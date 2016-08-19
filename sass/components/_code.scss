@@ -3,9 +3,10 @@ $code-font-family: 'Inconsolata', monospace;;
 .code, .nx, .p, .s1, .line-number, .o, .gd, .gi, .kc, .kp, .c1, .nb, .mi, .kd {
 	font-family: $code-font-family;
 	font-weight: 400;	
+	line-height: 1.5em;
 }
 
-.code {
+.code, code {
 
 	background: #FFA1A1;
 	.nx, .o {

@@ -1,4 +1,10 @@
 .header {
 	background: pink;
 	padding: 1em 0;
+
+	&__title {
+		font-size: 6rem;
+		background: rgba(0, 255, 255, .7);
+		padding: .2rem .6rem;
+	}
 }
