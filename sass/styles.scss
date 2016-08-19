@@ -1,14 +1,21 @@
-@import "_normalize.scss";
-@import "_mixins.scss";
-@import "components/header.scss";
-@import "components/nav.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,700,400,300);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:100,400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+@import "normalize";
+@import "mixins";
+@import "components/header";
+@import "components/nav";
+@import "components/code";
 
 /*------------------------------------*\
     # Simple Typography Settings
 \*------------------------------------*/
 
 // Font Family
-$font-family: 'Open Sans', sans-serif;
+$base-font-family: 'Libre Baskerville', sans-serif;
+$title-font-family: 'Open Sas', sans-serif;
+$code-font-family: 'Inconsolata', monospace;;
 
 // Base Font for HTML
 $base-font-size: 16px;
@@ -56,7 +63,7 @@ $max-width: 40em;
 *, html, body {
 	margin: 0;
     font-size: $base-font-size;
-    font-family: $font-family;
+    font-family: $base-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -71,6 +78,7 @@ h1, h2, h3, h4, h5, h6,
     color: $header-color;
     line-height: $header-line-height;
     font-weight: 400;
+    font-family: $title-font-family;
 }
 
 h1,
@@ -146,20 +154,16 @@ ul, ol {
 }
 
 ul {
-
+	margin: 0;
+	padding: 0;
     li {
-        list-style: disc;
-    }
-
-    ul {
-
-        li {
-            list-style: circle;
-        }
+        list-style: none;
     }
 }
 
 ol {
+	margin: 0;
+	padding: 0;
 
     li {
         list-style: decimal;
@@ -192,7 +196,7 @@ table {
     width: 100%;
     margin: $blockquote-margin 0;
     border-collapse: collapse;
-    background-color: #DD8671;
+    //background-color: #DD8671;
 }
 
 table, td, th {
@@ -247,17 +251,24 @@ code {
     position: relative;
     top: -0.2em;
     padding: 3px;
-    font-family: Courier New, Courier, monospace;
-    font-size: $paragraph-size / 1.4;
+    font-family: $code-font-family;
+    font-size: $paragraph-size / 1.1;
     color: white;
     line-height: 1em;
     pointer-events: none;
-    border: 1px solid $border-color;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+	font-weight: 400;
 }
 
+p code {
+	background: #FFA1A1;
+	padding: .1em .5em;
+    margin: .1em 0;
+    font-family: $base-font-family;
+
+}
 
 
 // Misc Styles
