@@ -1,11 +1,64 @@
+@mixin skew($side: right, $deg: -20deg, $right: -15px, $left: -15px, $width: 30px, $bg: #fff) {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+		z-index: -1;
+
+        @if $side == right {
+            right: $right;
+        }
+        @else if $side == left {
+            left: $left;
+        }
+
+        display: block;
+        width: $width;
+        background: $bg;
+        -webkit-transform: skew($deg);
+            -ms-transform: skew($deg);
+                transform: skew($deg);
+    }
+}
+
 .header {
 	background: pink;
-	padding: 1em 0;
+	padding: 1em 0 0 0;
+
 
 	&__title {
-		background: rgba(0, 255, 255, .7);
-		padding: .2rem .6rem;
-				font-size: 5rem;
+		font-size: 5rem;
+		margin: 0;
+		padding-right: 1rem;
+	}
 
+	&__subtitle {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		color: #fff;
+		font-style: italic;
+
+		@media (min-width: 700px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	.header__title-wrapper {
+		background: #4cecef;
+		padding: .2rem .6rem;
+		display: inline-block;
+		margin: 1rem 0;
+		z-index: 0;
+
+    	@include skew($bg: #4cecef, $deg: -20deg, $right: -45px, $width: 65px);
+	
+	}
+
+	&__wrapper {
+		max-width: 50em;
+		margin: 0 auto;
 	}
 }

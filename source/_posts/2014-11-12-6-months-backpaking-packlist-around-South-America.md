@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Backpacking 6 Months Packlist for Girls
-tags: [travel]
+categories: travel
 ---
 
 Trying to fit everything you may need for 6 months into a 65L bag is not easy, especially as a girl. I had to consider hot climates, farming in the jungle, camping on the beach as well as the colder mountain areas of Peru and some parts of Bolivia. It took me 3 or 4 packing attempts to see what fits and what can be discarded. In the end this is what I ended up with in my bag:

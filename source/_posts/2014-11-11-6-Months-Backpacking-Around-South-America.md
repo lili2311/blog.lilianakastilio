@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 6 Months Backpacking Around South America
-tags: [travel]
+categories: travel
 ---
 
 Today is a first day of a 6 months incredible journey, me and my fiance are going backpacking around South America, Mexico and Cuba in the hopes to learn more about unfamiliar to us culture of each country but mostly to gain experience in Organic Farming. This is not quite a WOOF adventure, while it may have started out as an idea to go around South America WOOFing we quickly realised that not every country has a huge choice of farms to stay on but also how much there is to do in general on the way that simply cannot be missed. Our first farm stay will be to learn the basics of organic farming in Belize, after which we hope to find farms in Argentina and Chile to stay on on the way to Brazil. 

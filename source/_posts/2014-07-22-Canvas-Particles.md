@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTML5 Canvas Particles System (pt. 1) 
-tags: [css,javascript,tutorial,example]
+categories: css javascript tutorial example
 ---
 
 

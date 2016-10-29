@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fixed On Scroll Animated Header with CSS and JavaScript
-tags: [css,javascript,tutorial,example]
+categories: css javascript tutorial example 
 ---
 
 In this post I will explain how to create an animated sticky header, with CSS3 and JavaScript. So we are going to have a header that will behave normally until we have to scroll and then it will become smaller but still stick to the top of the viewport.

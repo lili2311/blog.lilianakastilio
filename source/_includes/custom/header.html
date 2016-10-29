@@ -1,14 +1,15 @@
-<div class="">
-	<a class="h1" href="{{ root_url }}/"><h1 class="header__title">
-{{ site.title }}</h1></a>
+<div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
 
-<a><h1 class="header__title">
-Liliana</h1></a>
-<a><h1 class="header__title">
-Kastilio</h1></a>
-
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
 	{% if site.subtitle %}
-	<h2>{{ site.subtitle }}</h2>
+	<h2 class="header__subtitle">{{ site.subtitle }}</h2>
 	{% endif %}
 	<nav role="navigation" class="navigation">{% include navigation.html %}</nav>
 </div>

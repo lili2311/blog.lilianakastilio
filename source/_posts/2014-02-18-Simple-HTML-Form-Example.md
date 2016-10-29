@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Create a Simple HTML Form 
-tags: [css,html,forms,javascript,tutorial,example]
+categories: css html forms javascript tutorial example
 ---
 
 

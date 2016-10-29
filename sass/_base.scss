@@ -1,0 +1,51 @@
+// Font Family
+$base-font-family: 'Libre Baskerville', sans-serif;
+$title-font-family: 'Open Sas', sans-serif;
+$code-font-family: 'Inconsolata', monospace;;
+
+// Base Font for HTML
+$base-font-size: 16px;
+
+// Paragraph Styles
+$paragraph-color      : #505050;
+$paragraph-size       : rem(17px);
+$paragraph-line-height: 1.5em;
+$paragraph-margin     : 20px;
+
+// Header Styles
+$header-color      : #000000;
+$header-size       : rem(40px);
+$header-line-height: 1.25em;
+$header-margin     : $paragraph-margin * 1.2;
+
+// Blockquote Styles
+$blockquote-color      : #505050;
+$blockquote-size       : rem(23px);
+$blockquote-line-height: 1.5em;
+$blockquote-margin     : $paragraph-margin * 1.5;
+
+// Links
+$link-color: #4eaff6;
+
+// hr
+$hr-margin: 30px;
+
+// Type Misc
+$font-weight-bold: 800;
+$border-color: #DADADA;
+
+$max-width: 40em;
+
+.container {
+	max-width: $max-width;
+	margin: 0 auto;
+}// Make type normal across browsers
+*, html, body {
+	margin: 0;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
