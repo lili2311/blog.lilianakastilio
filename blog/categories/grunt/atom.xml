@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Grunt | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/grunt/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Frontend Automation With Grunt]]></title>
+    <link href="http://lili2311.github.io/blog/2016/03/05/frontend-automation-with-grunt/"/>
+    <updated>2016-03-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/03/05/frontend-automation-with-grunt</id>
+    <content type="html"><![CDATA[<h4>1. What is Grunt?</h4>
+
+<p><a href="http:/gruntjs.com/">Grunt</a> is a JavaScript task runner. Grunt lets you automate tasks like HTML minification, copying files, compiling CSS, deploying to AWS etc.</p>
+
+<h4>2. Download Node.js</h4>
+
+<p>Grunt and Grunt plugins are installed and managed via <a href="https://npmjs.org/">npm</a> the <a href="https://nodejs.org/en/">Node.js package manager</a>.
+First of all if you will need to download <a href="https://nodejs.org/en/download/">Node.js</a> (npm will be installed with it).</p>
+
+<h4>3. Basic Command Line Commands</h4>
+
+<p>If you have not used command line terminal before you here are some basic commands:</p>
+
+<p><code>ls</code></p>
+
+<p><strong>Description</strong>: Lists the names of the files in the working directory.
+For more complete information use <code>ls –alF</code></p>
+
+<p><code>cd directoryname</code></p>
+
+<p><strong>Description</strong>: Changes the working directory to the one you named.</p>
+
+<p><code>cd ..</code></p>
+
+<p><strong>Description</strong>: Brings you up one directory level.</p>
+
+<p><code>cd</code></p>
+
+<p><strong>Description</strong>: Returns you to your home directory.</p>
+
+<p><code>pwd</code></p>
+
+<p><strong>Description</strong>: Displays the pathname of the current directory.</p>
+
+<p><code>mkdir newdirectoryname</code></p>
+
+<p><strong>Description</strong>: Makes a new directory</p>
+
+<h4>4. Install Grunt</h4>
+
+<ol>
+<li>Open your preferred terminal or install <a href="https://www.iterm2.com/">iTerm</a>.</li>
+<li>Install Grunt <strong>globally</strong>: instructions below will install grunt client globally on your machine, if you already have Grunt installed skip this step. For a more detailed explanation see the official <a href="http://gruntjs.com/getting-started">documentation</a>.</li>
+<li>Install Grunt <strong>locally</strong>: Now we will install Grunt locally specifically for this project. Go to your project folder. Replace the path after <code>cd</code> with the path to your folder:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>Documents/workshop/
+</span></code></pre></td></tr></table></div></figure>
+In the terminal type out the below command to get to the project folder (if you have saved the workshop folder elsewhere adjust the path):<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>npm install grunt <span class="p">&amp;</span>ndash<span class="p">;</span>save-dev
+</span></code></pre></td></tr></table></div></figure></li>
+</ol>
+
+
+<h4>5. Configure</h4>
+
+<p>To configure the project, within your project folder type <code>npm init</code> in the terminal and follow the instructions:
+<img src="http://www.lilianakastilio.co.uk/images/automation-with-grunt/npminit.png" alt="" /></p>
+
+<h4>6. Grunt AWS Plugin</h4>
+
+<p>We will now install Grunt AWS Plugin. Grunt uses different plugins to perform certain tasks, in order to deploy to Amazon S3 we will use the <a href="https://github.com/MathieuLoutre/grunt-aws-s3">grunt-aws-s3 plugin</a>.</p>
+
+<p>In your project folder we can install this using the command below: <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>npm install grunt-aws-s3 <span class="p">&amp;</span>ndash<span class="p">;</span>save-dev
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>We now have the plugin installed and we can configure grunt to use this task to deploy our project without having to manually upload the files every time.</p>
+
+<p>In order for us to use this plugin  and deploy to S3 in the command line we need to create a file called <code>s3settings.json</code>, here we will keep all the login details and bucket information. <strong>This file MUST be kept secret, do not commit it to github or any other version control system. It should be excluded in <code>.gitignore</code>file if you are using git. It is important to take care as if these details are made public your account may be accessed and used by someone else, leaving you with a bill to pay</strong>:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/automation-with-grunt/s3json.png" alt="" /></p>
+
+<p>The <code>key</code> and <code>secret</code> are available in the user credentials file you downloaded when <a href="http://blog.lilianakastilio.co.uk/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws/">creating an IAM user</a>. Bucket must be exactly what you called the bucket on Amazon S3 and the same for region.</p>
+
+<p>The second file we need to create is <code>Gruntfile.js</code> this is a default file Grunt will look for locally within the project folder. Here is where we configure the tasks.</p>
+
+<p>Using your text editor or command line, create a new file within the workshop folder called <code>Gruntfile.js</code>, the content of it should be the following:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">grunt</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'><span class="nx">grunt</span><span class="p">.</span><span class="nx">loadNpmTasks</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">grunt</span><span class="o">-</span><span class="nx">aws</span><span class="o">-</span><span class="nx">s3</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">pkg</span><span class="o">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="kr">package</span><span class="p">.</span><span class="nx">json</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;),</span>
+</span><span class='line'>    <span class="nx">s3settings</span><span class="o">:</span> <span class="nx">grunt</span><span class="p">.</span><span class="nx">file</span><span class="p">.</span><span class="nx">readJSON</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">s3settings</span><span class="p">.</span><span class="nx">json</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;),</span>
+</span><span class='line'>        <span class="nx">aws_s3</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>            <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nx">accessKeyId</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">%=</span> <span class="nx">s3settings</span><span class="p">.</span><span class="nx">key</span> <span class="o">%&gt;&amp;</span><span class="nx">rsquo</span><span class="p">;,</span>
+</span><span class='line'>                <span class="nx">secretAccessKey</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">%=</span> <span class="nx">s3settings</span><span class="p">.</span><span class="nx">secret</span> <span class="o">%&gt;&amp;</span><span class="nx">rsquo</span><span class="p">;,</span>
+</span><span class='line'>                <span class="nx">region</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">%=</span> <span class="nx">s3settings</span><span class="p">.</span><span class="nx">region</span> <span class="o">%&gt;&amp;</span><span class="nx">rsquo</span><span class="p">;,</span>
+</span><span class='line'>                <span class="nx">uploadConcurrency</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">downloadConcurrency</span><span class="o">:</span> <span class="mi">5</span>
+</span><span class='line'>        <span class="p">},</span>
+</span><span class='line'>        <span class="nx">live</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>            <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nx">bucket</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">%=</span> <span class="nx">s3settings</span><span class="p">.</span><span class="nx">bucket</span> <span class="o">%&gt;&amp;</span><span class="nx">rsquo</span><span class="p">;,</span>
+</span><span class='line'>                <span class="nx">differential</span><span class="o">:</span> <span class="kc">true</span> <span class="c1">//Only uploads the files that have changed</span>
+</span><span class='line'>            <span class="p">},</span>
+</span><span class='line'>            <span class="nx">files</span><span class="o">:</span> <span class="p">[</span>
+</span><span class='line'>                <span class="p">{</span><span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">cwd</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">deploy</span><span class="o">/&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="nx">src</span><span class="o">:</span> <span class="p">[</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">**&amp;</span><span class="nx">rsquo</span><span class="p">;],</span> <span class="nx">dest</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;},</span>
+</span><span class='line'>                <span class="p">]</span>
+</span><span class='line'>            <span class="p">},</span>
+</span><span class='line'>        <span class="p">});</span>
+</span><span class='line'>    <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">deploy</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">[</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">aws_s3</span><span class="o">:</span><span class="nx">live</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;]);</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p><a href="http://pastebin.com/m3cK4EcC">Full code to copy is here.</a></p>
+
+<p>Here we have configured the plugin to upload to Amazon S3 all files in the folder deploy, so we would now have to create this folder within the project and copy any files we want uploaded.</p>
+
+<p>We have also created a task called <code>deploy</code> which can be run in command line within the project folder to upload all files within deploy folder to Amazon S3, to the bucket specified in the <code>s3settings.json</code> file.</p>
+
+<h4>7. Use Grunt to deploy to S3</h4>
+
+<p>Go to the project folder in the terminal. You can now run the deploy command by typing: <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>grunt deploy
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And we are done!</p>
+]]></content>
+  </entry>
+  
+</feed>

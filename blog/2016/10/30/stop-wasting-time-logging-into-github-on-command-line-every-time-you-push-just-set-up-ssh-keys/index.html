@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys - Liliana Kastilio</title>
+  <meta name="author" content="Liliana Kastilio">
+
+  
+  <meta name="description" content="Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys Oct 30th, 2016 11:54 pm 1. Does GitHub always ask &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">
+  <link href="/images/favicon.png" rel="icon">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
+<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+ -->  
+  
+
+</head>
+
+<body   >
+  <header role="banner" class="header"><div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
+
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
+	
+	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
+	
+	<nav role="navigation" class="navigation">  
+<ul class="navigation__list">
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/">Blog</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/archives">Archives</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/about">About</a>
+  </li>
+  <li class="navigation__item navigation__rss" data-subscription="rss">
+  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+  <div id="main" class="container">
+    <div id="content">
+      <div>
+<article class="article" role="article">
+  
+  <header>
+    
+      <h1 class="article__title">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-10-30T23:54:37+00:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:54 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="article__content"><h2>1. Does GitHub always ask you for your password? There is a fix, read on :)</h2>
+
+<p>If you recently started using Git &amp; Github in your workflow it is likely you are sick and tired of constantly having to type in your username and password every single time you want to push some chnages! Well that ends today as in this blog post I will show you how to tell Github to trust your laptop and just let you get on with coding without any fuss of logging in all the time.</p>
+
+<p>In order for this to work we will use something called SSH keys.</p>
+
+<h2>2. What are SSH keys?</h2>
+
+<p>SSH keys are a means of identifyng yourself to a server without having to type in your username and password every time. It can be though of as a passwordless login. Instead of a user name and password the a pair of keys is used that is exchanged between your laptop and the server. They keys live on your laptop and on the other side, this way every time you talk to that server it will realise that you are already knowkn to it and who you are.</p>
+
+<h2>3. Do you already have SSH keys?</h2>
+
+<p>Before we make a new key, lets check if you have lying around already.</p>
+
+<h3>Windows</h3>
+
+<p>In command promt type in:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> %userprofile%/.ssh
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now lets see if there is a key in there:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>dir id_*
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you see and error something like &ldquo;No such file or directory&rdquo; then you don&rsquo;t have a key and need to make one. Next section describes hwo to do this.</p>
+
+<h3>Mac &amp; Linux</h3>
+
+<p>Open your preffered terminal and run the command below:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ls -al ~/.ssh
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will list all the files currently present in the <code>~/.ssh</code> directory, which is a special directory where all keys are stored by default. The filenames to look out for are:</p>
+
+<ol>
+<li>id_rsa.pub</li>
+<li>id_rsa</li>
+<li>id_dsa.pub</li>
+<li>id_ecdsa.pub</li>
+<li>id_ed25519.pub</li>
+</ol>
+
+
+<p>Check the content of the file that looks similar to the example above by using the <code>cat</code> command:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cat ~/.ssh/id_rsa.pub
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There will be a whole lot ot stuff in that file including your email.</p>
+
+<p>If you did not find anything in there, not to worry we will make a new SHH key!</p>
+
+<h2>4. Generate a new SSH key.</h2>
+
+<p>So if you found no keys form steps before then we should make one. Lets go back to the terminal and run the command that will generate us a new key:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-keygen -t rsa -C <span class="s2">&quot;your-email@example.com&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Just press Enter when prompted for a filename</li>
+<li>Create and enter a passphrase as requested.</li>
+<li>Tada you now have a shiny new key ready to be used.</li>
+</ol>
+
+
+<p>Note that the ssh-keygen command is only available if you have already installed Git (for Windows that would be Git with Git Bash).</p>
+
+<h2>5. Adding a new SSH key to your GitHub account.</h2>
+
+<p>We now need to share the new key with Github in order to enjoy passwordless login when pushing code:</p>
+
+<ol>
+<li>Log in to your <a href="https://github.com/">GitHub account</a></li>
+<li>Click on your profile photo (in the top right corner) → &ldquo;Settings&rdquo;</li>
+<li>In the sidebar click on &ldquo;SSH and GPG keys&rdquo; → &ldquo;New SSH Key&rdquo;</li>
+<li>Give it a title/name (perhaps this is the key for you work laptop)</li>
+<li>You now need to copy and paste the entirety of the key into here. So all the text your saw with your email that was generated during the previous step all of that is a key. If you had a key already, simply open the file and copy paste the entire contents into here.</li>
+<li>Save!</li>
+</ol>
+
+
+<h2>5. Try it out!</h2>
+
+<p>You can now go back to your project and try pushing some code, you should no longer be prompted for the password and username every time.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liliana Kastilio</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-10-30T23:54:37+00:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:54 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/ssh/'>ssh</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/" data-via="" data-counturl="http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2016/03/05/frontend-automation-with-grunt/" title="Previous Post: Frontend automation with Grunt">&laquo; Frontend automation with Grunt</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2017/01/25/frontend-vs-backend/" title="Next Post: Frontend vs Backend">Frontend vs Backend &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer"><p>
+  Copyright &copy; 2018 -
+  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
+</p>
+
+</footer>
+  
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dgi1mac',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</body>
+</html>

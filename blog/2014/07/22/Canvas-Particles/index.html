@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 Canvas Particles System (Pt. 1) - Liliana Kastilio</title>
+  <meta name="author" content="Liliana Kastilio">
+
+  
+  <meta name="description" content="HTML5 Canvas Particles System (Pt. 1) Jul 22nd, 2014 12:00 am Learning to make a simple particle system using HTML5 Canvas and Javascript. In this &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/">
+  <link href="/images/favicon.png" rel="icon">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
+<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+ -->  
+  
+
+</head>
+
+<body   >
+  <header role="banner" class="header"><div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
+
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
+	
+	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
+	
+	<nav role="navigation" class="navigation">  
+<ul class="navigation__list">
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/">Blog</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/archives">Archives</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/about">About</a>
+  </li>
+  <li class="navigation__item navigation__rss" data-subscription="rss">
+  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+  <div id="main" class="container">
+    <div id="content">
+      <div>
+<article class="article" role="article">
+  
+  <header>
+    
+      <h1 class="article__title">HTML5 Canvas Particles System (Pt. 1)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-22T00:00:00+01:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="article__content"><p>Learning to make a simple particle system using HTML5 Canvas and Javascript.</p>
+
+<p>In this tutorial I will cover:</p>
+
+<ol>
+<li>Initialising Canvas</li>
+<li>Drawing circles</li>
+<li>Simple animation for particle movement using <code>SetInterval()</code></li>
+<li>Improving the code using <code>RequestAnimationFrame()</code></li>
+</ol>
+
+
+<h4>Initialising Canvas</h4>
+
+<p>Introduced in HTML5, the HTML  <code>&lt;canvas&gt;</code>  element can be used to draw graphics via scripting in JavaScript. The <code>&lt;canvas&gt;</code>  element isn&rsquo;t supported in some older browsers, but is supported in recent versions of all major browsers. More information can be found here: <a href="http://caniuse.com/#feat=canvas">http://caniuse.com/#feat=canvas</a>. <code>&lt;canvas&gt;</code> element requires the closing tag, like so:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;myCanvas&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This creates a blank canvas for us to use. You can set the with and height at this point:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;myCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;300&quot;</span><span class="nt">&gt;</span> JavaScript Particles Canvas <span class="nt">&lt;/canvas&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If not specified, <strong>width</strong> defaults to <strong>300px</strong> and <strong>height</strong> defaults to <strong>150px</strong>.</p>
+
+<p>Some older versions of browsers do not support the <code>&lt;canvas&gt;</code> element, we can provide fallback content. We just provide alternate content inside the <code>&lt;canvas&gt;</code> element. Browsers which don&rsquo;t support <code>&lt;canvas&gt;</code> will ignore the container and render the fallback content inside it, otherwise they will render the canvas normally:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;myCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;300&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can even include a different element inside the canvas element:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;myCanvas&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;300&quot;</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">&quot;img/example.png&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;300&quot;</span> <span class="na">alt=</span><span class="s">&quot;Example Image&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We have now initialized a blank canvas and are ready to draw something. I will cover drawing circles in the <a href="http://lili2311.github.io/blog/2014/11/16/HTML5-Canvas-Particle-System-pt2/">next blog post</a>.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liliana Kastilio</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-07-22T00:00:00+01:00'><span class='date'><span class='date-month'>Jul</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2014</span></span> <span class='time'>12:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/example/'>example</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/" data-via="" data-counturl="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/02/18/Simple-HTML-Form-Example/" title="Previous Post: How to Create a Simple HTML Form">&laquo; How to Create a Simple HTML Form</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/10/04/Fixed-On-Scroll-Animated-Header/" title="Next Post: Fixed On Scroll Animated Header with CSS and JavaScript">Fixed On Scroll Animated Header with CSS and JavaScript &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer"><p>
+  Copyright &copy; 2018 -
+  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
+</p>
+
+</footer>
+  
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dgi1mac',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</body>
+</html>

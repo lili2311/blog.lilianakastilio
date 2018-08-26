@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Html | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/html/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Secret to Learning to Code]]></title>
+    <link href="http://lili2311.github.io/blog/2018/08/26/the-secret-to-learning-to-code/"/>
+    <updated>2018-08-26T18:45:32+01:00</updated>
+    <id>http://lili2311.github.io/blog/2018/08/26/the-secret-to-learning-to-code</id>
+    <content type="html"><![CDATA[<p>Learning from articles, courses and examples is a great way to start getting the skills you need to get a job as an engineer. Learning is hard. I used to often find myself super motivated and excited after a attending a workshop or a meetup but then can’t remember a single thing I learned only a week later. The same thing happens to me if I read an article on a train on how to do a super exciting thing with CSS or something new and interesting about JavaScript but the excitement is gone once I realise I don’t know where to start or how to apply what I have just learned. It can be demotivating. But we can make it less so with some simple tips and of course a secret ingredient to learning to code.</p>
+
+<h2>What is the secret ingredient?</h2>
+
+<p>If you wish to get the most out of your learning, there is one essential requirement, it&rsquo;s more important than any other technique or suggestion. Unless you ensure to fulfil this requirement no suggestions or millions of tips will be successful in helping you to get value out of any course/workshop/article. What is this requirement, you say? A deep desire to learn, then improve and ultimately master the basics of web development. It must be a burning desire that fuels you, that keeps you going when you are having a lazy day or simply feel like giving up. But how do I get such a desire you might wonder? Constantly remind yourself self why you learning to code in the first place. Are you after a better paying job to increase your income and quality of life? Is web development a secret passion that was on hold and now you hope to take a full dive in and see how far you can take this? Think of different ways how having this new skill will improve your life, use this to fuel your determination and make the most of the course/workshop/article available to you.</p>
+
+<h2>Don&rsquo;t skip the exercises</h2>
+
+<p>Many skills are learned by doing and in many course/articles there are exercises. Let’s talk about deliberate practice: just practicing for the sake of practicing is simply not enough, in order to truly understand what you are trying to achieve and how you will go about it you must deliberately think about every step you are taking in the exercises. Even if you have done this exercise before, do it again! The second time make sure you understand every step and every decision. The end goal is not to complete the exercise but to gain wisdom.</p>
+
+<h2>Question everything</h2>
+
+<p>Are you unfamiliar with a term you just read in some article? Look it up! Are you following a tutorial and find that you did not understand one of the steps you just did? Go back to it and re-read it again and again until you gain more clarity. It is only once you gain true understanding of all the steps you took to do something that you can rest assured you got lot’s of value from reading the article/tutorial/course.</p>
+
+<h2>Take notes</h2>
+
+<p>If you see something that makes you go &ldquo;oh that would be good to read more about&rdquo;, &ldquo;that would be handy for the other things I am doing&rdquo;. Ask yourself as you read, where else could I apply this?</p>
+
+<h2>Re-read</h2>
+
+<p>Re-read the articles again and again. Skimming the material will not give you any lasting benefit. The speed with which humans forget things is astonishing. To truly cement the ideas, techniques and advice in any article - re-read it. Remember that the only way to get good at something is to develop good habits and understanding in that area.</p>
+
+<p>Remember that learning is a process. You cannot simply become a web developer by rushing through a course or reading a bunch of articles. Take every opportunity available to you to use the skills you have learned. This process will take time, it is a living thing that will grow and get better. But this is only possible if you actively participate in the process.</p>
+
+<p>Stay curious, don&rsquo;t give up and be patient.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Frontend vs Backend]]></title>
+    <link href="http://lili2311.github.io/blog/2017/01/25/frontend-vs-backend/"/>
+    <updated>2017-01-25T12:05:04+00:00</updated>
+    <id>http://lili2311.github.io/blog/2017/01/25/frontend-vs-backend</id>
+    <content type="html"><![CDATA[<p>When starting to learn about Web Development, I remember struggling to understand the difference between Frontend and Backend, in order to try and understand this lets first define what is a website?
+A simple website is typically a collection of HTML documents with CSS styling applied, linked using Hyperlinks (JavaScript may also be present for user interactions and animations). Both HTML and CSS are natively understood and interpreted by the browsers and so is JavaScript. Meaning that the 3 technologies together are the building blocks of any website. These 3 technologies are the typical makeup of the websites front-end. A front end is what the user sees when visiting a website. It is the visual part you can interact with.</p>
+
+<h2>Backend vs Frontend</h2>
+
+<p>Any website can also have a backend - aka some service that lives on a server capable of communicating with the front end of the website to send it data. For example the front end may be requesting user data  from a database to populate a user profile page. Front end only websites do not have a backend and do not usually have a database so are considered static. A static website means that the pages are always the same and the pages do not display differently depending on who you are, for example different users see different data in their profile page that is relevant to them. Backends are usually created for larger websites that need to handle user signups, user profiles, user messaging, payments and other useful actions. Static websites are more of a business card and simply provide information Every website has a front-end and some also have a backend.</p>
+
+<p>Some reading materials to learn more about websites and the basics of the web technologies like <a href="HTTP:">HTTP:</a></p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works?__s=gpt5uamtugwbh776shzn">How the Web works</a></li>
+<li><a href="https://dev.opera.com/articles/http-basic-introduction/?__s=gpt5uamtugwbh776shzn">HTTP Basic Introduction</a></li>
+<li><a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend?__s=gpt5uamtugwbh776shzn">Frontend vs Backend</a></li>
+<li><a href="http://blog.digitaltutors.com/whats-difference-front-end-back-end/?__s=gpt5uamtugwbh776shzn">Whats the difference between frontend and backend?</a></li>
+</ul>
+
+
+<p>🔥 If you enjoyed this post then you can keep up to date with my latests blogs posts &amp; courses by following me on <a href="https://twitter.com/lilianakastilio">Twitter</a> and checking out my code school for some <a href="http://cubcats.teachable.com/courses/">hands on guided coding practice.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/"/>
+    <updated>2015-12-03T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 1 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial I will briefly cover:</p>
+
+<ol>
+<li>What is HTML?</li>
+<li>HTML Basics</li>
+<li>Create a Simple HTML Page</li>
+<li>What is HTML5 and how is it different?</li>
+<li>HTML Exercisesb</li>
+</ol>
+
+
+<h4>1. What is HTML?</h4>
+
+<p><strong>HTML - HyperText Markup Language</strong> is the standard language used to create web pages. Web browsers can read HTML files and render them into visible web pages.
+HTML documents are described by HTML tags, these are enclosed in angular brackets <code>&lt;&gt;</code>.
+HTML tags can be considered to be “keywords” that the browser can understand and render/draw in the browser appropriately when viewing the page.
+Each browser has default ways of interpreting each element, these can later be “styled” to look how you prefer with the help of CSS, which will be explained a little further on.</p>
+
+<h4>2. HTML Basics</h4>
+
+<p>We will create a very basic HTML page that will load and simply display “Hello World”. It will look like this:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>The <code>DOCTYPE</code> is a declaration and tells the browser which &lsquo;language&rsquo; we are talking in so it knows how to render it.</li>
+<li>The text between <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> describes an HTML document</li>
+<li>The text between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> provides information about the document</li>
+<li>The text between <code>&lt;title&gt;</code> and <code>&lt;/title&gt;</code> provides a title for the document</li>
+<li>The text between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> describes the visible page content</li>
+<li>The text between <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> describes a heading</li>
+<li>The text between <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> describes a paragraph</li>
+</ul>
+
+
+<h4>3. Create a Simple HTML Page</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new folder in your <code>Documents</code> folder for this workshop, let’s call it <code>website</code>.</li>
+<li>Now open the text editor and save an empty file called <code>index.html</code>, you can press <code>Cmd + S</code> (Mac) or <code>Ctrl + S</code> (WIndows)
+
+<ul>
+<li><code>index.html</code> is a special name and this is a file that the server will look for by default when a certain url is requested (link e.g. <code>http://website.com</code>).</li>
+<li>Each simple website is basically a “directory” of files, the <code>index.html</code> is the first file the web browser will access and from here you can specify how to reach other files via writing hyperlinks.</li>
+<li>The default file can be configured to be called something else if required, but for the purpose of this workshop we will only concentrate on simple defaults.</li>
+</ul>
+</li>
+<li>Type out the code below: <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'> <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'> <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'> <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'> <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just created. You should see “Hello World” and the text you added as the paragraph, something like this:</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/preview.png" alt="" /></p>
+
+<h4>4. What is HTML5 and how is it different?</h4>
+
+<p><code>HTML5</code> is simply a newer version that is supported by most  modern browsers. HTML5 introduced some more awesome elements/tags we can use: such as <code>&lt;canvas&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;footer&gt;</code> and many more to bring the HTML language more in-line with modern times.</p>
+
+<h4>5. HTML Exercises</h4>
+
+<p>We can add more to the page at this stage or later, <a href="http://www.htmldog.com/references/html/tags/">here is a list</a> of <code>html</code> and new <code>html5</code> tags you can use.</p>
+
+<ol>
+<li>Add an image <code>&lt;img&gt;</code>:
+
+<ul>
+<li>Type out the following and modify the <code>src</code> to point to an image you like:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;https://www.example.com/image.png &quot;</span> <span class="na">alt=</span><span class="s">&quot;Image description&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><code>width="100"</code> and  <code>height="90"</code> are optional, play around with the numbers.</li>
+<li><a href="http://www.htmldog.com/references/html/tags/img/">Read more</a> about image <code>&lt;img&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a link <code>&lt;a&gt;</code> to your favourite website:
+
+<ul>
+<li>Type out the following and modify it to link to point your favourite website:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://www.example.com &quot;</span><span class="nt">&gt;</span>Link Text<span class="nt">&lt;/a&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><a href="http://www.w3schools.com/html/html_links.asp">Read more</a> about link <code>&lt;a&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a footer <code>&lt;footer&gt;</code>. These usually sit at the bottom of the page, but sometimes have to be styled to stay at the bottom if there is not enough content to fill the page:
+
+<ul>
+<li>Type out the following and modify it to say anything you want:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;footer&gt;</span> This is a footer <span class="nt">&lt;/footer&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Now try to add a link within the footer to point to a url of your choice, e.g. <a href="http://google.com">http://google.com</a></li>
+<li><a href="http://www.htmldog.com/references/html/tags/footer/">Read more about footer <code>footer</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+<li>Add a comment, which says <code>“This is my first website!”</code>:
+
+<ul>
+<li>Have a look at the example below and modify it as needed:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- Comment text, this will not be visible on the page --&gt;</span>
+</span></code></pre></td></tr></table></div></figure>   * <a href="http://www.tutorialspoint.com/html/html_comments.htm">Read more about comments</a></li>
+</ul>
+</li>
+<li>Add an unordered list of 3 things you love (use previous examples to get the format right):
+
+<ul>
+<li>Unordered list is started using the tag <code>&lt;ul&gt;</code> and closed using <code>&lt;/ul&gt;</code></li>
+<li>Within the list declaration mentioned above you can add in list items, these are defined by: <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code></li>
+<li>You can have as many list items in the unordered list as you want</li>
+<li>Within each item you can add other elements, such as: paragraph, link, images, another list.</li>
+<li>Play around with this one, it is very useful especially for menus</li>
+<li><a href="http://www.htmldog.com/references/html/tags/ul/">Read more about unordered list <code>ul</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+</ol>
+
+
+<p><strong>Further reading and things to try:</strong></p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/Learn/HTML/HTML_tags">Mozilla: HTML Tags</a></li>
+<li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1?curriculum_id=50579fb998b470000202dc8b">Codeacademy: Web Beginner</a></li>
+<li><a href="http://www.tutorialspoint.com/html/">Tutorialspoint: HTML</a></li>
+<li><a href="http://codepen.io/pen/">Codepen</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Create a Simple HTML Form]]></title>
+    <link href="http://lili2311.github.io/blog/2014/02/18/Simple-HTML-Form-Example/"/>
+    <updated>2014-02-18T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/02/18/Simple-HTML-Form-Example</id>
+    <content type="html"><![CDATA[<p>For my first web page I wanted to create something simple, but also challenging for myself. I created some web pages whilst at university and have attempted it a few times since but lack of understanding was holding me back, and I found it very discouraging not getting far. So after a couple of courses on <a href="http://www.codecademy.com/">Codeacademy</a> and some patient tutoring from my boyfriend (who is a web developer), I finally feel like I am getting somewhere.</p>
+
+<p>I have never in the past managed to use forms or manipulate data using JavaScript on a web page so these were elements I wanted to include in my first project. I should mention that I am not new to coding or scripting, but am a complete noob to web development. In the end I wanted a page that was reminiscent of <em>Lorem Ipsum</em> text generators, but much simpler: here is the <a href="http://www.lilianakastilio.co.uk/meow/meow.html">result</a>. The user can enter some text and in return get a &ldquo;Meow&rdquo; filled paragraph.</p>
+
+<p>So how did I do it?
+After some franctic googling and trying desperately to remember what I have learned at university about HTML, I have found that we need two main things to make a webpage: <code>HTML</code> and <code>CSS</code>. But in this example we will also need Javascript to be able to process user input.</p>
+
+<h4>HTML - HyperText Markup Language.</h4>
+
+
+<p>First things first is to create a file <code>index.html</code> and insert the basic HTML5 structure of a web page:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>So lets explain each tag:</p>
+
+<ol>
+<li><code>&lt;!DOCTYPE html&gt;</code> - here we are declaring that the document contains HTML5 markup.</li>
+<li><code>&lt;head&gt;</code> - here you will store links to or definitions of scripts and stylesheets. Any description of the page content goes here, such as page title. Search engines will use this to add the page to their search index. This must be the first element in the <code>&lt;html&gt;</code> element.</li>
+<li><code>&lt;title&gt;</code> - this defines the page title, which will be shown in the browser tab or title bar.</li>
+<li><code>&lt;body&gt;</code> - this holds the content of the HTML page. This must be the second element in the <code>&lt;html&gt;</code> element.</li>
+</ol>
+
+
+<p>At this stage opening <code>index.html</code> in the browser will produce an empty page with the tab title &ldquo;Page title goes here&rdquo;.</p>
+
+<p>Earlier I mentioned that I wanted the page to have an input field and a button to process the input on click. Looking at the <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list">HTML 5 Element List</a>, we can see that within the <code>&lt;form&gt;</code> we have <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code> elements available to us. We will also need a <code>&lt;label&gt;</code> to caption the <code>&lt;input&gt;</code>. Here is them all added:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Meow<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-container&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;meow-form&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;label&gt;</span>Type Anything:<span class="nt">&lt;/label&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;meow-input&quot;</span> <span class="na">name=</span><span class="s">&quot;field&quot;</span> <span class="na">maxlength=</span><span class="s">&quot;255&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">autocomplete=</span><span class="s">&quot;off&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Go!<span class="nt">&lt;/button&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/form&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>The form is within a container <code>&lt;div&gt;</code>, it can also be called a content <code>&lt;div&gt;</code>. Placing the form in the container will allow for more sophisticated CSS styling and to place the elements anywhere we want on the page with ease. There are a couple of thigs to explain here:</p>
+
+<ol>
+<li><code>class</code> and <code>id</code> attributes. The <code>class</code> attribute in the <code>&lt;div&gt;</code> element assigns the element to a named class (in this case <code>form-container</code>). Multiple elements in the document can have the same class value, for any unique elements <code>id</code> is more appropriate. (Note: <code>id</code> must be unique in the document). However in this case, <code>id</code> could have also been used. I found a simple explanation of where to use which <a href="http://www.impressivewebs.com/difference-class-id-css/">here</a>. Both <code>id</code> and <code>class</code> are used as selectors in the stylesheet to style the elements (more on this later).</li>
+<li><code>&lt;label&gt;</code> - simply has text to be used as a caption.</li>
+<li><code>&lt;input&gt;</code> - we have given the input an <code>id</code> so that it can be styled later on.</li>
+<li><code>&lt;button&gt;</code> - setting the <code>type="submit"</code> will submit form data when the button is pressed. This is the default option if nothing is specified.</li>
+</ol>
+
+
+<p>Loading the <code>index.html</code> in the browser now gives us this:</p>
+
+<p><img src="http://i.imgur.com/ExVY6i4.png" alt="" /></p>
+
+<h4>CSS - Cascading Style Sheets.</h4>
+
+
+<p>CSS describes how a structured element (HTML or XML) must be rendered on screen.CSS can be:</p>
+
+<ol>
+<li><em>inline</em> - using the style attribute in HTML elements.</li>
+<li><em>internal</em> - using the <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section.</li>
+<li><em>external</em> - using an external <code>.css</code> file.</li>
+</ol>
+
+
+<p>I am putting all CSS in an external <code>style.css</code>:</p>
+
+<p>First we can set the body of the page to have a background image:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">body</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/lined_paper.png)</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>The whole expression is a <strong><em>rule</em></strong>, and <strong><em>body</em></strong> is a selector, which selects which element the rules apply to.</p>
+
+<p>Now we want to give the whole form a width and set the font. Earlier we have made the div that contained the form be of class &ldquo;form-container&rdquo;, in order to select elements of that class we have to put a <code>.</code> in front of the class name:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.form-container</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">90px</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">font-family</span><span class="o">:</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">Roboto</span> <span class="n">Condensed</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>We can give the input a desired width:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">input</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And style the button:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">button</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background-color</span><span class="o">:</span><span class="m">#ED518A</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">height</span><span class="o">:</span><span class="m">37px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>By saying display the button as an <code>inline-block</code> we are actually telling it to stay on the same line.</p>
+
+<p>Now we need to add a line in the <code>&lt;head&gt;</code>  to load the external <code>.css</code> file and to load the custom Google font (the Google font link can be generated on <a href="http://www.google.com/fonts">Google Fonts</a> website):
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Meow<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;normalize.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>After applying all the changes, our web page should now look like this:
+<img src="http://i.imgur.com/vOhv3Li.png" alt="" /></p>
+
+<p>Trying this in a few different browsers may yield a different result, but we can help the page to render consistently across different browsers by using something called <a href="http://necolas.github.io/normalize.css/">Normalize.css</a>. You can see that I have already included normalize.css in the <code>&lt;head&gt;</code>. There is also a project called <a href="http://www.cssreset.com/">reset.css</a>, there are many different versions you can try, but <a href="http://stackoverflow.com/a/8357635">here</a> an overview of the main differences between <code>reset.css</code> and <code>normalize.css</code>.</p>
+
+<h4>JavaScript</h4>
+
+
+<p>Javascript is an (quasi) object-oriented language, widely used as a scripting language for web pages. To add javascript to our page we will create an external script called meow.js which we can include in the index.html:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;meow.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>This is the full meow.js:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">send</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">input_text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">meow</span><span class="o">-</span><span class="nx">input</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;).</span><span class="nx">value</span><span class="p">;</span>
+</span><span class='line'>    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">meow</span><span class="o">-</span><span class="nx">output</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;).</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">meow</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="nx">input_text</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="kd">function</span> <span class="nx">meow</span><span class="p">(</span><span class="nx">times</span><span class="p">,</span> <span class="nx">input_text</span><span class="p">){</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">times</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">times</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">output</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span> <span class="nx">meow</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">input_text</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">output</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>To explain briefly what is being done here: the function <code>send(event)</code> is called once the button is clicked. We are extracting the user input from the button with id <code>meow-input</code> and using it to calculate the output. The function <code>meow(times, input_text)</code> repeats the user input <code>x</code> number of times with the word &ldquo;meow&rdquo; in between.</p>
+
+<p>We also need to tell the button to submit the information once it is clicked and use the function send (which is above), this I have done with some internal javascript:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">meow</span><span class="o">-</span><span class="nx">form</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">submit</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="nx">send</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</span><span class='line'><span class="nt">&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And that&rsquo;s it!</p>
+
+<p><strong>Some useful resources:</strong></p>
+
+<ol>
+<li><a href="https://developer.mozilla.org/en-US/">MDN - Mozilla Developer Network</a></li>
+<li><a href="http://caniuse.com/">Can I Use&hellip;</a></li>
+<li><a href="http://color.hailpixel.com/">color.hailpixel.com</a></li>
+<li><a href="http://stackoverflow.com/">StackOverflow</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

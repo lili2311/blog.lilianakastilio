@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Aws | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/aws/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Part 4: Create New IAM Users and Permissions in AWS]]></title>
+    <link href="http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws/"/>
+    <updated>2016-03-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws</id>
+    <content type="html"><![CDATA[<p>This is <strong>Part 4</strong> of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>.</p>
+
+<p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a>, <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/">Part 3: Deploy to AWS</a> of this tutorial.</p>
+
+<h4>1. Create a new User</h4>
+
+<ol>
+<li>Sign in to the <a href="https://console.aws.amazon.com/console/home?nc2=h_m_mc">AWS Amazon console</a></li>
+<li>Click on <strong>Identity &amp; Access Management</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/iam.png" alt="" /></li>
+<li>Click on <strong>User</strong> on the left hand-side menu<br/>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user.png" alt="" /></li>
+<li>Click <strong>Create New User</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-user.png" alt="" /></li>
+<li>Enter username <code>testuser</code>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/new-user-name.png" alt="" /></li>
+<li>Click <strong>Create</strong></li>
+<li>Download the credentials. These will include User Name, Access Key Id, Secret Access Key. Keep these secret as they are tied to your account and can be used for malicious purposes if not kept safely. Remember that your account is tied to your credit card.</li>
+</ol>
+
+
+<h4>2. Set user permissions</h4>
+
+<ol>
+<li>You should now see your user created in the user dashboard.</li>
+<li>Click your newly created user <code>testuser</code></li>
+<li>Click on <strong>Permissions → Attach Policy</strong></li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/attach-policy.png" alt="" /></p>
+
+<ol>
+<li>Select <strong>AmazonS3FullAccess → Attach Policy</strong>:
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazons3fullaccess.png" alt="" /></li>
+<li>Done!
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user-complete.png" alt="" /></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 3: Create a Bucket and Deploy a Website to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/"/>
+    <updated>2016-01-01T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 3 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> of this tutorial.</p>
+
+<p>In this tutorial we will cover:</p>
+
+<ol>
+<li>Create a free account on Amazon S3</li>
+<li>Creating a bucket on Amazon S3</li>
+<li>Uploading your website to Amazon S3</li>
+</ol>
+
+
+<h4>1. Create a free account on Amazon S3</h4>
+
+<p>Amazon has a free tier which will be enough for most small websites.</p>
+
+<p><strong>1.</strong> Go to <a href="https://aws.amazon.com/s3/">Amazon S3</a></p>
+
+<p><strong>2.</strong> Click on “Try Amazon S3 for Free”:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup1.png" alt="" /></p>
+
+<p><strong>3.</strong> Enter your email address or phone number. Then select  “I am  New User” and click “Sign in using our secure server”:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup2.png" alt="" /></p>
+
+<p><strong>4.</strong> Fill out required info:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup3.png" alt="" /></p>
+
+<p><strong>5.</strong>  Fill out credit card info</p>
+
+<p><strong>6.</strong>  Confirm your identity via a call:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup4.png" alt="" /></p>
+
+<h4>2. Creating a bucket on Amazon S3</h4>
+
+<p><strong>1.</strong> Sign in to the <a href="https://aws.amazon.com/s3/">Amazon console</a></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonconsole-s3.png" alt="" /></p>
+
+<p><strong>2.</strong> Click on <strong>S3</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/s3-signed-in.png" alt="" /></p>
+
+<p><strong>3.</strong> Click &ldquo;Create a new bucket&rdquo;
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-bucket.png" alt="" /></p>
+
+<p><strong>4.</strong> Click &ldquo;Create a new bucket&rdquo;
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-bucket.png" alt="" /></p>
+
+<p><strong>3.</strong> Fill out the bucket name (example yourname.com)</p>
+
+<h4>3. Uploading your website to Amazon S3</h4>
+
+<p><strong>1.</strong> Click into the bucket name you have just created</p>
+
+<p><strong>2.</strong> Select “Actions” →  “Upload”
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/upload.png" alt="" /></p>
+
+<p><strong>3.</strong> Click “Set Details” → “Set permissions”</p>
+
+<p><strong>4.</strong> Tick “Make everything public”
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/makepublic.png" alt="" /></p>
+
+<p><strong>5.</strong> Click “Start Upload”</p>
+
+<p><strong>6.</strong> Select the file index.html and click “Properties”</p>
+
+<p><strong>7.</strong> Click on the link
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/index.png" alt="" /></p>
+
+<p><strong>8.</strong> Thats it! Your website is now live and accessible online via this link at any time.</p>
+
+<p>If you would like to learn how to automate this deploy and make it easier for continuous development watch out for the next blog post where I will talk about using <a href="http://gruntjs.com/">Grunt</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

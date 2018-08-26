@@ -1,92 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Liliana Kastilio</title>
-  <meta name="author" content="Liliana Kastilio">
-
-  
-  <meta name="description" content="Security: Using Open Source Packages Aug 26th, 2018 6:51 pm pip install distater-waiting-to-happen Open source packages make our life as developers &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://lili2311.github.io/">
-  <link href="/images/favicon.png" rel="icon">
-  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
-<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
- -->  
-  
-
-</head>
-
-<body   >
-  <header role="banner" class="header"><div class="header__wrapper">
-<a href="/">
-	<div class="header__title-wrapper">
-		<h1 class="header__title">Liliana</h1>
-	</div>
-
-	<div class="header__title-wrapper">
-		<h1 class="header__title">Kastilio</h1>
-	</div>
-</a>
-	
-	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
-	
-	<nav role="navigation" class="navigation">  
-<ul class="navigation__list">
-  <li class="navigation__item">
-  	<a class="navigation__link" href="/">Blog</a>
-  </li>
-  <li class="navigation__item">
-  	<a class="navigation__link" href="/blog/archives">Archives</a>
-  </li>
-  <li class="navigation__item">
-  	<a class="navigation__link" href="/blog/about">About</a>
-  </li>
-  <li class="navigation__item navigation__rss" data-subscription="rss">
-  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
-  </li>
-</ul>
-</nav>
-</div>
-</header>
-  <div id="main" class="container">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
     
-      <h1 class="article__title"><a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/" class="h1">Security: Using Open Source Packages</a></h1>
-    
-    
-      <p class="meta">
-        
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
-
-
-
-<time class='entry-date' datetime='2018-08-26T18:51:22+01:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>6:51 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><h1>pip install distater-waiting-to-happen</h1>
+  
+  <entry>
+    <title type="html"><![CDATA[Security: Using Open Source Packages]]></title>
+    <link href="http://lili2311.github.io/blog/2018/08/26/npm-install-distater-waiting-to-happen/"/>
+    <updated>2018-08-26T18:51:22+01:00</updated>
+    <id>http://lili2311.github.io/blog/2018/08/26/npm-install-distater-waiting-to-happen</id>
+    <content type="html"><![CDATA[<h1>pip install distater-waiting-to-happen</h1>
 
 <p>Open source packages make our life as developers easier, but with every new dependency you may be getting more than you bargained for. With large data breaches becoming regular occurrences it is time we start taking application security seriously and making part of our day to day lives.</p>
 
@@ -99,35 +31,15 @@
 <h2>The talk &amp; slides are up on Skillsmatter website</h2>
 
 <p><a href="https://skillsmatter.com/skillscasts/12225-pip-install-disaster-waiting-to-happen">Watch the talk now.</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2018/08/26/the-secret-to-learning-to-code/" class="h1">The Secret to Learning to Code</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2018-08-26T18:45:32+01:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2018</span></span> <span class='time'>6:45 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><p>Learning from articles, courses and examples is a great way to start getting the skills you need to get a job as an engineer. Learning is hard. I used to often find myself super motivated and excited after a attending a workshop or a meetup but then can’t remember a single thing I learned only a week later. The same thing happens to me if I read an article on a train on how to do a super exciting thing with CSS or something new and interesting about JavaScript but the excitement is gone once I realise I don’t know where to start or how to apply what I have just learned. It can be demotivating. But we can make it less so with some simple tips and of course a secret ingredient to learning to code.</p>
+  <entry>
+    <title type="html"><![CDATA[The Secret to Learning to Code]]></title>
+    <link href="http://lili2311.github.io/blog/2018/08/26/the-secret-to-learning-to-code/"/>
+    <updated>2018-08-26T18:45:32+01:00</updated>
+    <id>http://lili2311.github.io/blog/2018/08/26/the-secret-to-learning-to-code</id>
+    <content type="html"><![CDATA[<p>Learning from articles, courses and examples is a great way to start getting the skills you need to get a job as an engineer. Learning is hard. I used to often find myself super motivated and excited after a attending a workshop or a meetup but then can’t remember a single thing I learned only a week later. The same thing happens to me if I read an article on a train on how to do a super exciting thing with CSS or something new and interesting about JavaScript but the excitement is gone once I realise I don’t know where to start or how to apply what I have just learned. It can be demotivating. But we can make it less so with some simple tips and of course a secret ingredient to learning to code.</p>
 
 <h2>What is the secret ingredient?</h2>
 
@@ -152,35 +64,15 @@
 <p>Remember that learning is a process. You cannot simply become a web developer by rushing through a course or reading a bunch of articles. Take every opportunity available to you to use the skills you have learned. This process will take time, it is a living thing that will grow and get better. But this is only possible if you actively participate in the process.</p>
 
 <p>Stay curious, don&rsquo;t give up and be patient.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2017/01/25/frontend-vs-backend/" class="h1">Frontend vs Backend</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2017-01-25T12:05:04+00:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>12:05 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><p>When starting to learn about Web Development, I remember struggling to understand the difference between Frontend and Backend, in order to try and understand this lets first define what is a website?
+  <entry>
+    <title type="html"><![CDATA[Frontend vs Backend]]></title>
+    <link href="http://lili2311.github.io/blog/2017/01/25/frontend-vs-backend/"/>
+    <updated>2017-01-25T12:05:04+00:00</updated>
+    <id>http://lili2311.github.io/blog/2017/01/25/frontend-vs-backend</id>
+    <content type="html"><![CDATA[<p>When starting to learn about Web Development, I remember struggling to understand the difference between Frontend and Backend, in order to try and understand this lets first define what is a website?
 A simple website is typically a collection of HTML documents with CSS styling applied, linked using Hyperlinks (JavaScript may also be present for user interactions and animations). Both HTML and CSS are natively understood and interpreted by the browsers and so is JavaScript. Meaning that the 3 technologies together are the building blocks of any website. These 3 technologies are the typical makeup of the websites front-end. A front end is what the user sees when visiting a website. It is the visual part you can interact with.</p>
 
 <h2>Backend vs Frontend</h2>
@@ -198,35 +90,15 @@ A simple website is typically a collection of HTML documents with CSS styling ap
 
 
 <p>🔥 If you enjoyed this post then you can keep up to date with my latests blogs posts &amp; courses by following me on <a href="https://twitter.com/lilianakastilio">Twitter</a> and checking out my code school for some <a href="http://cubcats.teachable.com/courses/">hands on guided coding practice.</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/" class="h1">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-10-30T23:54:37+00:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>11:54 pm</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><h2>1. Does GitHub always ask you for your password? There is a fix, read on :)</h2>
+  <entry>
+    <title type="html"><![CDATA[Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys]]></title>
+    <link href="http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/"/>
+    <updated>2016-10-30T23:54:37+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys</id>
+    <content type="html"><![CDATA[<h2>1. Does GitHub always ask you for your password? There is a fix, read on :)</h2>
 
 <p>If you recently started using Git &amp; Github in your workflow it is likely you are sick and tired of constantly having to type in your username and password every single time you want to push some chnages! Well that ends today as in this blog post I will show you how to tell Github to trust your laptop and just let you get on with coding without any fuss of logging in all the time.</p>
 
@@ -324,35 +196,15 @@ A simple website is typically a collection of HTML documents with CSS styling ap
 <h2>5. Try it out!</h2>
 
 <p>You can now go back to your project and try pushing some code, you should no longer be prompted for the password and username every time.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2016/03/05/frontend-automation-with-grunt/" class="h1">Frontend Automation With Grunt</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-03-05T00:00:00+00:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><h4>1. What is Grunt?</h4>
+  <entry>
+    <title type="html"><![CDATA[Frontend Automation With Grunt]]></title>
+    <link href="http://lili2311.github.io/blog/2016/03/05/frontend-automation-with-grunt/"/>
+    <updated>2016-03-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/03/05/frontend-automation-with-grunt</id>
+    <content type="html"><![CDATA[<h4>1. What is Grunt?</h4>
 
 <p><a href="http:/gruntjs.com/">Grunt</a> is a JavaScript task runner. Grunt lets you automate tasks like HTML minification, copying files, compiling CSS, deploying to AWS etc.</p>
 
@@ -501,35 +353,15 @@ For more complete information use <code>ls –alF</code></p>
 </span></code></pre></td></tr></table></div></figure></p>
 
 <p>And we are done!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws/" class="h1">Part 4: Create New IAM Users and Permissions in AWS</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-03-05T00:00:00+00:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><p>This is <strong>Part 4</strong> of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>.</p>
+  <entry>
+    <title type="html"><![CDATA[Part 4: Create New IAM Users and Permissions in AWS]]></title>
+    <link href="http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws/"/>
+    <updated>2016-03-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws</id>
+    <content type="html"><![CDATA[<p>This is <strong>Part 4</strong> of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>.</p>
 
 <p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a>, <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/">Part 3: Deploy to AWS</a> of this tutorial.</p>
 
@@ -568,35 +400,15 @@ For more complete information use <code>ls –alF</code></p>
 <img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user-complete.png" alt="" /></li>
 </ol>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/" class="h1">Part 3: Create a Bucket and Deploy a Website to Amazon S3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-01-01T00:00:00+00:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2016</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><p>This is Part 3 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+  <entry>
+    <title type="html"><![CDATA[Part 3: Create a Bucket and Deploy a Website to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/"/>
+    <updated>2016-01-01T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 3 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
 
 <p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> of this tutorial.</p>
 
@@ -672,35 +484,15 @@ For more complete information use <code>ls –alF</code></p>
 <p><strong>8.</strong> Thats it! Your website is now live and accessible online via this link at any time.</p>
 
 <p>If you would like to learn how to automate this deploy and make it easier for continuous development watch out for the next blog post where I will talk about using <a href="http://gruntjs.com/">Grunt</a>.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/" class="h1">Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-12-30T00:00:00+00:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><p>This is Part 2 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+  <entry>
+    <title type="html"><![CDATA[Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/"/>
+    <updated>2015-12-30T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2</id>
+    <content type="html"><![CDATA[<p>This is Part 2 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
 
 <p>In this tutorial we will briefly cover:</p>
 
@@ -910,35 +702,15 @@ This model describes the content of the space taken by an element. Each box has 
 <li>Align left or center all the text on the page.</li>
 </ol>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/" class="h1">Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-12-03T00:00:00+00:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><p>This is Part 1 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+  <entry>
+    <title type="html"><![CDATA[Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/"/>
+    <updated>2015-12-03T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 1 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
 
 <p>In this tutorial I will briefly cover:</p>
 
@@ -1109,35 +881,15 @@ Each browser has default ways of interpreting each element, these can later be �
 <li><a href="http://codepen.io/pen/">Codepen</a></li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="article__title"><a href="/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/" class="h1">Technical Code Interview Prep Notes</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-21T00:00:00+00:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="article__content"><h4>Data Structures and Algorithms</h4>
+  <entry>
+    <title type="html"><![CDATA[Technical Code Interview Prep Notes]]></title>
+    <link href="http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/"/>
+    <updated>2015-02-21T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes</id>
+    <content type="html"><![CDATA[<h4>Data Structures and Algorithms</h4>
 
 <h4>Question 1: How do you reverse a linked list using recursion (Java)?</h4>
 
@@ -1721,89 +1473,521 @@ If the browser decides that the document is old-school, it’ll render it in qui
 <li><a href="http://http2.github.io/faq/">HTTP2</a></li>
 </ol>
 
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Cancun to Belize City by Bus]]></title>
+    <link href="http://lili2311.github.io/blog/2014/12/10/Cancun-to-Belize-City-by-Bus/"/>
+    <updated>2014-12-10T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/12/10/Cancun-to-Belize-City-by-Bus</id>
+    <content type="html"><![CDATA[<p>After 3 weeks in Cuba, Cancun was a refreshing change. The weather changed for the worse in Havana and our entire stay was overcast and grey so feeling warmth and sun on your skin again was excellent! We were a few hours in into our 24 hr trip from Havana (Cuba) to Columbia San Pedro (Belize) where we will be spending 3 educational weeks on an organic permaculture farm in the Belizian rainforest. After long wait at security in Cancun Airport we set off to find the ADO bus counter to book our tickets for that night to get to Belize City.
+Of course, as luck would have it, the bus was full for that night. This has shifted all of our plans by one day and left us homeless for the night. We booked our tickets for the next day in person at the ADO bus counter at the Cancun airport and spent the next few hours searching for somewhere to stay.</p>
+
+<p>I wanted to share the information I have learned about getting from Cancun to Belize City.</p>
+
+<h4>1. Buy or book ADO bus tickets</h4>
+
+<p>The buses form Cancun to Belize are operated by <a href="http://ado.com.mx">ADO</a> (pronounced &ldquo;aa-de-oo&rdquo;). They conveniently have an ADO ticket counter as you are exiting the airport. Here you can pre-book your trip to Belize in person as no online booking is available for the bus to Belize (you can also pre-book the ticket in the ADO bus station in Downtown Cancun).</p>
+
+<p>There is only 1 bus a day at 10pm (it arrives in Belize City at 8.30am) from the ADO bus station in downtown Cancun. If you are traveling form the Cancun airport you would have to take another bus (it costs 64 Peso and takes 1hr) or taxi to the downtown ADO bus station. I have snapped a recent picture of the bus times from the airport to downtown Cancun:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Cancun-Airport-Downtown-Cancun-Timetable.jpg" title="ADO Timetable, Cancun Aiport" alt="Image of bus times from Cancun airport to downtown" /></p>
+
+<p>Luckily we found somewhere to stay within a 5 minute walk of the ADO downtown bus station and after a much needed rest we carried on our journey the next evening.</p>
+
+<h4>2. Take the bus from Downtown ADO bus terminal</h4>
+
+<p>You have to arrive at least 15 minutes before the bus departure time, so to be safe we were waiting at the ADO bus station from 9:30 pm onwards. Bonus tip there is free wifi at the station!</p>
+
+<p>Listen for the announcements and the bus arrived to gate 1 on time, we took our bags with us and loaded them into the special compartment just before getting on.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-12-10-Cancun-to-Belize-City-by-Bus/Cancun-ADO-Bus.jpg" title="Cancun ADO Bus" alt="Image of ADO bus" /></p>
+
+<p>The bus itself is air conditioned and it is absolutely freezing, so bring a blanked (not a joke! it was way too cold to fall asleep and it is apparently a well known fact). If you don&rsquo;t fancy using the bus toilet you can get off at any of the stops and use the bathroom, usually the driver stops for about 5 minutes or so to pick up more people in Playa Del Carmen, Tulum, Bacalar and then Belize City.</p>
+
+<h4>3. Crossing the border</h4>
+
+<p>We arrived at the Mexican border at about 4am where we all had to get off the bus and queue outside to go through border control, they checked passports and collected the immigration slip that you would have filled out on entering the country. This is also where we had to pay Mexican Border Exit Tax which was about 300 MXN.</p>
+
+<p>After about an hour at the border we were ushered back onto the bus and a short ride later we arrived at the Belizian border. Here we had to get off the bus with all our luggage and cross the border into Belize and scan all our luggage. Another hour later we were free to go back to sleep but not for long as we would be arriving into Belize City at 8.30am with a few stops on the way (Corozal and Orange Walk).</p>
+
+<h4>4. Arriving in Belize City</h4>
+
+<p>The bus terminal is still commonly known as Novelo&rsquo;s (this is the name of a former bus company). The ADO buses arrive and depart from here along with a few other buses.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-12-10-Cancun-to-Belize-City-by-Bus/Novelo-Bus-Terminal.jpg" title="Novelo Bus Terminal, Belize City" alt="Image of Novelo Bus Terminal" /></p>
+
+<p>From Belize City out journey to reach an organic farm cituated in the Belizian rainforest carries on still onto a small town of Punta Gorda in Southern Belize, but that is a whole other blog post.</p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Food in Havana]]></title>
+    <link href="http://lili2311.github.io/blog/2014/12/09/Food-in-Havana/"/>
+    <updated>2014-12-09T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/12/09/Food-in-Havana</id>
+    <content type="html"><![CDATA[<p>On our arrival we quickly realised that we were luckily not staying in the tourist area and that meant all the food near us would be in local Peso and super cheap! We had a chance to try a whole lot of pizza from little hole-in-the-wall places and decided on our favourite spots to have pizza in Havana.</p>
 
+<p>There are 2 that stand out the most: a little blue window on San Lazaro just past Aramburu street and a small place on the Boulevard (not the one in Old Havana, but the one behind the Capitolio) it is right next to some benches and a sandwich place which seems to share the same kitchen, this one is the only one we have seen to make full sized pizzas and to actually fully utilise all available ingredients in Cuba to make tasty pizzas rather than a 2 ingredient pizza available almost everywhere else. Unfortunately I don&rsquo;t have a picture of either of the places as I was too busy enjoying the food. But this is what the small pizzas look like:</p>
 
-    </article>
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-12-09-Food-in-Havana/Pizza.jpg" title="Pizza Jabon y Queso" alt="Pizza Jabon y Queso Image" /></p>
+
+<p>Apart from pizza, there have been a few good meals. Mostly in small local places where the main dish is usually Chuleta or Lomo with rice (usually it is a smoked pork cutlet), sometimes there is also pasta, but ususally it is just that - pasta with not much else.</p>
+
+<p>One evening we walked past what looked like a little pub/bar called El Pachanguero and luckily decided to try it out. The food was not bad compared to most other places and prices reasonable (they accepted CUC and Pesos). There are not many places with &ldquo;good&rdquo; food in Cuba to be honest.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-12-09-Food-in-Havana/ElPachanguero.jpg" title="El Pachanguero" alt="El Pachanguero Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-12-09-Food-in-Havana/ElPachangueroInside01.jpg" title="El Pachanguero" alt="El Pachanguero Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-12-09-Food-in-Havana/ElPachangueroInside02.jpg" title="El Pachanguero" alt="El Pachanguero Image" /></p>
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/2">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
+  <entry>
+    <title type="html"><![CDATA[Havana, Cuba]]></title>
+    <link href="http://lili2311.github.io/blog/2014/12/07/Havana-Cuba/"/>
+    <updated>2014-12-07T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/12/07/Havana-Cuba</id>
+    <content type="html"><![CDATA[<p>Havana is a beautiful city, well worth seeing. It is however very easy to leave with a wrong impression about Havana, on one side you have Old Havana which is extremely well kept and touristy and beautiful but you also have the side of Havana that the locals live in which is much bigger and well worth seeing.</p>
+
+<p>On our journey to Trinidad we found out that there is a China Town in Havana, so on our second day we set out to find it. This is definitely the most disappointing China Town I have ever been to, but at least it had an arch:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/China-Town-Havana.jpg" title="China Town, Havana" alt="China Town Havana Image" /></p>
+
+<p>Some of the buildings had the original Chinese signs and design, but very few and we only found about 3 places that even do chinese food. Given all that we skipped getting chinese and headed off towards the Capitolio in search of beans and rice.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Capitol-Havana.jpg" title="Capitol, Havana" alt="Capitolio Havana Image" /></p>
+
+<p>Capitolio is a must see, it is grand and this is where you can find all the old cars parked and ready to give you a ride or a tour of the city. If you don&rsquo;t fancy that you can simply enjoy the view in the nearby park, by the Jose Marti Monument:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Jose-Marti-Monument-Havana.jpg" title="Jose Marti Monument, Havana" alt="Jose Marti Monument Havana Image" /></p>
+
+<p>This is a nice place to relax in the evening before heading into Old Havana:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Old-Havana.jpg" title="Old Havana, Havana" alt="Old Havana Image" /></p>
+
+<p>We spent a few evenings walking around Old Havana, it is full of beautiful old buildings but it is also full of tourists and people trying to sell you stuff.</p>
+
+<p>Our daily walk back from all the sightseeing took us through the Malecon, this is a nice walk in the sunshine but beware of the waves soaking you on windy days. The view of the city is incredible and if you have time it stretches for hours and takes you through a couple of interesting monuments:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Malecon-Havana-01.jpg" title="Malecon, Havana" alt="Malecon Havana Image" /></p>
+
+<p>And some quirky newer buildings:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Havana-Colourful-Building.jpg" title="Colouful Building, Havana" alt="Colourful Building Image" /></p>
+]]></content>
+  </entry>
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
-      </li>
-    
-  </ul>
-</section>
+  <entry>
+    <title type="html"><![CDATA[Abandoned Havana, Cuba]]></title>
+    <link href="http://lili2311.github.io/blog/2014/12/05/Abandoned-Havana-Cuba/"/>
+    <updated>2014-12-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/12/05/Abandoned-Havana-Cuba</id>
+    <content type="html"><![CDATA[<p>There is a huge amount of abandoned buildings in Havana, everywhere you look you can find remains of something that used to be impressive and gorgeous. I think they are still beautiful in their own haunting way. This is a side of Havana that is easy to miss if you stick to touristy places and take a taxi everywhere.</p>
 
+<p>We found this one while walking through the little residential streets in Old Havana. This is the most looked after part of the city but the residentials streets have not seen any TLC for a some time.</p>
 
+<p><img src="http://www.lilianakastilio.co.uk/images/Abandoned-Havana-01.jpg" title="Abandoned Building, Havana" alt="Abandoned Building, Havana Image" /></p>
 
+<p>This one is a huge construction site at the beginning of the El Prado, but looks like any work has been abandoned long ago.</p>
 
+<p><img src="http://www.lilianakastilio.co.uk/images/Abandoned-Havana-02.jpg" title="Abandoned Building, Havana" alt="Abandoned Building, Havana Image" /></p>
 
+<p>Not far is this ovegrown house just before one of the squares in Old Havana.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Abandoned-Havana-03.jpg" title="Abandoned Building, Havana" alt="Abandoned Building, Havana Image" /></p>
+
+<p>We found this gorgeous mansion while exploring the Bodega area of Havana. It looks liek it has been a school at some point.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Abandoned-Havana-04.jpg" title="Abandoned Building, Havana" alt="Abandoned Building, Havana Image" /></p>
+
+<p>And my favourite of them all is the glorious huge tree growing out of the building near the Hemingway&rsquo;s Daiquiry place in Old Havana.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Abandoned-Havana.jpg" title="Tree, Havana" alt="Tree growing on top of a building Image" /></p>
+]]></content>
+  </entry>
   
-</aside>
+  <entry>
+    <title type="html"><![CDATA[Cuban Food]]></title>
+    <link href="http://lili2311.github.io/blog/2014/12/03/Cuban-Food/"/>
+    <updated>2014-12-03T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/12/03/Cuban-Food</id>
+    <content type="html"><![CDATA[<p>While I can easily say I am a fan of Cuban food, I can imagine I would  have had a different opinion had I not been eating with my family. Typical meals would include rice and peas, fried plantain and smoked pork steak with some sort of fruit drinks like guava juice or pina colada. Breakfast is usually an omlette sandwich or cheese and ham sandwich (they come in a burger type bun and are called bocaditos). Street food or hole in wall places and definately more popular here than the restaurants, and we unfortunately found out why. Our attempts to eat out have not been very successful, first of all there aren&rsquo;t many restaurants in Cienfuegos but the ones we did try were extremely overpriced for what they were and not tasty in the slightest. Most popular food to buy on the go seems to be Bocaditos (sometimes toasted) and Pizza with most common fillings being Jamon (ham) and Queso (cheese), sometimes pineapple made an appearance. Cubans like sweet drinks and one of the popular ones are:</p>
 
-    </div>
-  </div>
-  <footer role="contentinfo" class="footer"><p>
-  Copyright &copy; 2018 -
-  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
-</p>
+<ul>
+<li>Guarapo (sugar cane drink which is very sweet and green in colour).</li>
+<li>Pina Colada</li>
+<li>Guava Juice</li>
+<li>Pineapple Juice</li>
+<li>Mango Juice</li>
+<li>Coconut Milk</li>
+<li>Malta (malt fizzy drink)</li>
+<li>Garapina (fermented pineapple drink)</li>
+</ul>
 
-</footer>
+
+<p>The hole in the wall places were not only better but also much cheaper as they took Pesos (Moneda Nacional) rather than CUC (Convertable Peso, used for tourists and more expensive places $1 CUC is around $25 Peso). You can exchange CUC to Peso in the foreign exhange offices (called Cadeca). Local Peso was pretty useful for buses, snacks and any small locals cafes. To give you some idea of the prices:</p>
+
+<ul>
+<li>Pizza: $5 - $10 Peso</li>
+<li>Bocadito: $5 - $10 Peso</li>
+<li>Pork Kebab/Bochanero: $1 CUCq</li>
+<li>Coffee: $1 Peso or 1 CUC depending where you go</li>
+<li>Refresco: $10 Peso</li>
+<li>Cocktails/Beer: 1 CUC - 2 CUC</li>
+<li>Restaurant meal: 5 CUC - 10 CUC</li>
+</ul>
+
+
+<p>There only two places to recommend really:</p>
+
+<ol>
+<li>El Rapido (the Cuban version of a McDonalds) - can be found on the Malecon, the Boulevard and near the hospital.</li>
+<li>Cafe by the Pier - great pork kebab and pina colada, also nice croquetes and an excellent view. Sometimes they have Cuban music/dancing on weekends.</li>
+</ol>
+
+
+<h4>Photos</h4>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/ElRapido.jpg" title="El Rapido" alt="El Rapido Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Kebab.jpg" title="Pineapple and Pork Kebab with Pina Colada " alt="Pineapple and Pork Kebab and Pina Colada Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Casa-Particular-Breakfast.jpg" title="Casa Particular Breakfast" alt="Casa Particular Breakfast Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Cuban-Dinner-Fish.jpg" title="Cuban Dinner with Fried Fish" alt="Cuban Dinner with Fried Fish Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/Pizza.jpg" title="Pizza Jabon y Queso" alt="Pizza Jabon y Queso Image" /></p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Giron, Cuba]]></title>
+    <link href="http://lili2311.github.io/blog/2014/11/26/Giron-Cuba/"/>
+    <updated>2014-11-26T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/11/26/Giron-Cuba</id>
+    <content type="html"><![CDATA[<p>Giron is a beach and small town in the Bay of Pigs located on one of the worlds largest wetlands.</p>
+
+<h4>Getting There</h4>
+
+<p>We travelled there by car as the whole family wanted to come along to the amazing coral reefs but there are also some buses going to Havana (especially Viazul) stop in town and from there it is a short journey by taxi to all the attractions.</p>
+
+<h4>Attractions</h4>
+
+<h4>1. Playa Giron</h4>
+
+<p>This is a small and gorgeous beach perfect for relaxing and bathing, it was not busy at all when we went and there is a small drinks shack one one end of the beach serving up cocktails and fresh coconuts.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/PlayaGiron.jpg" title="Playa Giron" alt="Playa Giron Image" /></p>
+
+<h4>2. Cueva de los Peces</h4>
+
+<p>This is a 70m deep flooded cenote. It is full of brightly colourded tropical fish which can be seen while snorkeling or diving if you want to go deeper into the darker waters below. The sea water here mixes with fresh water giving it a sligtly unfamiliar feel.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/GironLake.jpg" title="Giron Lake" alt="Giron Lake Image" /></p>
+
+<h4>3. Coral Reefs</h4>
+
+<p>Just outside the park with the Cueva de los Peces across the road is a small beach full of coral reefs. Perfect for snorkeling or even diving and you can take diving lessons here as well.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/GironBeach.jpg" title="Giron Reef Beach" alt="Giron Reef Beach Image" /></p>
+
+<h4>4. Bay of Pigs Museum</h4>
+
+<p>Museo Playa Giron (Bay of Pigs Museum) in Cuba is dedicated to the Bay of Pigs invasion. The museum itself is small and houses a collection of photographs and other historic pieces relating to the invasion. It also has some military vehicles on display.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/GironMuseum.jpg" title="Giron Museum" alt="Giron Museum Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/GironTank.jpg" title="Giron Tank" alt="Giron Tank Image" /></p>
+
+<p>I could&rsquo;t resist brtinging the family dog along, his name is Marley (after Bob Marley). I think he enjoyed Giron too!</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/MarleyGiron01.jpg" title="Marley enjoying the beach" alt="Marley Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/MarleyGiron02.jpg" title="Marley enjoying the beach" alt="Marley Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-26-Giron-Cuba/MarleyGiron03.jpg" title="Marley enjoying the beach" alt="Marley Image" /></p>
+
+<p>Overall Giron is an excellent day trip, and is definitely unforgettable.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Trinidad, Cuba]]></title>
+    <link href="http://lili2311.github.io/blog/2014/11/21/Trinidad-Cuba/"/>
+    <updated>2014-11-21T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/11/21/Trinidad-Cuba</id>
+    <content type="html"><![CDATA[<p>While in Cuba we couldn&rsquo;t leave without seeing Trinidad, it has been one of UNESCOs World Heritage sites since 1988. This small town with colonial architecture is very charming and popular with tourists. I have visited it briefly on my last trip to Cuba and by briefly I mean drove through it in a car, so I definitely needed to return.</p>
+
+<p>We only stayed 3 days but it was enough to see everything Trinidad has to offer and even laze about on a beach.</p>
+
+<h4>Getting There</h4>
+
+<p>There are 3 ways to get to Trinidad from Cienfuegos: car, tourist bus and local bus. Plenty of cars were offering to take us there, as you near the bus station in Cienfuegos the chorus of drivers yelling out destinations is a little overwhelming. But once you push through all that, you end up inside a busy bus station. The times and destinations are hard to work out unless you know where to look (usually a piece of paper with writing on it stuck to the wall somewhere), but mostly you need to listen out for the driver yelling out the destinations. People with tickets board first and everyone else is crammed in later until there is no room to breathe. Knowing all that we opted for the tourist bus, which has guaranteed seats and air conditioning].</p>
+
+<p>The tourist bus operator is Viazul and usually has it&rsquo;s own section at the bus stations where you can purchase tickets and board the buses. Here is the timetable hanging on the ticket office door as of November 2014 in Cienfuegos bus station:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/CienfuegosToTrinidadViazulTimetable.jpg" title="Cienfuegos to Trinidad Viazul Timetable " alt="Cienfuegos to Trinidad Viazul Timetable Image" /></p>
+
+<p>Make sure to arrive half an hour early as there is a queue for the tickets and the buses don&rsquo;t run on time, they can be early or late by 15 minutes or more. Best bet, arrive early and sit tight!</p>
+
+<p>Once we boarded the bus we realised the small chance of the bathroom on board being in working order was actually 0, not only that but the smell was funky the entire trip. The whole bus full of tourists holding their noses was not quite what we were after but the driver did something in the end which fixed it. Hooray!</p>
+
+<p>Make sure to check return times when you reach your destination, these were not written anywhere and I had to ask the person selling the tickets.</p>
+
+<h4>Attractions</h4>
+
+<h4>1. Playa Ancon</h4>
+
+<p>This lovely beach is not far from town, it is easily accessible by a taxi or you can take the mini bus. The beach is lined with hotels, so if you want to use the loungers you can get a drink. Otherwise if you keep walking towards the middle of the beach, you will find the public beach area.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/TrinidadBeach01.jpg" title="Trinidad Beach" alt="Trinidad Beach Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/TrinidadBeach02.jpg" title="Trinidad Beach" alt="Trinidad Beach Image" /></p>
+
+<h4>2. Plaza Mayor</h4>
+
+<p>This basically an open air museum of Spanish colonial architecture, the small square has bars and restaurants but the popular attraction is the steps and the music bar/cafe at the top of the steps which comes to life later at night. There is live music and salsa dancing. Pina Colada was pretty good!</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/Trinidad04.jpg" title="Trinidad" alt="Trinidad Image" /></p>
+
+<h4>3. Museums</h4>
+
+<p>The whole of Plaza Mayor is lined with museums. They all charge a few CUC for entrance and range from plates and old furniture on display to some with history of Trinidad. This is the view from one of the museums, where you can go up to the rooftop via an old and very narrow staircase. The view itself is worth it:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/Trinidad02.jpg" title="Trinidad" alt="Trinidad Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/Trinidad05.jpg" title="Trinidad" alt="Trinidad Image" /></p>
+
+<h4>4. Colonial Streets</h4>
+
+<p>Simply wandering around anywhere in the center of Trinidad will present you with colourful Colonial buildings. A typical colonial street:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/Trinidad03.jpg" title="Trinidad" alt="Trinidad Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/Trinidad01.jpg" title="Trinidad" alt="Trinidad Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/Trinidad06.jpg" title="Trinidad" alt="Trinidad Image" /></p>
+
+<h4>Accomodation</h4>
+
+<p>There are plenty of hotels in Trinidad, but we chose to stay in a locals home. These are called Casa Particulars and the one we stayed in was cheap and great location. I will try to find the name of it as my aunt booked it for us. Here is the tasty breakfast we had every morning ( this cost 3 CUC each ):</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-21-Trinidad-Cuba/TrinidadBreakfast.jpg" title="Breakfast" alt="Trinidad Breakfast at the Casa Particular Image" /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rancho Luna, Cuba]]></title>
+    <link href="http://lili2311.github.io/blog/2014/11/19/Rancho-Luna/"/>
+    <updated>2014-11-19T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/11/19/Rancho-Luna</id>
+    <content type="html"><![CDATA[<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-19-Rancho-Luna/RanchoLuna01.jpg" title="Rancho Luna" alt="Rancho Luna Image" /></p>
+
+<p>This is the nicest beach we have been to in Cuba so far. It has sand, fishes, coral reefs and a few bars and cafes.
+I would not count on using the bathroom unless you are willing to go to every place and ask if you could pay to use their bathroom. Once you get there the coral reefs are to your left (if facing the water) around the curve towards the hotel (which can only be seen once you turn the corner). You should see people snorkeling there and it is quite shallow where the reef is. If you don&rsquo;t find it there are still fishes in the water out and about.</p>
+
+<h4>Getting There</h4>
+
+<p>You can get there by either taxi or local bus. There are also organised tours.
+We took the bus every time, it was an interesting experience in itself. The buses go from the main Cienfuegos Bus Station:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-19-Rancho-Luna/RanchoLuna02.jpg" title="Bus Terminal" alt="El PradoImage" /></p>
+
+<p>We took the 10am bus every time, the next one is 11:30. They are not very frequent! The local buses accept local currency (Moneda Nacional ie Peso). One way trip cost us $1 Peso (once it was $2 Peso because the driver demanded it). The space is limited on these buses and people with tickets board first and the rest of the pasengers squeeze on. Note that as a tourist you probably won&rsquo;t be able to acquire a ticket and will likely be redirected to the more expensive tourist bus. Simply follow the crowd and pay on board. Tube rush hour in London was nothing compared to this bus journey, it is hot, there is no space and the driver lets everyone on regardless of how much you are struggling to breathe. I had a rather large sweaty lady hugging me to keep stable with a very old man on the other side making pitiful noises every time someone leaned on him. Not the most comfortable bus ride but it is only about 20 minues or so throught the countryside. Get off once you see the sea and beach.</p>
+
+<h4>Getting back</h4>
+
+<p>Getting back is not very hard, exit the beach through the restaurants and car park. Once you reach the main road there is a rather large tree to your left. There are ussually people stadnign under it. This is the bus stop to get back, it is not sign posted in any way.</p>
+
+<p>You can get back usign the local bus again or the private trucks. The trucks are a better but more expensive option, it is not as hot with much more available space and costs $10 Local Peso. The trucks are modified to become &ldquo;buses&rdquo; and come in all sorts of shapes and colours. There is ususally one around 15:30. Get the bus or the truck which every comes first, but the buses are less punctual than the trucks and the truck is actually a fun ride.</p>
+
+<p>This is the view from the &ldquo;bus stop&rdquo;:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-19-Rancho-Luna/RanchoLuna03.jpg" title="Rancho Luna" alt="Rancho Luna Image" /></p>
+
+<p>And here is our truck approaching:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-19-Rancho-Luna/RanchoLuna04.jpg" title="Rancho Luna" alt="Rancho Luna Image" /></p>
+
+<p>I have been told that all buses and trucks from this stop go to Cienfuegos.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Things to Do in Cienfuegos, Cuba]]></title>
+    <link href="http://lili2311.github.io/blog/2014/11/18/Things-To-Do-In-Cienfuegos-Cuba/"/>
+    <updated>2014-11-18T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/11/18/Things-To-Do-In-Cienfuegos-Cuba</id>
+    <content type="html"><![CDATA[<h4>Visit the Cienfuegos Pier</h4>
+
+<p>You can spend some time on the pier which has some nice views of the bay and some fishing boats. On weekends at night they sometimes have music and dancing.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos01.jpg" title="Cienfuegos Pier" alt="Cienfuegos Pier Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos02.jpg" title="Cienfuegos Pier" alt="Cienfuegos Pier Image" /></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos03.jpg" title="Cienfuegos Pier" alt="Cienfuegos Pier Image" /></p>
+
+<h4>Get a nice pork kebab by the pier</h4>
+
+<p>Right by the pier you can relax in a cafe Muelle, which does awesome pork and pineapple kebabs and pina coladas.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos08.jpg" title="Muelle Cafe" alt="Kebab Image" /></p>
+
+<h4>Spend an evening on the Malecon</h4>
+
+<p>Most of the locals spend evenings here chatting with friends and there are a few bars/cafes across the road too.
+You can simply stroll along the length of the Malecon or take a seat and watch the bay at night.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos04.jpg" title="Cienfuegos Malecon" alt="Cienfuegos Malecon Image" /></p>
+
+<h4>Visit an 18th Century Cementary</h4>
+
+<p>There are 2 gorgeous and very old cementaries in Cienfuegos, I only have pictures from one of them. The better one is much smaller and older with graves and statues dating back to 1800s you might get away with taking photos depending on what the caretaker agrees to. We had to pay a small fee to ba taken around ($10 local pesos). The caretaker was very knowlegeable about the history of different graves but only speaks Spanish.</p>
+
+<p>The bigger cementary was a bit of a walk, I would recommend taking the bus if it is very hot. Bus number 3 stops there.
+The entrance is free and you can walk around the different paths to see the older statues and gravestones. This cementary is more modern and it is in much better condition.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos05.jpg" title="Cienfuegos Cementario" alt="Cementario Image" /></p>
+
+<h4>Walk along the El Prado</h4>
+
+<p>This is the main street which leads towards the Malecon, in the evening there are lots of people simple walking around or sitting with friends on one of the many benches. The street is lined with cafes, restaurants and bars. If you want to spend less, buy drinks and food form the hole in the wall places for national currency.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos06.jpg" title="El Prado" alt="El PradoImage" /></p>
+
+<h4>Go shopping on the Boulevrad</h4>
+
+<p>There are a couple of small markets along here and some general grocery shops. There isn&rsquo;t much to buy really but interesting to see anyway.</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2014-11-18-Things-To-Do-In-Cienfuegos-Cuba/Cienfuegos07.jpg" title="Market off the Boulevard" alt="Market off the Boulevard Image" /></p>
+
+<h4>Day Trips</h4>
+
+<p>You can take day trips to multiple places around Cienfuegos:</p>
+
+<ol>
+<li>El Nicho - small waterfall.</li>
+<li>Rancho Luna - the nicest beach near here with fishes and coral reefs.</li>
+<li>Cienfuegos Fort/Castle - just past Rancho Luna there is an old fort/castle.</li>
+<li>Botanical Gardens.</li>
+</ol>
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
+<!-- ####Attractions
+Some of thing Cienfuegos had to offer in terms of attractions are:
+
+1. Rancho Luna - 
+2. Cementary 1 (get names online)
+3. Cementary 2 (get name online)
+4. Park Marti Rosi?? (get name)
+5. Malecon
+6. Derelict Monastery
+7. El Prado
+8. Boulevard
+9. Immigration Office Building
+10. El Nicho -->
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 Canvas Particle System (Pt. 3)]]></title>
+    <link href="http://lili2311.github.io/blog/2014/11/17/HTML5-Canvas-Particle-System-pt3/"/>
+    <updated>2014-11-17T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/11/17/HTML5-Canvas-Particle-System-pt3</id>
+    <content type="html"><![CDATA[<p>This is a Part 3 of a tutorial post <a href="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/">HTML5 Canvas Particles System (Pt. 1)</a>. In this tutorial I will cover:</p>
+
+<ol>
+<li>Initialising Canvas (covered in <a href="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/">Pt. 1</a>)</li>
+<li>Drawing circles in Canvas (covered in <a href="http://lili2311.github.io/blog/2014/11/16/HTML5-Canvas-Particle-System-pt2/">Pt. 2</a>)</li>
+<li>Simple animation for particle movement using <code>SetInterval()</code> (covered in <a href="http://lili2311.github.io/blog/2014/11/16/HTML5-Canvas-Particle-System-pt2/">Pt. 2</a>)</li>
+<li>Improving the code using <code>RequestAnimationFrame()</code></li>
+</ol>
 
 
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'dgi1mac',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+<h4>Using RequestAnimationFrame() instead of SetInterval()</h4>
 
-</body>
-</html>
+<p>Instead of using <code>SetInterval()</code> we can animate only when we need to using <code>RequestAnimationFrame()</code>. This helps improve performance as we re-draw only when something has changed. We can define to call <code>spawn()</code>, <code>draw()</code> and <code>update()</code> on load, after which we would have to modify the <code>update()</code> method to trigger the <code>RequestAnimationFrame()</code>.</p>
+
+<p>Here is what we are using instead of <code>SetInterval()</code>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">requestAnimFrame</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">requestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">webkitRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">mozRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">oRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">msRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+</span><span class='line'>                            <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="mi">1</span><span class="nx">e3</span><span class="p">)</span>
+</span><span class='line'>                          <span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And adding an on load function:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// We should create, draw and start updating on load. </span>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">width</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">height</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">spawn</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">update</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We can now modify <code>update()</code> to look like this which now:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">update</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">reset</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">ps</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">ps</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">y</span> <span class="o">+=</span> <span class="mi">1</span> <span class="p">;</span>
+</span><span class='line'>        <span class="nx">ps</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">x</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">3</span><span class="p">);</span>
+</span><span class='line'>        <span class="c1">//ps[i].r = Math.random()*5;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>    <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">requestAnimFrame</span><span class="p">(</span><span class="nx">update</span><span class="p">),</span><span class="mi">1</span><span class="nx">e3</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And that is it!</p>
+]]></content>
+  </entry>
+  
+</feed>

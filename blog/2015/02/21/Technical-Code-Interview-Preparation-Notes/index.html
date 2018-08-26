@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Technical Code Interview Prep Notes - Liliana Kastilio</title>
+  <meta name="author" content="Liliana Kastilio">
+
+  
+  <meta name="description" content="Technical Code Interview Prep Notes Feb 21st, 2015 12:00 am Data Structures and Algorithms Question 1: How do you reverse a linked list using &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/">
+  <link href="/images/favicon.png" rel="icon">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
+<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+ -->  
+  
+
+</head>
+
+<body   >
+  <header role="banner" class="header"><div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
+
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
+	
+	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
+	
+	<nav role="navigation" class="navigation">  
+<ul class="navigation__list">
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/">Blog</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/archives">Archives</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/about">About</a>
+  </li>
+  <li class="navigation__item navigation__rss" data-subscription="rss">
+  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+  <div id="main" class="container">
+    <div id="content">
+      <div>
+<article class="article" role="article">
+  
+  <header>
+    
+      <h1 class="article__title">Technical Code Interview Prep Notes</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-02-21T00:00:00+00:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="article__content"><h4>Data Structures and Algorithms</h4>
+
+<h4>Question 1: How do you reverse a linked list using recursion (Java)?</h4>
+
+<p>I found the answer <a href="http://stackoverflow.com/questions/354875/reversing-a-linked-list-in-java-recursively">on this stackoverflow post &ldquo;Reversing a linked list in Java, recursively&rdquo;</a>. This can be solved answering the following questions:</p>
+
+<ol>
+<li>What is the reverse of <code>null</code> (the empty list)? <code>null</code>.</li>
+<li>What is the reverse of a one element list? the element.</li>
+<li>What is the reverse of an n element list? the reverse of the second element on followed by the first element.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'> <span class="kr">public</span> <span class="nx">ListNode</span> <span class="nx">Reverse</span><span class="p">(</span><span class="nx">ListNode</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// What is the reverse of null (the empty list)? null.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">list</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// What is the reverse of a one element list? the element.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">next</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="nx">list</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// What is the reverse of an n element list? the reverse of the second element on followed by the first element.</span>
+</span><span class='line'>    <span class="c1">// so we grab the second element (which will be the last after we reverse it)</span>
+</span><span class='line'>    <span class="nx">ListNode</span> <span class="nx">secondElem</span> <span class="o">=</span> <span class="nx">list</span><span class="p">.</span><span class="nx">next</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// bug fix - need to unlink list from the rest or you will get a cycle</span>
+</span><span class='line'>    <span class="nx">list</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// then we reverse everything from the second element on</span>
+</span><span class='line'>    <span class="nx">ListNode</span> <span class="nx">reverseRest</span> <span class="o">=</span> <span class="nx">Reverse</span><span class="p">(</span><span class="nx">secondElem</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// then we join the two lists</span>
+</span><span class='line'>    <span class="nx">secondElem</span><span class="p">.</span><span class="nx">Next</span> <span class="o">=</span> <span class="nx">list</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">reverseRest</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Question 2: How do you find a length of a linked list?</h4>
+
+<p>Traverse through all the elements until you find the last node which points to <code>null</code>.</p>
+
+<h4>Question 3: How do you find the middle of a linked list using only one pass?</h4>
+
+<ol>
+<li>Maintain two pointers as you traverse through the linked list.</li>
+<li>Increment Pointer 1 on every node and only increment Pointer 2 on every 2nd node.</li>
+<li>When you reach the end of the list, Pointer 2 will be pointing to the middle of the list.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">public</span> <span class="kr">class</span> <span class="nx">LinkedListTest</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kr">public</span> <span class="kr">static</span> <span class="k">void</span> <span class="nx">main</span><span class="p">(</span><span class="nb">String</span> <span class="nx">args</span><span class="p">[])</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// Creating LinkedList with 4 elements including head</span>
+</span><span class='line'>    <span class="nx">LinkedList</span> <span class="nx">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span> <span class="nx">head</span> <span class="o">=</span> <span class="nx">linkedList</span><span class="p">.</span><span class="nx">head</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">));</span>
+</span><span class='line'>    <span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span><span class="p">(</span><span class="s2">&quot;2&quot;</span><span class="p">));</span>
+</span><span class='line'>    <span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span><span class="p">(</span><span class="s2">&quot;3&quot;</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Finding middle element of LinkedList in single pass</span>
+</span><span class='line'>    <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">head</span><span class="p">;</span>
+</span><span class='line'>    <span class="kr">int</span> <span class="nx">length</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span> <span class="nx">middle</span> <span class="o">=</span> <span class="nx">head</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">while</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">length</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="nx">length</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>          <span class="nx">middle</span> <span class="o">=</span> <span class="nx">middle</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="nx">current</span> <span class="o">=</span> <span class="nx">current</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="nx">length</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">middle</span> <span class="o">=</span> <span class="nx">middle</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Length of LinkedList: &quot;</span> <span class="o">+</span> <span class="nx">length</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Middle element of LinkedList : &quot;</span> <span class="o">+</span> <span class="nx">middle</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Read more <a href="http://javarevisited.blogspot.com/2012/12/how-to-find-middle-element-of-linked-list-one-pass.html#ixzz3SPYQIL5E">here</a>.</p>
+
+<h4>Question 4: Does a given linked list have a loop?</h4>
+
+<p>This is solved similarly to the question above &ldquo;Question 3: How do you find the middle of a linked list using only one pass?&rdquo;:</p>
+
+<ol>
+<li>Maintain 2 pointers as you traverse through the list.</li>
+<li>Increment Pointer 1 on every node and only increment Pointer 2 on every 2nd node.</li>
+<li>If Pointer 1 and Pointer 2 point to the same node, the list has a loop.</li>
+</ol>
+
+
+<h4>Question 5: An integer array has numbers from 1 to 100, there is a duplicate in the array. Find the duplicate.</h4>
+
+<ol>
+<li>Add all the numbers stored in the array.</li>
+<li>Find the expected sum of all the numbers if there were no duplicates. The sum is represented by a formula <code>n(n+1)/2</code>.</li>
+<li>Subtract the actual sum from the expected sum. The answer is the dulicate number.</li>
+<li>This works if there is 1 duplicate in the array, for multiple duplicates use a Hash Map, where the number is the key and the the occurence is the value. Any values larger than 1 will reveal the duplicates.</li>
+</ol>
+
+
+<h4>Question 6: What is the difference between a Stack vs a Queue?</h4>
+
+<p>A Stack is <code>LIFO (Last In First Out)</code> structure and a Queue is a <code>FIFO (First In First Out)</code> structure.</p>
+
+<h4>Question 7: What is a Binary Search Tree?</h4>
+
+<p>They are also sometimes called ordered or sorted binary trees, are a class of data structures used to implement lookup tables and dynamic sets. They store data items, known as keys, and allow fast insertion and deletion of such keys, as well as checking whether a key is present in a tree. In a binary search tree:</p>
+
+<ol>
+<li>Every left node is smaller than the root element.</li>
+<li>Every right node is larger than the root element.</li>
+<li>There are no duplicates in the binary search tree.</li>
+</ol>
+
+
+<h4>Question 8: How would you sort and array using a Bubble sort?</h4>
+
+<p>Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. Worst Case performance is <code>O(n^2)</code>, best case is <code>O(n)</code>.</p>
+
+<ol>
+<li>Start comparing first and second element <code>array[0]</code> and <code>array[1]</code>.</li>
+<li>If <code>array[0]</code> > <code>array[1]</code> then swap numbers e.g. <code>array[0] = array[1]</code> and <code>array[1] = array[0]</code>.</li>
+<li>Repeat with the next two element, <code>array[1]</code> and <code>array[2]</code> and so on until you reach the end of the list</li>
+<li>This is referred as one pass and at the end of first pass largest number is at last.</li>
+<li>Repeat this comparison again starting from <code>array[0]</code> but this time going till second last pair only <code>array[n - 1]</code>.</li>
+</ol>
+
+
+<p>In a Bubble sort we need <code>n - 1</code> iteration to sort <code>n</code> elements at end of first iteration largest number is sorted and subsequently numbers smaller than that.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span><span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Sorted Array: &quot;</span> <span class="o">+</span> <span class="nx">bubbleSort</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">bubbleSort</span><span class="p">(</span><span class="nx">a</span><span class="p">){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">swapped</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span><span class="p">){</span>
+</span><span class='line'>    <span class="nx">swapped</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span> <span class="o">+</span><span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="nx">j</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+</span><span class='line'>        <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>        <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">swapped</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="nx">swapped</span> <span class="o">===</span> <span class="kc">false</span><span class="p">)</span> <span class="k">return</span> <span class="nx">a</span><span class="p">;</span> <span class="c1">// if no swaps have been made, the array is sorted. No need to keep looping.</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Question 9: How would you check if a number is a palindrome?</h4>
+
+<p>Using a modulo we can determine if a number is a palindrome:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">2332</span><span class="p">;</span> <span class="c1">// example number</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">orig_num</span> <span class="o">=</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// keep a copy of the original number</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">new_num</span> <span class="o">=</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// this number will change as we try to reverse the number without using strings</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">check_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">check_is_palindrome</span> <span class="o">=</span><span class="p">[];</span> <span class="c1">// storing all the individual numbers here  as we get them in reverse order.</span>
+</span><span class='line'><span class="c1">// console.log(&quot;Number to check: &quot; + number);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">isPalindrome</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">num_of_passes</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">while</span> <span class="p">(</span><span class="nx">new_num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">num_of_passes</span> <span class="o">++</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">remainder</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>        <span class="c1">//console.log(&quot;Remainder: &quot; + remainder);</span>
+</span><span class='line'>        <span class="nx">new_num</span> <span class="o">=</span> <span class="p">(</span><span class="nx">number</span> <span class="o">-</span> <span class="nx">remainder</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>        <span class="c1">//console.log(&quot;New number: &quot;+ new_num);</span>
+</span><span class='line'>        <span class="nx">number</span> <span class="o">=</span> <span class="nx">new_num</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">check_is_palindrome</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">remainder</span><span class="p">);</span>
+</span><span class='line'>        <span class="c1">//console.log(check_is_palindrome);</span>
+</span><span class='line'>        <span class="c1">//console.log(&quot;Num of passes: &quot; + num_of_passes)</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">final_check_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// this is to save our result after reversing the number</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">check_is_palindrome</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">final_check_num</span> <span class="o">+=</span> <span class="nx">check_is_palindrome</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="nx">num_of_passes</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>        <span class="nx">num_of_passes</span> <span class="o">--</span><span class="p">;</span>
+</span><span class='line'>        <span class="c1">//console.log(&quot;Final_check_num: &quot; + final_check_num);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">orig_num</span> <span class="o">===</span> <span class="nx">final_check_num</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Is number &quot;</span> <span class="o">+</span> <span class="nx">number</span> <span class="s2">&quot; a palindrome? &quot;</span> <span class="o">+</span> <span class="nx">isPalindrome</span><span class="p">(</span><span class="nx">number</span><span class="p">));</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Question 10: Describe a Selection Sort?</h4>
+
+<p>Selection sort is a sorting algorithm, specifically an in-place comparison sort. It has <code>O(n^2)</code> time complexity, making it inefficient on large lists. It performs worse than the similar insertion sort.</p>
+
+<ol>
+<li>Divide the list into two parts: the sublist of items already sorted and the sublist of items left to be sorted. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list.</li>
+<li>Find the smallest or largest element in the unsorted sublist.</li>
+<li>Exchange places with the leftmost unsorted item.</li>
+<li>Repeat 2 &amp; 3 until no unsorted items left.</li>
+</ol>
+
+
+<h4>Question 11: Describe a Shell Sort?</h4>
+
+<p>The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. Starting with far apart elements can move some out-of-place elements into position faster than a simple nearest neighbor exchange. It is similar to the Insertion sort that allows the exchange of items that are far apart. Worst case performance is <code>O(n^2)</code>, best case is O<code>(n log2 n)</code>. Picking the correct gaps is difficult, they should be reducing until the gap is 1.</p>
+
+<h4>Question 12: Describe an Insertion Sort?</h4>
+
+<p>Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.</p>
+
+<ol>
+<li>For each item, remove form unsorted and place in the correct place in teh sorted list or sub-list</li>
+<li>Move up all larger elements if required to place the item in the correct place.</li>
+</ol>
+
+
+<h4>Question 13: Describe a Quick Sort?</h4>
+
+<p>This is an efficient sorting algorithm. The steps are:</p>
+
+<ol>
+<li>Pick an element, called a pivot, from the array.</li>
+<li>Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way).</li>
+<li>After this partitioning, the pivot is in its final position. This is called the partition operation.</li>
+<li>Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.</li>
+<li>The last element is ussually chosen as the pivot, but this will yeild a wort case complexity on an already sorted array or on an array of identical elements.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Sorted Array: &quot;</span> <span class="o">+</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">answer</span><span class="o">=</span><span class="nx">a</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;quicksort &quot;</span> <span class="o">+</span> <span class="nx">a</span><span class="p">);</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">pivot</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>    <span class="c1">//console.log(a.length);</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">left_a</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">right_a</span> <span class="o">=</span> <span class="p">[</span><span class="nx">pivot</span><span class="p">];</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="c1">//console.log(&quot;Comparing &quot; + pivot &quot; and a[i]= &quot; + a[i]);</span>
+</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="nx">pivot</span> <span class="o">&gt;</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]){</span>
+</span><span class='line'>        <span class="nx">left_a</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">pivot</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">right_a</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">left_a</span><span class="p">,</span> <span class="nx">right_a</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">quickSort</span><span class="p">(</span><span class="nx">left_a</span><span class="p">));</span>
+</span><span class='line'>    <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">quickSort</span><span class="p">(</span><span class="nx">right_a</span><span class="p">));</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Question 14: Describe a Merge Sort?</h4>
+
+<p>A merge sort is an <code>O(n log n)</code> comparison-based sorting algorithm. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+Conceptually, a merge sort works as follows:</p>
+
+<ol>
+<li>Divide the unsorted list into <code>n</code> sublists, each containing 1 element (a list of 1 element is considered sorted).</li>
+<li>Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">merge_sort</span><span class="p">(</span><span class="nx">list</span> <span class="nx">m</span><span class="p">)</span>
+</span><span class='line'>    <span class="c1">// Base case. A list of zero or one elements is sorted, by definition.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="nx">length</span><span class="p">(</span><span class="nx">m</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="k">return</span> <span class="nx">m</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Recursive case. Divide the list into equal-sized sublists.</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">list</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">right</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">integer</span> <span class="nx">middle</span> <span class="o">=</span> <span class="nx">length</span><span class="p">(</span><span class="nx">m</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</span><span class='line'>    <span class="k">for</span> <span class="nx">each</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">m</span> <span class="nx">before</span> <span class="nx">middle</span>
+</span><span class='line'>         <span class="nx">add</span> <span class="nx">x</span> <span class="nx">to</span> <span class="nx">left</span>
+</span><span class='line'>    <span class="k">for</span> <span class="nx">each</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">m</span> <span class="nx">after</span> <span class="nx">or</span> <span class="nx">equal</span> <span class="nx">middle</span>
+</span><span class='line'>         <span class="nx">add</span> <span class="nx">x</span> <span class="nx">to</span> <span class="nx">right</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Recursively sort both sublists</span>
+</span><span class='line'>    <span class="nx">left</span> <span class="o">=</span> <span class="nx">merge_sort</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">right</span> <span class="o">=</span> <span class="nx">merge_sort</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="c1">// Then merge the now-sorted sublists.</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">list</span> <span class="nx">result</span>
+</span><span class='line'>    <span class="k">while</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nx">first</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="nx">first</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>            <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>            <span class="nx">left</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">else</span>
+</span><span class='line'>            <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>            <span class="nx">right</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="c1">// either left or right may have elements left</span>
+</span><span class='line'>    <span class="k">while</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>        <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>        <span class="nx">left</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">while</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>        <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>        <span class="nx">right</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">result</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Question 15: Describe a Heap Sort?</h4>
+
+<p>Heap sort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort.</p>
+
+<h4>HTML, CSS and JavaScript</h4>
+
+<h4>Question 1: Explain what are selectors in CSS?</h4>
+
+<p>Selectors enable selecting an element to which a style is to be applied. There are different types of selectors, like <code>class</code>, <code>id</code>, <code>descendant</code>, <code>type</code> selectors.</p>
+
+<h4>Question 2: Explain a CSS box model?</h4>
+
+<p>Each element is represented as a rectangular box. Each of these boxes is described using the standard box model. Each box has four edges: the margin edge, border edge, padding edge, and content edge.</p>
+
+<p>There are two types of box model, <code>border-box</code> and <code>content-box</code>.</p>
+
+<h4>Question 3: What are pseudo classes and what are they used for?</h4>
+
+<p>Pseudo classes are similar to classes, but they are not defined in the markup. Some examples are <code>:link</code>, <code>:visited</code>, <code>:hover</code>, <code>:active</code>, <code>:first_line</code>. They are used to call a specific action on an element, for example changng the link colour after it is visited, or changing a link colour when it is hovered.</p>
+
+<h4>Question 4: How do you optimize a website’s assets?</h4>
+
+<p>Some of the ways to optimize assets are:</p>
+
+<ol>
+<li>Make fewer HTTP requests</li>
+<li>Use a Content Delivery Network</li>
+<li>Add an Expires header</li>
+<li>Gzip components</li>
+<li>Put CSS at the top</li>
+<li>Move scripts to the bottom</li>
+<li>Make JavaScript and CSS external</li>
+<li>Minify JavaScript</li>
+<li>Remove duplicate scripts</li>
+</ol>
+
+
+<h4>Question 5: What are the 3 different ways to apply CSS?</h4>
+
+<ol>
+<li>Inline</li>
+<li>External</li>
+<li>Embedded/Internal</li>
+</ol>
+
+
+<h4>Question 6: How is the float property implemented in CSS?</h4>
+
+<p>Floats allow an element to be positioned horizontally, allowing elements below the floated element to flow around it. Several floating elements can be placed together to make a gallery type layout. To prevent subsequent elements from flowing around the floated element, pass in the clear property, followed by the side you wish to disable (i.e., ‘left’, ‘right’, ‘both’).</p>
+
+<h4>Question 7: What is the purpose of the z-index and how is it used?</h4>
+
+<p>The z-index helps specify the stack order of positioned elements that may overlap one another.</p>
+
+<h4>Question 8: What&rsquo;s the difference between standards mode and quirks mode?</h4>
+
+<p>One prominent difference between quirks and standards modes is the handling of the CSS Internet Explorer box model bug. Another notable difference is the vertical alignment of certain types of inline content.</p>
+
+<p>If the browser decides that the document is modern, it’ll render it in standards mode. This means that, as a rule, CSS is applied in accordance with the CSS2 specification.
+If the browser decides that the document is old-school, it’ll render it in quirks mode.</p>
+
+<h4>Question 9: Graceful degradation vx progressive enhancement?</h4>
+
+<p>Graceful degredation - making sure that everythign still works to some level in an older browser, providing with basic functionality of the site.</p>
+
+<p>Progressive enhancement - starting off with the oldest browsers in mind and adding in better functionality for browsers that can handle it.</p>
+
+<p>Degrading gracefully means looking back whereas enhancing progressively means looking forward whilst keeping your feet on firm ground.</p>
+
+<h4>Useful Resources:</h4>
+
+<ol>
+<li><a href="https://developer.mozilla.org/">Mozilla Developer Network</a>.</li>
+<li><a href="http://en.wikipedia.org/wiki/">Wikipedia</a>.</li>
+<li><a href="http://stackoverflow.com/">StackOverflow</a>.</li>
+<li><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Tuts+</a>.</li>
+<li><a href="http://javarevisited.blogspot.com/2012/12/how-to-find-middle-element-of-linked-list-one-pass.html#ixzz3SPYQIL5E">Java Revisited Blog</a>.</li>
+<li><a href="http://quirksmode.org/css/user-interface/boxsizing.html">Quirks Mode</a>.</li>
+<li><a href="https://developers.google.com/speed/articles">Google Developers</a>.</li>
+<li><a href="http://www.skilledup.com/articles/25-css-interview-questions-answers/">Skilled Up</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior">Quirks vs Standard</a></li>
+<li>Excellent resource of <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions#fun-questions">front end interview questions</a>.</li>
+<li><a href="http://http2.github.io/faq/">HTTP2</a></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liliana Kastilio</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-02-21T00:00:00+00:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/example/'>example</a>, <a class='category' href='/blog/categories/java/'>java</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/" data-via="" data-counturl="http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/12/10/Cancun-to-Belize-City-by-Bus/" title="Previous Post: Cancun to Belize City by Bus">&laquo; Cancun to Belize City by Bus</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/" title="Next Post: Part 1: Create a Simple Website in CSS/HTML and deploy to Amazon S3">Part 1: Create a Simple Website in CSS/HTML and deploy to Amazon S3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer"><p>
+  Copyright &copy; 2018 -
+  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
+</p>
+
+</footer>
+  
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dgi1mac',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Forms | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/forms/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Create a Simple HTML Form]]></title>
+    <link href="http://lili2311.github.io/blog/2014/02/18/Simple-HTML-Form-Example/"/>
+    <updated>2014-02-18T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/02/18/Simple-HTML-Form-Example</id>
+    <content type="html"><![CDATA[<p>For my first web page I wanted to create something simple, but also challenging for myself. I created some web pages whilst at university and have attempted it a few times since but lack of understanding was holding me back, and I found it very discouraging not getting far. So after a couple of courses on <a href="http://www.codecademy.com/">Codeacademy</a> and some patient tutoring from my boyfriend (who is a web developer), I finally feel like I am getting somewhere.</p>
+
+<p>I have never in the past managed to use forms or manipulate data using JavaScript on a web page so these were elements I wanted to include in my first project. I should mention that I am not new to coding or scripting, but am a complete noob to web development. In the end I wanted a page that was reminiscent of <em>Lorem Ipsum</em> text generators, but much simpler: here is the <a href="http://www.lilianakastilio.co.uk/meow/meow.html">result</a>. The user can enter some text and in return get a &ldquo;Meow&rdquo; filled paragraph.</p>
+
+<p>So how did I do it?
+After some franctic googling and trying desperately to remember what I have learned at university about HTML, I have found that we need two main things to make a webpage: <code>HTML</code> and <code>CSS</code>. But in this example we will also need Javascript to be able to process user input.</p>
+
+<h4>HTML - HyperText Markup Language.</h4>
+
+
+<p>First things first is to create a file <code>index.html</code> and insert the basic HTML5 structure of a web page:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>So lets explain each tag:</p>
+
+<ol>
+<li><code>&lt;!DOCTYPE html&gt;</code> - here we are declaring that the document contains HTML5 markup.</li>
+<li><code>&lt;head&gt;</code> - here you will store links to or definitions of scripts and stylesheets. Any description of the page content goes here, such as page title. Search engines will use this to add the page to their search index. This must be the first element in the <code>&lt;html&gt;</code> element.</li>
+<li><code>&lt;title&gt;</code> - this defines the page title, which will be shown in the browser tab or title bar.</li>
+<li><code>&lt;body&gt;</code> - this holds the content of the HTML page. This must be the second element in the <code>&lt;html&gt;</code> element.</li>
+</ol>
+
+
+<p>At this stage opening <code>index.html</code> in the browser will produce an empty page with the tab title &ldquo;Page title goes here&rdquo;.</p>
+
+<p>Earlier I mentioned that I wanted the page to have an input field and a button to process the input on click. Looking at the <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list">HTML 5 Element List</a>, we can see that within the <code>&lt;form&gt;</code> we have <code>&lt;input&gt;</code> and <code>&lt;button&gt;</code> elements available to us. We will also need a <code>&lt;label&gt;</code> to caption the <code>&lt;input&gt;</code>. Here is them all added:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Meow<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;form-container&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">&quot;meow-form&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;label&gt;</span>Type Anything:<span class="nt">&lt;/label&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;meow-input&quot;</span> <span class="na">name=</span><span class="s">&quot;field&quot;</span> <span class="na">maxlength=</span><span class="s">&quot;255&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">autocomplete=</span><span class="s">&quot;off&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Go!<span class="nt">&lt;/button&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/form&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>The form is within a container <code>&lt;div&gt;</code>, it can also be called a content <code>&lt;div&gt;</code>. Placing the form in the container will allow for more sophisticated CSS styling and to place the elements anywhere we want on the page with ease. There are a couple of thigs to explain here:</p>
+
+<ol>
+<li><code>class</code> and <code>id</code> attributes. The <code>class</code> attribute in the <code>&lt;div&gt;</code> element assigns the element to a named class (in this case <code>form-container</code>). Multiple elements in the document can have the same class value, for any unique elements <code>id</code> is more appropriate. (Note: <code>id</code> must be unique in the document). However in this case, <code>id</code> could have also been used. I found a simple explanation of where to use which <a href="http://www.impressivewebs.com/difference-class-id-css/">here</a>. Both <code>id</code> and <code>class</code> are used as selectors in the stylesheet to style the elements (more on this later).</li>
+<li><code>&lt;label&gt;</code> - simply has text to be used as a caption.</li>
+<li><code>&lt;input&gt;</code> - we have given the input an <code>id</code> so that it can be styled later on.</li>
+<li><code>&lt;button&gt;</code> - setting the <code>type="submit"</code> will submit form data when the button is pressed. This is the default option if nothing is specified.</li>
+</ol>
+
+
+<p>Loading the <code>index.html</code> in the browser now gives us this:</p>
+
+<p><img src="http://i.imgur.com/ExVY6i4.png" alt="" /></p>
+
+<h4>CSS - Cascading Style Sheets.</h4>
+
+
+<p>CSS describes how a structured element (HTML or XML) must be rendered on screen.CSS can be:</p>
+
+<ol>
+<li><em>inline</em> - using the style attribute in HTML elements.</li>
+<li><em>internal</em> - using the <code>&lt;style&gt;</code> element in the <code>&lt;head&gt;</code> section.</li>
+<li><em>external</em> - using an external <code>.css</code> file.</li>
+</ol>
+
+
+<p>I am putting all CSS in an external <code>style.css</code>:</p>
+
+<p>First we can set the body of the page to have a background image:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">body</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/lined_paper.png)</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>The whole expression is a <strong><em>rule</em></strong>, and <strong><em>body</em></strong> is a selector, which selects which element the rules apply to.</p>
+
+<p>Now we want to give the whole form a width and set the font. Earlier we have made the div that contained the form be of class &ldquo;form-container&rdquo;, in order to select elements of that class we have to put a <code>.</code> in front of the class name:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.form-container</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">margin</span><span class="o">:</span> <span class="m">90px</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="m">400px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">font-family</span><span class="o">:</span> <span class="o">&amp;</span><span class="n">ldquo</span><span class="p">;</span><span class="n">Roboto</span> <span class="n">Condensed</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="p">;;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>We can give the input a desired width:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">input</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">width</span><span class="o">:</span> <span class="m">200px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And style the button:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">button</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">background-color</span><span class="o">:</span><span class="m">#ED518A</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">height</span><span class="o">:</span><span class="m">37px</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">border</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="m">#fff</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>By saying display the button as an <code>inline-block</code> we are actually telling it to stay on the same line.</p>
+
+<p>Now we need to add a line in the <code>&lt;head&gt;</code>  to load the external <code>.css</code> file and to load the custom Google font (the Google font link can be generated on <a href="http://www.google.com/fonts">Google Fonts</a> website):
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;title&gt;</span>Meow<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;normalize.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style.css&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
+</span><span class='line'><span class="nt">&lt;/head&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>After applying all the changes, our web page should now look like this:
+<img src="http://i.imgur.com/vOhv3Li.png" alt="" /></p>
+
+<p>Trying this in a few different browsers may yield a different result, but we can help the page to render consistently across different browsers by using something called <a href="http://necolas.github.io/normalize.css/">Normalize.css</a>. You can see that I have already included normalize.css in the <code>&lt;head&gt;</code>. There is also a project called <a href="http://www.cssreset.com/">reset.css</a>, there are many different versions you can try, but <a href="http://stackoverflow.com/a/8357635">here</a> an overview of the main differences between <code>reset.css</code> and <code>normalize.css</code>.</p>
+
+<h4>JavaScript</h4>
+
+
+<p>Javascript is an (quasi) object-oriented language, widely used as a scripting language for web pages. To add javascript to our page we will create an external script called meow.js which we can include in the index.html:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;meow.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>This is the full meow.js:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">send</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">input_text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">meow</span><span class="o">-</span><span class="nx">input</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;).</span><span class="nx">value</span><span class="p">;</span>
+</span><span class='line'>    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">meow</span><span class="o">-</span><span class="nx">output</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;).</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">meow</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="nx">input_text</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'><span class="kd">function</span> <span class="nx">meow</span><span class="p">(</span><span class="nx">times</span><span class="p">,</span> <span class="nx">input_text</span><span class="p">){</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">times</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">times</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">output</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span> <span class="nx">meow</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">input_text</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">output</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>To explain briefly what is being done here: the function <code>send(event)</code> is called once the button is clicked. We are extracting the user input from the button with id <code>meow-input</code> and using it to calculate the output. The function <code>meow(times, input_text)</code> repeats the user input <code>x</code> number of times with the word &ldquo;meow&rdquo; in between.</p>
+
+<p>We also need to tell the button to submit the information once it is clicked and use the function send (which is above), this I have done with some internal javascript:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">form</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">meow</span><span class="o">-</span><span class="nx">form</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;);</span>
+</span><span class='line'>    <span class="nx">form</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">submit</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="nx">send</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</span><span class='line'><span class="nt">&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And that&rsquo;s it!</p>
+
+<p><strong>Some useful resources:</strong></p>
+
+<ol>
+<li><a href="https://developer.mozilla.org/en-US/">MDN - Mozilla Developer Network</a></li>
+<li><a href="http://caniuse.com/">Can I Use&hellip;</a></li>
+<li><a href="http://color.hailpixel.com/">color.hailpixel.com</a></li>
+<li><a href="http://stackoverflow.com/">StackOverflow</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

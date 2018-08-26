@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Fixed on Scroll Animated Header With CSS and JavaScript - Liliana Kastilio</title>
+  <meta name="author" content="Liliana Kastilio">
+
+  
+  <meta name="description" content="Fixed on Scroll Animated Header With CSS and JavaScript Oct 4th, 2014 12:00 am In this post I will explain how to create an animated sticky header, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lili2311.github.io/blog/2014/10/04/Fixed-On-Scroll-Animated-Header/">
+  <link href="/images/favicon.png" rel="icon">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
+<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+ -->  
+  
+
+</head>
+
+<body   >
+  <header role="banner" class="header"><div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
+
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
+	
+	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
+	
+	<nav role="navigation" class="navigation">  
+<ul class="navigation__list">
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/">Blog</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/archives">Archives</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/about">About</a>
+  </li>
+  <li class="navigation__item navigation__rss" data-subscription="rss">
+  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+  <div id="main" class="container">
+    <div id="content">
+      <div>
+<article class="article" role="article">
+  
+  <header>
+    
+      <h1 class="article__title">Fixed on Scroll Animated Header With CSS and JavaScript</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-04T00:00:00+01:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="article__content"><p>In this post I will explain how to create an animated sticky header, with CSS3 and JavaScript. So we are going to have a header that will behave normally until we have to scroll and then it will become smaller but still stick to the top of the viewport.</p>
+
+<h4>The HTML</h4>
+
+<p>For this example all we need is a header with an h1 and the main div which holds the content that we can scroll over.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;body&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;header&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;h1&gt;</span>Animated Sticky Header<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/header&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;main&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p&gt;</span> Curabitur quam neque, malesuada sit amet justo ut, posuere pretium quam. In laoreet nunc velit. Nam mattis erat et leo mollis, sed pulvinar lectus volutpat. Phasellus mi eros, sollicitudin non elit sed, molestie viverra eros. Nullam facilisis mauris ante, sed vulputate sapien efficitur quis. Curabitur vitae lorem eros. Fusce orci odio, eleifend et sem luctus, bibendum viverra nibh. Proin vitae libero egestas, consequat orci id, facilisis ex. Quisque lectus dui, mattis non lectus ac, finibus facilisis velit. Integer mauris nibh, suscipit eu egestas nec, placerat scelerisque purus. Nulla facilisi. Proin eleifend, lectus eget rutrum luctus, dolor nunc luctus ex, sed consequat urna nisi ac ipsum.In hac habitasse platea dictumst.<span class="nt">&lt;p&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'><span class="nt">&lt;/body&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>The CSS</h4>
+
+<p>In order to make the header sticky we have to fix it&rsquo;s position to the top of the viewport, hide any overflow and make sure it is always visible by setting the <code>z-index</code> of the header:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">overflow</span><span class="o">:</span> <span class="nt">hidden</span><span class="o">;</span>
+</span><span class='line'><span class="nt">position</span><span class="o">:</span> <span class="nt">fixed</span><span class="o">;</span>
+</span><span class='line'><span class="nt">top</span><span class="o">:</span> <span class="nt">0</span><span class="o">;</span>
+</span><span class='line'><span class="nt">left</span><span class="o">:</span> <span class="nt">0</span><span class="o">;</span>
+</span><span class='line'><span class="nt">z-index</span><span class="o">:</span> <span class="nt">999</span><span class="o">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will now keep the header always at the top and visible.</p>
+
+<p>The animation of the header can be achived by having a different style rule for when the user has scrolled down -<code>.smaller</code> class. We cna detect if the user has scrolled down using JavaScript (described below) and apply the <code>.smaller</code> class to the <code>&lt;header&gt;</code>. When the header is smaller, we are reducing its height and the font size of the <code>&lt;h1&gt;</code>. This is now the full CSS:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">html</span><span class="o">,</span>
+</span><span class='line'><span class="nt">body</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">min-height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">header</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">background</span><span class="o">:</span> <span class="m">#F58065</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">padding</span><span class="o">:</span> <span class="m">0.75em</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">4em</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span> <span class="m">#fcfcfc</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">position</span><span class="o">:</span> <span class="k">fixed</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">z-index</span><span class="o">:</span> <span class="m">999</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">max-width</span><span class="o">:</span> <span class="m">70%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.smaller</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">height</span><span class="o">:</span> <span class="m">2em</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nc">.smaller</span> <span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span> <span class="m">1em</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nt">p</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">max-width</span><span class="o">:</span> <span class="m">70%</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">min-height</span><span class="o">:</span><span class="m">700px</span><span class="p">;</span> <span class="c">/**this is just to force scrolling since we don&#39;t have much content**/</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nf">#main</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">padding-top</span><span class="o">:</span> <span class="m">8em</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>The JavaScript</h4>
+
+<p>As mentioned above, in order to animate the header we have to detect of the user is scrolling. This can be achieved by checking if the <code>pageYOffset</code> or the value received from the <code>document.documentElement.scrollTop</code> the returned value is the distance scrolled in pixels.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">distanceY</span> <span class="o">=</span> <span class="nx">getScrollTop</span><span class="p">(),</span>
+</span><span class='line'>      <span class="nx">shrinkOn</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">header</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;header&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">distanceY</span> <span class="o">&gt;</span> <span class="nx">shrinkOn</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">header</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">,</span><span class="s2">&quot;smaller&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">header</span><span class="p">.</span><span class="nx">removeAttribute</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span> <span class="nx">getScrollTop</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">pageYOffset</span> <span class="o">!=</span> <span class="s1">&#39;undefined&#39;</span><span class="p">){</span>
+</span><span class='line'>      <span class="c1">//most browsers except IE before 9</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nx">pageYOffset</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">B</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">;</span> <span class="c1">//IE &#39;quirks&#39;</span>
+</span><span class='line'>      <span class="kd">var</span> <span class="nx">D</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">;</span> <span class="c1">//IE with DOCTYPE</span>
+</span><span class='line'>      <span class="nx">D</span> <span class="o">=</span> <span class="p">(</span><span class="nx">D</span><span class="p">.</span><span class="nx">clientHeight</span><span class="p">)</span><span class="o">?</span> <span class="nx">D</span><span class="o">:</span> <span class="nx">B</span><span class="p">;</span>
+</span><span class='line'>      <span class="k">return</span> <span class="nx">D</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="nx">init</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liliana Kastilio</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-04T00:00:00+01:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/example/'>example</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lili2311.github.io/blog/2014/10/04/Fixed-On-Scroll-Animated-Header/" data-via="" data-counturl="http://lili2311.github.io/blog/2014/10/04/Fixed-On-Scroll-Animated-Header/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/07/22/Canvas-Particles/" title="Previous Post: HTML5 Canvas Particles System (pt. 1)">&laquo; HTML5 Canvas Particles System (pt. 1)</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/11/11/6-Months-Backpacking-Around-South-America/" title="Next Post: 6 Months Backpacking Around South America">6 Months Backpacking Around South America &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer"><p>
+  Copyright &copy; 2018 -
+  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
+</p>
+
+</footer>
+  
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dgi1mac',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</body>
+</html>

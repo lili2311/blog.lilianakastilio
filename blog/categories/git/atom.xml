@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Git | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys]]></title>
+    <link href="http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/"/>
+    <updated>2016-10-30T23:54:37+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys</id>
+    <content type="html"><![CDATA[<h2>1. Does GitHub always ask you for your password? There is a fix, read on :)</h2>
+
+<p>If you recently started using Git &amp; Github in your workflow it is likely you are sick and tired of constantly having to type in your username and password every single time you want to push some chnages! Well that ends today as in this blog post I will show you how to tell Github to trust your laptop and just let you get on with coding without any fuss of logging in all the time.</p>
+
+<p>In order for this to work we will use something called SSH keys.</p>
+
+<h2>2. What are SSH keys?</h2>
+
+<p>SSH keys are a means of identifyng yourself to a server without having to type in your username and password every time. It can be though of as a passwordless login. Instead of a user name and password the a pair of keys is used that is exchanged between your laptop and the server. They keys live on your laptop and on the other side, this way every time you talk to that server it will realise that you are already knowkn to it and who you are.</p>
+
+<h2>3. Do you already have SSH keys?</h2>
+
+<p>Before we make a new key, lets check if you have lying around already.</p>
+
+<h3>Windows</h3>
+
+<p>In command promt type in:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd</span> %userprofile%/.ssh
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Now lets see if there is a key in there:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>dir id_*
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>If you see and error something like &ldquo;No such file or directory&rdquo; then you don&rsquo;t have a key and need to make one. Next section describes hwo to do this.</p>
+
+<h3>Mac &amp; Linux</h3>
+
+<p>Open your preffered terminal and run the command below:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ls -al ~/.ssh
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>This will list all the files currently present in the <code>~/.ssh</code> directory, which is a special directory where all keys are stored by default. The filenames to look out for are:</p>
+
+<ol>
+<li>id_rsa.pub</li>
+<li>id_rsa</li>
+<li>id_dsa.pub</li>
+<li>id_ecdsa.pub</li>
+<li>id_ed25519.pub</li>
+</ol>
+
+
+<p>Check the content of the file that looks similar to the example above by using the <code>cat</code> command:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cat ~/.ssh/id_rsa.pub
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>There will be a whole lot ot stuff in that file including your email.</p>
+
+<p>If you did not find anything in there, not to worry we will make a new SHH key!</p>
+
+<h2>4. Generate a new SSH key.</h2>
+
+<p>So if you found no keys form steps before then we should make one. Lets go back to the terminal and run the command that will generate us a new key:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ssh-keygen -t rsa -C <span class="p">&amp;</span>ldquo<span class="p">;</span>&lt;a <span class="nv">href</span><span class="o">=</span><span class="s2">&quot;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#121;&amp;#x6f;&amp;#x75;&amp;#114;&amp;#45;&amp;#101;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#64;&amp;#101;&amp;#120;&amp;#97;&amp;#109;&amp;#112;&amp;#x6c;&amp;#x65;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&quot;</span>&gt;<span class="p">&amp;</span><span class="c">#121;&amp;#x6f;&amp;#117;&amp;#x72;&amp;#x2d;&amp;#x65;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x40;&amp;#x65;&amp;#x78;&amp;#x61;&amp;#x6d;&amp;#112;&amp;#108;&amp;#x65;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#109;&lt;/a&gt;&amp;rdquo;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ol>
+<li>Just press Enter when prompted for a filename</li>
+<li>Create and enter a passphrase as requested.</li>
+<li>Tada you now have a shiny new key ready to be used.</li>
+</ol>
+
+
+<p>Note that the ssh-keygen command is only available if you have already installed Git (for Windows that would be Git with Git Bash).</p>
+
+<h2>5. Adding a new SSH key to your GitHub account.</h2>
+
+<p>We now need to share the new key with Github in order to enjoy passwordless login when pushing code:</p>
+
+<ol>
+<li>Log in to your <a href="https://github.com/">GitHub account</a></li>
+<li>Click on your profile photo (in the top right corner) → &ldquo;Settings&rdquo;</li>
+<li>In the sidebar click on &ldquo;SSH and GPG keys&rdquo; → &ldquo;New SSH Key&rdquo;</li>
+<li>Give it a title/name (perhaps this is the key for you work laptop)</li>
+<li>You now need to copy and paste the entirety of the key into here. So all the text your saw with your email that was generated during the previous step all of that is a key. If you had a key already, simply open the file and copy paste the entire contents into here.</li>
+<li>Save!</li>
+</ol>
+
+
+<h2>5. Try it out!</h2>
+
+<p>You can now go back to your project and try pushing some code, you should no longer be prompted for the password and username every time.</p>
+]]></content>
+  </entry>
+  
+</feed>

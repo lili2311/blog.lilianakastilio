@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Css | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Secret to Learning to Code]]></title>
+    <link href="http://lili2311.github.io/blog/2018/08/26/the-secret-to-learning-to-code/"/>
+    <updated>2018-08-26T18:45:32+01:00</updated>
+    <id>http://lili2311.github.io/blog/2018/08/26/the-secret-to-learning-to-code</id>
+    <content type="html"><![CDATA[<p>Learning from articles, courses and examples is a great way to start getting the skills you need to get a job as an engineer. Learning is hard. I used to often find myself super motivated and excited after a attending a workshop or a meetup but then can’t remember a single thing I learned only a week later. The same thing happens to me if I read an article on a train on how to do a super exciting thing with CSS or something new and interesting about JavaScript but the excitement is gone once I realise I don’t know where to start or how to apply what I have just learned. It can be demotivating. But we can make it less so with some simple tips and of course a secret ingredient to learning to code.</p>
+
+<h2>What is the secret ingredient?</h2>
+
+<p>If you wish to get the most out of your learning, there is one essential requirement, it&rsquo;s more important than any other technique or suggestion. Unless you ensure to fulfil this requirement no suggestions or millions of tips will be successful in helping you to get value out of any course/workshop/article. What is this requirement, you say? A deep desire to learn, then improve and ultimately master the basics of web development. It must be a burning desire that fuels you, that keeps you going when you are having a lazy day or simply feel like giving up. But how do I get such a desire you might wonder? Constantly remind yourself self why you learning to code in the first place. Are you after a better paying job to increase your income and quality of life? Is web development a secret passion that was on hold and now you hope to take a full dive in and see how far you can take this? Think of different ways how having this new skill will improve your life, use this to fuel your determination and make the most of the course/workshop/article available to you.</p>
+
+<h2>Don&rsquo;t skip the exercises</h2>
+
+<p>Many skills are learned by doing and in many course/articles there are exercises. Let’s talk about deliberate practice: just practicing for the sake of practicing is simply not enough, in order to truly understand what you are trying to achieve and how you will go about it you must deliberately think about every step you are taking in the exercises. Even if you have done this exercise before, do it again! The second time make sure you understand every step and every decision. The end goal is not to complete the exercise but to gain wisdom.</p>
+
+<h2>Question everything</h2>
+
+<p>Are you unfamiliar with a term you just read in some article? Look it up! Are you following a tutorial and find that you did not understand one of the steps you just did? Go back to it and re-read it again and again until you gain more clarity. It is only once you gain true understanding of all the steps you took to do something that you can rest assured you got lot’s of value from reading the article/tutorial/course.</p>
+
+<h2>Take notes</h2>
+
+<p>If you see something that makes you go &ldquo;oh that would be good to read more about&rdquo;, &ldquo;that would be handy for the other things I am doing&rdquo;. Ask yourself as you read, where else could I apply this?</p>
+
+<h2>Re-read</h2>
+
+<p>Re-read the articles again and again. Skimming the material will not give you any lasting benefit. The speed with which humans forget things is astonishing. To truly cement the ideas, techniques and advice in any article - re-read it. Remember that the only way to get good at something is to develop good habits and understanding in that area.</p>
+
+<p>Remember that learning is a process. You cannot simply become a web developer by rushing through a course or reading a bunch of articles. Take every opportunity available to you to use the skills you have learned. This process will take time, it is a living thing that will grow and get better. But this is only possible if you actively participate in the process.</p>
+
+<p>Stay curious, don&rsquo;t give up and be patient.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Frontend vs Backend]]></title>
+    <link href="http://lili2311.github.io/blog/2017/01/25/frontend-vs-backend/"/>
+    <updated>2017-01-25T12:05:04+00:00</updated>
+    <id>http://lili2311.github.io/blog/2017/01/25/frontend-vs-backend</id>
+    <content type="html"><![CDATA[<p>When starting to learn about Web Development, I remember struggling to understand the difference between Frontend and Backend, in order to try and understand this lets first define what is a website?
+A simple website is typically a collection of HTML documents with CSS styling applied, linked using Hyperlinks (JavaScript may also be present for user interactions and animations). Both HTML and CSS are natively understood and interpreted by the browsers and so is JavaScript. Meaning that the 3 technologies together are the building blocks of any website. These 3 technologies are the typical makeup of the websites front-end. A front end is what the user sees when visiting a website. It is the visual part you can interact with.</p>
+
+<h2>Backend vs Frontend</h2>
+
+<p>Any website can also have a backend - aka some service that lives on a server capable of communicating with the front end of the website to send it data. For example the front end may be requesting user data  from a database to populate a user profile page. Front end only websites do not have a backend and do not usually have a database so are considered static. A static website means that the pages are always the same and the pages do not display differently depending on who you are, for example different users see different data in their profile page that is relevant to them. Backends are usually created for larger websites that need to handle user signups, user profiles, user messaging, payments and other useful actions. Static websites are more of a business card and simply provide information Every website has a front-end and some also have a backend.</p>
+
+<p>Some reading materials to learn more about websites and the basics of the web technologies like <a href="HTTP:">HTTP:</a></p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works?__s=gpt5uamtugwbh776shzn">How the Web works</a></li>
+<li><a href="https://dev.opera.com/articles/http-basic-introduction/?__s=gpt5uamtugwbh776shzn">HTTP Basic Introduction</a></li>
+<li><a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend?__s=gpt5uamtugwbh776shzn">Frontend vs Backend</a></li>
+<li><a href="http://blog.digitaltutors.com/whats-difference-front-end-back-end/?__s=gpt5uamtugwbh776shzn">Whats the difference between frontend and backend?</a></li>
+</ul>
+
+
+<p>🔥 If you enjoyed this post then you can keep up to date with my latests blogs posts &amp; courses by following me on <a href="https://twitter.com/lilianakastilio">Twitter</a> and checking out my code school for some <a href="http://cubcats.teachable.com/courses/">hands on guided coding practice.</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/"/>
+    <updated>2015-12-30T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2</id>
+    <content type="html"><![CDATA[<p>This is Part 2 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial we will briefly cover:</p>
+
+<ol>
+<li>What is CSS?</li>
+<li>CSS Basics</li>
+<li>Create a Stylesheet</li>
+<li>Link HTML and CSS</li>
+<li>Basic CSS Properties</li>
+<li>CSS Exercises</li>
+</ol>
+
+
+<h4>1. What is CSS?</h4>
+
+<p><strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing what the html elements should “look like”. It is used to describe whether an html element should be of certain height, width, if the text should be bold, text colour etc. We will try this shortly.</p>
+
+<!-- CSS allows us to separate the document structure from document appearance, it also allows certain styles to be re-used. For example if all buttons should look the same, it allows us to style them once and not repeat ourselves
+ -->
+
+
+<h4>2. CSS Basics</h4>
+
+<p>This is a <strong>rule</strong>:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>This rule starts with <code>h1</code>, which is a <em>selector</em>.</li>
+<li>The part inside the curly braces is the <em>declaration</em>.</li>
+<li><code>color</code> is a <em>property</em>.</li>
+<li><code>red</code> is a <em>value</em>.</li>
+<li><code>color: red;</code>  is a <em>property-value pair</em>.</li>
+<li>The <code>;</code> after the <em>property-value pair</em> separates it from other <em>property-value pairs</em> in the same <em>rule</em>, for example:</li>
+</ul>
+
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+We will refer to those definitions throughout this class.</p>
+
+<h4>3. CSS Basics</h4>
+
+<p>When the browser reads the CSS file, it finds each <em>selector</em> and works out if it applies to any elements in the HTML.
+If it does, it uses the <em>properties</em> within the matching rule.</p>
+
+<p>A <strong>style sheet</strong> consists of a list of <strong>rules</strong>.
+Each <strong>rule</strong> or <strong>rule-set</strong> consists of one or more selectors.
+<strong>Selectors</strong> allow you to SELECT all elements that match:</p>
+
+<ul>
+<li>a certain tag name e.g. <code>&lt;h1&gt;</code></li>
+<li>a certain element inside another element e.g. all <code>&lt;li&gt;</code> within a <code>&lt;ul&gt;</code></li>
+</ul>
+
+
+<!-- in addition to tag names, you can use attribute values in selectors and for example select all items that are `h1` but have a class `.red` (More info on classes later)
+ -->
+
+
+<h4>4. Create a Stylesheet</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new file in the same folder as the <code>index.html</code> and name it <code>style.css</code></li>
+<li>Type out the code below and save in in your <code>style.css</code> file:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'> <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></li>
+</ol>
+
+
+<p>Here you created a rule that says:
+<em>All <code>h1</code> elements have the following properties:  text alignment is <code>center</code> &amp; the text colour is <code>red</code>.</em></p>
+
+<p><strong>Exercise:</strong> Now use the example above to do the same for <code>&lt;p&gt;</code>. Clue: create a new rule and replace <code>h1</code> with <code>p</code>.</p>
+
+<h4>5. Link HTML and CSS</h4>
+
+<p>Now that we have our first stylesheet, we can tell the html document <code>index.html</code> to use the stylesheet <code>style.css</code> so that the browser knows what the page should look like.</p>
+
+<ol>
+<li>Add the following line in your <code>index.html</code> file underneath the <code>&lt;title&gt;</code> tag:<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style.css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Reload the file in the browser or open it again: Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just updated. You should see “Hello World” and the text you added in the paragraph with the added style.</li>
+</ol>
+
+
+<h4>6. Basic CSS Properties</h4>
+
+<p><code>color</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is the text colour, this is used to style elements that have text e.g. <code>h1</code>, <code>p</code>, <code>h2</code>.</li>
+<li><strong>Example</strong>: <code>color: white;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/color">MDN: color</a></li>
+</ul>
+
+
+<p><code>background-color</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to define the background color of a particular element.</li>
+<li><strong>Example</strong>: <code>background-color: blue;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-color">MDN: background-color</a></li>
+</ul>
+
+
+<p><code>font-size</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set the size of a font in px or other units.</li>
+<li><strong>Example</strong>: <code>font-size: 16px;</code></li>
+<li><strong>More Info</strong>: <a href="https://www.google.com/url?q=http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/&amp;sa=D&amp;usg=AFQjCNFv60g9JwR8d5c6QMP-e9IraqjfNA">CSS font size units</a></li>
+</ul>
+
+
+<p><code>background-image</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set an image as a background of an element.</li>
+<li><strong>Example</strong>: <code>background-image: url(http://examplelink.com);</code></li>
+<li><strong>More Info</strong>: <a href="https://css-tricks.com/almanac/properties/b/background-image/">CSS-tricks: background-image</a></li>
+</ul>
+
+
+<p><code>text-align</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to align text.</li>
+<li><strong>Example</strong>: <code>text-align: left;</code></li>
+<li><strong>More Info</strong>: <a href="http://www.quirksmode.org/css/text/textalign.html">Quirksmode: text-align</a></li>
+</ul>
+
+
+<p><code>padding</code></p>
+
+<ul>
+<li><strong>Description</strong>: sets the padding of the element. See the <strong>Box Model picture</strong> below for
+an explanation of what padding is and how it will affect the look of the element.</li>
+<li><strong>Example</strong>: <code>padding: 10px 10px 10px 10px;</code> or <code>padding: 10px;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/padding">MDN: padding </a></li>
+</ul>
+
+
+<p><code>margin</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set the margin of the element. See the <strong>Box Model
+picture</strong> below for an explanation of what padding is and how it will affect the
+look of the element.</li>
+<li><strong>Example</strong>: <code>margin: 10px;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/margin">MDN: margin</a></li>
+</ul>
+
+
+<h5>6.1 CSS Box Model</h5>
+
+<p>In a document, each element is represented as a rectangular box.
+This model describes the content of the space taken by an element. Each box has four edges:</p>
+
+<ol>
+<li><code>margin</code> edge</li>
+<li><code>border</code> edge</li>
+<li><code>padding</code> edge</li>
+<li><code>content</code> edge (in blue)</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/CSSBoxModel.png" alt="" /></p>
+
+<p>You can read more about <a href="https://www.google.com/url?q=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model%23padding&amp;sa=D&amp;usg=AFQjCNFnLGpiKkdw0tpeCMcxLd6Zd5sW0A">CSS Box Model here</a>.</p>
+
+<h4>5. CSS Exercises</h4>
+
+<p>We can add more to the <code>style.css</code> at this stage or later, <a href="https://www.google.com/url?q=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference&amp;sa=D&amp;usg=AFQjCNGs3Xcq6WpTsShEmATiE4-XHERnug">here is a list of CSS properties available</a>.</p>
+
+<ol>
+<li>Try out all the properties from the <strong>Basic CSS Properties</strong> section and see what they all do.</li>
+<li>You can also style the <code>&lt;body&gt;</code> element, try setting a background image on the <body> element and see what that does.</li>
+<li>Make an image to also be a link, ie make the image clickable that will take you to a different website. Tip: you can add some elements inside of other elements,try and add an <code>img</code> within the <code>a</code>.</li>
+<li>Align left or center all the text on the page.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/"/>
+    <updated>2015-12-03T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 1 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial I will briefly cover:</p>
+
+<ol>
+<li>What is HTML?</li>
+<li>HTML Basics</li>
+<li>Create a Simple HTML Page</li>
+<li>What is HTML5 and how is it different?</li>
+<li>HTML Exercisesb</li>
+</ol>
+
+
+<h4>1. What is HTML?</h4>
+
+<p><strong>HTML - HyperText Markup Language</strong> is the standard language used to create web pages. Web browsers can read HTML files and render them into visible web pages.
+HTML documents are described by HTML tags, these are enclosed in angular brackets <code>&lt;&gt;</code>.
+HTML tags can be considered to be “keywords” that the browser can understand and render/draw in the browser appropriately when viewing the page.
+Each browser has default ways of interpreting each element, these can later be “styled” to look how you prefer with the help of CSS, which will be explained a little further on.</p>
+
+<h4>2. HTML Basics</h4>
+
+<p>We will create a very basic HTML page that will load and simply display “Hello World”. It will look like this:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>The <code>DOCTYPE</code> is a declaration and tells the browser which &lsquo;language&rsquo; we are talking in so it knows how to render it.</li>
+<li>The text between <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> describes an HTML document</li>
+<li>The text between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> provides information about the document</li>
+<li>The text between <code>&lt;title&gt;</code> and <code>&lt;/title&gt;</code> provides a title for the document</li>
+<li>The text between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> describes the visible page content</li>
+<li>The text between <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> describes a heading</li>
+<li>The text between <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> describes a paragraph</li>
+</ul>
+
+
+<h4>3. Create a Simple HTML Page</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new folder in your <code>Documents</code> folder for this workshop, let’s call it <code>website</code>.</li>
+<li>Now open the text editor and save an empty file called <code>index.html</code>, you can press <code>Cmd + S</code> (Mac) or <code>Ctrl + S</code> (WIndows)
+
+<ul>
+<li><code>index.html</code> is a special name and this is a file that the server will look for by default when a certain url is requested (link e.g. <code>http://website.com</code>).</li>
+<li>Each simple website is basically a “directory” of files, the <code>index.html</code> is the first file the web browser will access and from here you can specify how to reach other files via writing hyperlinks.</li>
+<li>The default file can be configured to be called something else if required, but for the purpose of this workshop we will only concentrate on simple defaults.</li>
+</ul>
+</li>
+<li>Type out the code below: <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'> <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'> <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'> <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'> <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just created. You should see “Hello World” and the text you added as the paragraph, something like this:</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/preview.png" alt="" /></p>
+
+<h4>4. What is HTML5 and how is it different?</h4>
+
+<p><code>HTML5</code> is simply a newer version that is supported by most  modern browsers. HTML5 introduced some more awesome elements/tags we can use: such as <code>&lt;canvas&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;footer&gt;</code> and many more to bring the HTML language more in-line with modern times.</p>
+
+<h4>5. HTML Exercises</h4>
+
+<p>We can add more to the page at this stage or later, <a href="http://www.htmldog.com/references/html/tags/">here is a list</a> of <code>html</code> and new <code>html5</code> tags you can use.</p>
+
+<ol>
+<li>Add an image <code>&lt;img&gt;</code>:
+
+<ul>
+<li>Type out the following and modify the <code>src</code> to point to an image you like:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;https://www.example.com/image.png &quot;</span> <span class="na">alt=</span><span class="s">&quot;Image description&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><code>width="100"</code> and  <code>height="90"</code> are optional, play around with the numbers.</li>
+<li><a href="http://www.htmldog.com/references/html/tags/img/">Read more</a> about image <code>&lt;img&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a link <code>&lt;a&gt;</code> to your favourite website:
+
+<ul>
+<li>Type out the following and modify it to link to point your favourite website:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://www.example.com &quot;</span><span class="nt">&gt;</span>Link Text<span class="nt">&lt;/a&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><a href="http://www.w3schools.com/html/html_links.asp">Read more</a> about link <code>&lt;a&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a footer <code>&lt;footer&gt;</code>. These usually sit at the bottom of the page, but sometimes have to be styled to stay at the bottom if there is not enough content to fill the page:
+
+<ul>
+<li>Type out the following and modify it to say anything you want:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;footer&gt;</span> This is a footer <span class="nt">&lt;/footer&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Now try to add a link within the footer to point to a url of your choice, e.g. <a href="http://google.com">http://google.com</a></li>
+<li><a href="http://www.htmldog.com/references/html/tags/footer/">Read more about footer <code>footer</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+<li>Add a comment, which says <code>“This is my first website!”</code>:
+
+<ul>
+<li>Have a look at the example below and modify it as needed:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- Comment text, this will not be visible on the page --&gt;</span>
+</span></code></pre></td></tr></table></div></figure>   * <a href="http://www.tutorialspoint.com/html/html_comments.htm">Read more about comments</a></li>
+</ul>
+</li>
+<li>Add an unordered list of 3 things you love (use previous examples to get the format right):
+
+<ul>
+<li>Unordered list is started using the tag <code>&lt;ul&gt;</code> and closed using <code>&lt;/ul&gt;</code></li>
+<li>Within the list declaration mentioned above you can add in list items, these are defined by: <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code></li>
+<li>You can have as many list items in the unordered list as you want</li>
+<li>Within each item you can add other elements, such as: paragraph, link, images, another list.</li>
+<li>Play around with this one, it is very useful especially for menus</li>
+<li><a href="http://www.htmldog.com/references/html/tags/ul/">Read more about unordered list <code>ul</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+</ol>
+
+
+<p><strong>Further reading and things to try:</strong></p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/Learn/HTML/HTML_tags">Mozilla: HTML Tags</a></li>
+<li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1?curriculum_id=50579fb998b470000202dc8b">Codeacademy: Web Beginner</a></li>
+<li><a href="http://www.tutorialspoint.com/html/">Tutorialspoint: HTML</a></li>
+<li><a href="http://codepen.io/pen/">Codepen</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Technical Code Interview Prep Notes]]></title>
+    <link href="http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/"/>
+    <updated>2015-02-21T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes</id>
+    <content type="html"><![CDATA[<h4>Data Structures and Algorithms</h4>
+
+<h4>Question 1: How do you reverse a linked list using recursion (Java)?</h4>
+
+<p>I found the answer <a href="http://stackoverflow.com/questions/354875/reversing-a-linked-list-in-java-recursively">on this stackoverflow post &ldquo;Reversing a linked list in Java, recursively&rdquo;</a>. This can be solved answering the following questions:</p>
+
+<ol>
+<li>What is the reverse of <code>null</code> (the empty list)? <code>null</code>.</li>
+<li>What is the reverse of a one element list? the element.</li>
+<li>What is the reverse of an n element list? the reverse of the second element on followed by the first element.</li>
+</ol>
+
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'> <span class="kr">public</span> <span class="nx">ListNode</span> <span class="nx">Reverse</span><span class="p">(</span><span class="nx">ListNode</span> <span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// What is the reverse of null (the empty list)? null.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="nx">list</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="kc">null</span><span class="p">;</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="c1">// What is the reverse of a one element list? the element.</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">next</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="nx">list</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// What is the reverse of an n element list? the reverse of the second element on followed by the first element.</span>
+</span><span class='line'><span class="c1">// so we grab the second element (which will be the last after we reverse it)</span>
+</span><span class='line'><span class="nx">ListNode</span> <span class="nx">secondElem</span> <span class="o">=</span> <span class="nx">list</span><span class="p">.</span><span class="nx">next</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// bug fix - need to unlink list from the rest or you will get a cycle</span>
+</span><span class='line'><span class="nx">list</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// then we reverse everything from the second element on</span>
+</span><span class='line'><span class="nx">ListNode</span> <span class="nx">reverseRest</span> <span class="o">=</span> <span class="nx">Reverse</span><span class="p">(</span><span class="nx">secondElem</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// then we join the two lists</span>
+</span><span class='line'><span class="nx">secondElem</span><span class="p">.</span><span class="nx">Next</span> <span class="o">=</span> <span class="nx">list</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="nx">reverseRest</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Question 2: How do you find a length of a linked list?</h4>
+
+<p>Traverse through all the elements until you find the last node which points to <code>null</code>.</p>
+
+<h4>Question 3: How do you find the middle of a linked list using only one pass?</h4>
+
+<ol>
+<li>Maintain two pointers as you traverse through the linked list.</li>
+<li>Increment Pointer 1 on every node and only increment Pointer 2 on every 2nd node.</li>
+<li>When you reach the end of the list, Pointer 2 will be pointing to the middle of the list.</li>
+</ol>
+
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kr">public</span> <span class="kr">class</span> <span class="nx">LinkedListTest</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kr">public</span> <span class="kr">static</span> <span class="k">void</span> <span class="nx">main</span><span class="p">(</span><span class="nb">String</span> <span class="nx">args</span><span class="p">[])</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// Creating LinkedList with 4 elements including head</span>
+</span><span class='line'>    <span class="nx">LinkedList</span> <span class="nx">linkedList</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span> <span class="nx">head</span> <span class="o">=</span> <span class="nx">linkedList</span><span class="p">.</span><span class="nx">head</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="mi">1</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;));</span>
+</span><span class='line'>    <span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="mi">2</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;));</span>
+</span><span class='line'>    <span class="nx">linkedList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span> <span class="k">new</span> <span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="mi">3</span><span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;));</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="c1">// Finding middle element of LinkedList in single pass</span>
+</span><span class='line'><span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span> <span class="nx">current</span> <span class="o">=</span> <span class="nx">head</span><span class="p">;</span>
+</span><span class='line'><span class="kr">int</span> <span class="nx">length</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="nx">LinkedList</span><span class="p">.</span><span class="nx">Node</span> <span class="nx">middle</span> <span class="o">=</span> <span class="nx">head</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">while</span><span class="p">(</span><span class="nx">current</span><span class="p">.</span><span class="nx">next</span><span class="p">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">length</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="nx">length</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">middle</span> <span class="o">=</span> <span class="nx">middle</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nx">current</span> <span class="o">=</span> <span class="nx">current</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span><span class="p">(</span><span class="nx">length</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">middle</span> <span class="o">=</span> <span class="nx">middle</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Length of LinkedList: &quot;</span> <span class="o">+</span> <span class="nx">length</span><span class="p">);</span>
+</span><span class='line'><span class="nx">System</span><span class="p">.</span><span class="nx">out</span><span class="p">.</span><span class="nx">println</span><span class="p">(</span><span class="s2">&quot;Middle element of LinkedList : &quot;</span> <span class="o">+</span> <span class="nx">middle</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>Read more <a href="http://javarevisited.blogspot.com/2012/12/how-to-find-middle-element-of-linked-list-one-pass.html#ixzz3SPYQIL5E">here</a>.</p>
+
+<h4>Question 4: Does a given linked list have a loop?</h4>
+
+<p>This is solved similarly to the question above &ldquo;Question 3: How do you find the middle of a linked list using only one pass?&rdquo;:</p>
+
+<ol>
+<li>Maintain 2 pointers as you traverse through the list.</li>
+<li>Increment Pointer 1 on every node and only increment Pointer 2 on every 2nd node.</li>
+<li>If Pointer 1 and Pointer 2 point to the same node, the list has a loop.</li>
+</ol>
+
+
+<h4>Question 5: An integer array has numbers from 1 to 100, there is a duplicate in the array. Find the duplicate.</h4>
+
+<ol>
+<li>Add all the numbers stored in the array.</li>
+<li>Find the expected sum of all the numbers if there were no duplicates. The sum is represented by a formula <code>n(n+1)/2</code>.</li>
+<li>Subtract the actual sum from the expected sum. The answer is the dulicate number.</li>
+<li>This works if there is 1 duplicate in the array, for multiple duplicates use a Hash Map, where the number is the key and the the occurence is the value. Any values larger than 1 will reveal the duplicates.</li>
+</ol>
+
+
+<h4>Question 6: What is the difference between a Stack vs a Queue?</h4>
+
+<p>A Stack is <code>LIFO (Last In First Out)</code> structure and a Queue is a <code>FIFO (First In First Out)</code> structure.</p>
+
+<h4>Question 7: What is a Binary Search Tree?</h4>
+
+<p>They are also sometimes called ordered or sorted binary trees, are a class of data structures used to implement lookup tables and dynamic sets. They store data items, known as keys, and allow fast insertion and deletion of such keys, as well as checking whether a key is present in a tree. In a binary search tree:</p>
+
+<ol>
+<li>Every left node is smaller than the root element.</li>
+<li>Every right node is larger than the root element.</li>
+<li>There are no duplicates in the binary search tree.</li>
+</ol>
+
+
+<h4>Question 8: How would you sort and array using a Bubble sort?</h4>
+
+<p>Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. Worst Case performance is <code>O(n^2)</code>, best case is <code>O(n)</code>.</p>
+
+<ol>
+<li>Start comparing first and second element <code>array[0]</code> and <code>array[1]</code>.</li>
+<li>If <code>array[0]</code> > <code>array[1]</code> then swap numbers e.g. <code>array[0] = array[1]</code> and <code>array[1] = array[0]</code>.</li>
+<li>Repeat with the next two element, <code>array[1]</code> and <code>array[2]</code> and so on until you reach the end of the list</li>
+<li>This is referred as one pass and at the end of first pass largest number is at last.</li>
+<li>Repeat this comparison again starting from <code>array[0]</code> but this time going till second last pair only <code>array[n - 1]</code>.</li>
+</ol>
+
+
+<p>In a Bubble sort we need <code>n - 1</code> iteration to sort <code>n</code> elements at end of first iteration largest number is sorted and subsequently numbers smaller than that.</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span><span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">];</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Sorted</span> <span class="nb">Array</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">bubbleSort</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">function</span> <span class="nx">bubbleSort</span><span class="p">(</span><span class="nx">a</span><span class="p">){</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">swapped</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">++</span><span class="p">){</span>
+</span><span class='line'>    <span class="nx">swapped</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span> <span class="o">+&amp;</span><span class="nx">ldquo</span><span class="p">;</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">j</span><span class="p">);</span>
+</span><span class='line'>      <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]){</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">];</span>
+</span><span class='line'>        <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>        <span class="nx">a</span><span class="p">[</span><span class="nx">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span><span class="p">;</span>
+</span><span class='line'>        <span class="nx">swapped</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="nx">swapped</span> <span class="o">===</span> <span class="kc">false</span><span class="p">)</span> <span class="k">return</span> <span class="nx">a</span><span class="p">;</span> <span class="c1">// if no swaps have been made, the array is sorted. No need to keep looping.</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">a</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Question 9: How would you check if a number is a palindrome?</h4>
+
+<p>Using a modulo we can determine if a number is a palindrome:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">2332</span><span class="p">;</span> <span class="c1">// example number</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">orig_num</span> <span class="o">=</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// keep a copy of the original number</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">new_num</span> <span class="o">=</span> <span class="nx">number</span><span class="p">;</span> <span class="c1">// this number will change as we try to reverse the number without using strings</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">check_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">check_is_palindrome</span> <span class="o">=</span><span class="p">[];</span> <span class="c1">// storing all the individual numbers here  as we get them in reverse order.</span>
+</span><span class='line'><span class="c1">// console.log(&amp;ldquo;Number to check: &amp;rdquo; + number);&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">function</span> <span class="nx">isPalindrome</span><span class="p">(</span><span class="nx">number</span><span class="p">)</span> <span class="p">{</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="k">if</span> <span class="p">(</span><span class="nx">number</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">num_of_passes</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">while</span> <span class="p">(</span><span class="nx">new_num</span> <span class="o">&amp;</span><span class="nx">gt</span><span class="p">;</span> <span class="mi">0</span><span class="p">){</span>
+</span><span class='line'>    <span class="nx">num_of_passes</span> <span class="o">++</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">remainder</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">%</span> <span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>    <span class="c1">//console.log(&quot;Remainder: &quot; + remainder);</span>
+</span><span class='line'>    <span class="nx">new_num</span> <span class="o">=</span> <span class="p">(</span><span class="nx">number</span> <span class="o">-</span> <span class="nx">remainder</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span><span class="p">;</span>
+</span><span class='line'>    <span class="c1">//console.log(&quot;New number: &quot;+ new_num);</span>
+</span><span class='line'>    <span class="nx">number</span> <span class="o">=</span> <span class="nx">new_num</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">check_is_palindrome</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">remainder</span><span class="p">);</span>
+</span><span class='line'>    <span class="c1">//console.log(check_is_palindrome);</span>
+</span><span class='line'>    <span class="c1">//console.log(&quot;Num of passes: &quot; + num_of_passes)</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">final_check_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// this is to save our result after reversing the number</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">check_is_palindrome</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>    <span class="nx">final_check_num</span> <span class="o">+=</span> <span class="nx">check_is_palindrome</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">pow</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="nx">num_of_passes</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>    <span class="nx">num_of_passes</span> <span class="o">--</span><span class="p">;</span>
+</span><span class='line'>    <span class="c1">//console.log(&quot;Final_check_num: &quot; + final_check_num);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="nx">orig_num</span> <span class="o">===</span> <span class="nx">final_check_num</span><span class="p">;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Is</span> <span class="nx">number</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">number</span> <span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span> <span class="nx">a</span> <span class="nx">palindrome</span><span class="o">?</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">isPalindrome</span><span class="p">(</span><span class="nx">number</span><span class="p">));</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Question 10: Describe a Selection Sort?</h4>
+
+<p>Selection sort is a sorting algorithm, specifically an in-place comparison sort. It has <code>O(n^2)</code> time complexity, making it inefficient on large lists. It performs worse than the similar insertion sort.</p>
+
+<ol>
+<li>Divide the list into two parts: the sublist of items already sorted and the sublist of items left to be sorted. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list.</li>
+<li>Find the smallest or largest element in the unsorted sublist.</li>
+<li>Exchange places with the leftmost unsorted item.</li>
+<li>Repeat 2 &amp; 3 until no unsorted items left.</li>
+</ol>
+
+
+<h4>Question 11: Describe a Shell Sort?</h4>
+
+<p>The method starts by sorting pairs of elements far apart from each other, then progressively reducing the gap between elements to be compared. Starting with far apart elements can move some out-of-place elements into position faster than a simple nearest neighbor exchange. It is similar to the Insertion sort that allows the exchange of items that are far apart. Worst case performance is <code>O(n^2)</code>, best case is O<code>(n log2 n)</code>. Picking the correct gaps is difficult, they should be reducing until the gap is 1.</p>
+
+<h4>Question 12: Describe an Insertion Sort?</h4>
+
+<p>Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.</p>
+
+<ol>
+<li>For each item, remove form unsorted and place in the correct place in teh sorted list or sub-list</li>
+<li>Move up all larger elements if required to place the item in the correct place.</li>
+</ol>
+
+
+<h4>Question 13: Describe a Quick Sort?</h4>
+
+<p>This is an efficient sorting algorithm. The steps are:</p>
+
+<ol>
+<li>Pick an element, called a pivot, from the array.</li>
+<li>Reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way).</li>
+<li>After this partitioning, the pivot is in its final position. This is called the partition operation.</li>
+<li>Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.</li>
+<li>The last element is ussually chosen as the pivot, but this will yeild a wort case complexity on an already sorted array or on an array of identical elements.</li>
+</ol>
+
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="mi">56</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">];</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">Sorted</span> <span class="nb">Array</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">array</span><span class="p">));</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">function</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">answer</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">answer</span><span class="o">=</span><span class="nx">a</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">){</span>
+</span><span class='line'>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">ldquo</span><span class="p">;</span><span class="nx">quicksort</span> <span class="o">&amp;</span><span class="nx">rdquo</span><span class="p">;</span> <span class="o">+</span> <span class="nx">a</span><span class="p">);</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">pivot</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+</span><span class='line'>    <span class="c1">//console.log(a.length);</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">left_a</span> <span class="o">=</span> <span class="p">[];</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">right_a</span> <span class="o">=</span> <span class="p">[</span><span class="nx">pivot</span><span class="p">];</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+</span><span class='line'>      <span class="c1">//console.log(&amp;ldquo;Comparing &amp;rdquo; + pivot &amp;ldquo; and a[i]= &amp;rdquo; + a[i]);</span>
+</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="nx">pivot</span> <span class="o">&gt;</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]){</span>
+</span><span class='line'>        <span class="nx">left_a</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="k">if</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">pivot</span><span class="p">){</span>
+</span><span class='line'>        <span class="nx">right_a</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">left_a</span><span class="p">,</span> <span class="nx">right_a</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">quickSort</span><span class="p">(</span><span class="nx">left_a</span><span class="p">));</span>
+</span><span class='line'>    <span class="nx">answer</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">quickSort</span><span class="p">(</span><span class="nx">right_a</span><span class="p">));</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nx">answer</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Question 14: Describe a Merge Sort?</h4>
+
+<p>A merge sort is an <code>O(n log n)</code> comparison-based sorting algorithm. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.
+Conceptually, a merge sort works as follows:</p>
+
+<ol>
+<li>Divide the unsorted list into <code>n</code> sublists, each containing 1 element (a list of 1 element is considered sorted).</li>
+<li>Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.</li>
+</ol>
+
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">merge_sort</span><span class="p">(</span><span class="nx">list</span> <span class="nx">m</span><span class="p">)</span>
+</span><span class='line'>    <span class="c1">// Base case. A list of zero or one elements is sorted, by definition.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="nx">length</span><span class="p">(</span><span class="nx">m</span><span class="p">)</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="k">return</span> <span class="nx">m</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="c1">// Recursive case. Divide the list into equal-sized sublists.</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">list</span> <span class="nx">left</span><span class="p">,</span> <span class="nx">right</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">integer</span> <span class="nx">middle</span> <span class="o">=</span> <span class="nx">length</span><span class="p">(</span><span class="nx">m</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</span><span class='line'><span class="k">for</span> <span class="nx">each</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">m</span> <span class="nx">before</span> <span class="nx">middle</span>
+</span><span class='line'>     <span class="nx">add</span> <span class="nx">x</span> <span class="nx">to</span> <span class="nx">left</span>
+</span><span class='line'><span class="k">for</span> <span class="nx">each</span> <span class="nx">x</span> <span class="k">in</span> <span class="nx">m</span> <span class="nx">after</span> <span class="nx">or</span> <span class="nx">equal</span> <span class="nx">middle</span>
+</span><span class='line'>     <span class="nx">add</span> <span class="nx">x</span> <span class="nx">to</span> <span class="nx">right</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Recursively sort both sublists</span>
+</span><span class='line'><span class="nx">left</span> <span class="o">=</span> <span class="nx">merge_sort</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'><span class="nx">right</span> <span class="o">=</span> <span class="nx">merge_sort</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'><span class="c1">// Then merge the now-sorted sublists.</span>
+</span><span class='line'><span class="k">return</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">function</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">list</span> <span class="nx">result</span>
+</span><span class='line'>    <span class="k">while</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nx">first</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="nx">first</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>            <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>            <span class="nx">left</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">else</span>
+</span><span class='line'>            <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>            <span class="nx">right</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="c1">// either left or right may have elements left</span>
+</span><span class='line'>    <span class="k">while</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>        <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>        <span class="nx">left</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">left</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">while</span> <span class="nx">notempty</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>        <span class="nx">append</span> <span class="nx">first</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span> <span class="nx">to</span> <span class="nx">result</span>
+</span><span class='line'>        <span class="nx">right</span> <span class="o">=</span> <span class="nx">rest</span><span class="p">(</span><span class="nx">right</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="nx">result</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<h4>Question 15: Describe a Heap Sort?</h4>
+
+<p>Heap sort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort.</p>
+
+<h4>HTML, CSS and JavaScript</h4>
+
+<h4>Question 1: Explain what are selectors in CSS?</h4>
+
+<p>Selectors enable selecting an element to which a style is to be applied. There are different types of selectors, like <code>class</code>, <code>id</code>, <code>descendant</code>, <code>type</code> selectors.</p>
+
+<h4>Question 2: Explain a CSS box model?</h4>
+
+<p>Each element is represented as a rectangular box. Each of these boxes is described using the standard box model. Each box has four edges: the margin edge, border edge, padding edge, and content edge.</p>
+
+<p>There are two types of box model, <code>border-box</code> and <code>content-box</code>.</p>
+
+<h4>Question 3: What are pseudo classes and what are they used for?</h4>
+
+<p>Pseudo classes are similar to classes, but they are not defined in the markup. Some examples are <code>:link</code>, <code>:visited</code>, <code>:hover</code>, <code>:active</code>, <code>:first_line</code>. They are used to call a specific action on an element, for example changng the link colour after it is visited, or changing a link colour when it is hovered.</p>
+
+<h4>Question 4: How do you optimize a website’s assets?</h4>
+
+<p>Some of the ways to optimize assets are:</p>
+
+<ol>
+<li>Make fewer HTTP requests</li>
+<li>Use a Content Delivery Network</li>
+<li>Add an Expires header</li>
+<li>Gzip components</li>
+<li>Put CSS at the top</li>
+<li>Move scripts to the bottom</li>
+<li>Make JavaScript and CSS external</li>
+<li>Minify JavaScript</li>
+<li>Remove duplicate scripts</li>
+</ol>
+
+
+<h4>Question 5: What are the 3 different ways to apply CSS?</h4>
+
+<ol>
+<li>Inline</li>
+<li>External</li>
+<li>Embedded/Internal</li>
+</ol>
+
+
+<h4>Question 6: How is the float property implemented in CSS?</h4>
+
+<p>Floats allow an element to be positioned horizontally, allowing elements below the floated element to flow around it. Several floating elements can be placed together to make a gallery type layout. To prevent subsequent elements from flowing around the floated element, pass in the clear property, followed by the side you wish to disable (i.e., ‘left’, ‘right’, ‘both’).</p>
+
+<h4>Question 7: What is the purpose of the z-index and how is it used?</h4>
+
+<p>The z-index helps specify the stack order of positioned elements that may overlap one another.</p>
+
+<h4>Question 8: What&rsquo;s the difference between standards mode and quirks mode?</h4>
+
+<p>One prominent difference between quirks and standards modes is the handling of the CSS Internet Explorer box model bug. Another notable difference is the vertical alignment of certain types of inline content.</p>
+
+<p>If the browser decides that the document is modern, it’ll render it in standards mode. This means that, as a rule, CSS is applied in accordance with the CSS2 specification.
+If the browser decides that the document is old-school, it’ll render it in quirks mode.</p>
+
+<h4>Question 9: Graceful degradation vx progressive enhancement?</h4>
+
+<p>Graceful degredation - making sure that everythign still works to some level in an older browser, providing with basic functionality of the site.</p>
+
+<p>Progressive enhancement - starting off with the oldest browsers in mind and adding in better functionality for browsers that can handle it.</p>
+
+<p>Degrading gracefully means looking back whereas enhancing progressively means looking forward whilst keeping your feet on firm ground.</p>
+
+<h4>Useful Resources:</h4>
+
+<ol>
+<li><a href="https://developer.mozilla.org/">Mozilla Developer Network</a>.</li>
+<li><a href="http://en.wikipedia.org/wiki/">Wikipedia</a>.</li>
+<li><a href="http://stackoverflow.com/">StackOverflow</a>.</li>
+<li><a href="http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Tuts+</a>.</li>
+<li><a href="http://javarevisited.blogspot.com/2012/12/how-to-find-middle-element-of-linked-list-one-pass.html#ixzz3SPYQIL5E">Java Revisited Blog</a>.</li>
+<li><a href="http://quirksmode.org/css/user-interface/boxsizing.html">Quirks Mode</a>.</li>
+<li><a href="https://developers.google.com/speed/articles">Google Developers</a>.</li>
+<li><a href="http://www.skilledup.com/articles/25-css-interview-questions-answers/">Skilled Up</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla_Quirks_Mode_Behavior">Quirks vs Standard</a></li>
+<li>Excellent resource of <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions#fun-questions">front end interview questions</a>.</li>
+<li><a href="http://http2.github.io/faq/">HTTP2</a></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

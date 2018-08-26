@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Iam | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/iam/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Part 4: Create New IAM Users and Permissions in AWS]]></title>
+    <link href="http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws/"/>
+    <updated>2016-03-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws</id>
+    <content type="html"><![CDATA[<p>This is <strong>Part 4</strong> of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>.</p>
+
+<p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a>, <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/">Part 3: Deploy to AWS</a> of this tutorial.</p>
+
+<h4>1. Create a new User</h4>
+
+<ol>
+<li>Sign in to the <a href="https://console.aws.amazon.com/console/home?nc2=h_m_mc">AWS Amazon console</a></li>
+<li>Click on <strong>Identity &amp; Access Management</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/iam.png" alt="" /></li>
+<li>Click on <strong>User</strong> on the left hand-side menu<br/>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user.png" alt="" /></li>
+<li>Click <strong>Create New User</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-user.png" alt="" /></li>
+<li>Enter username <code>testuser</code>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/new-user-name.png" alt="" /></li>
+<li>Click <strong>Create</strong></li>
+<li>Download the credentials. These will include User Name, Access Key Id, Secret Access Key. Keep these secret as they are tied to your account and can be used for malicious purposes if not kept safely. Remember that your account is tied to your credit card.</li>
+</ol>
+
+
+<h4>2. Set user permissions</h4>
+
+<ol>
+<li>You should now see your user created in the user dashboard.</li>
+<li>Click your newly created user <code>testuser</code></li>
+<li>Click on <strong>Permissions → Attach Policy</strong></li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/attach-policy.png" alt="" /></p>
+
+<ol>
+<li>Select <strong>AmazonS3FullAccess → Attach Policy</strong>:
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazons3fullaccess.png" alt="" /></li>
+<li>Done!
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user-complete.png" alt="" /></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

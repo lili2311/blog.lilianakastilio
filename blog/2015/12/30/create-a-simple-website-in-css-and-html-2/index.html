@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3 - Liliana Kastilio</title>
+  <meta name="author" content="Liliana Kastilio">
+
+  
+  <meta name="description" content="Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3 Dec 30th, 2015 12:00 am This is Part 2 of a tutorial post Create a Simple &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">
+  <link href="/images/favicon.png" rel="icon">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
+<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+ -->  
+  
+
+</head>
+
+<body   >
+  <header role="banner" class="header"><div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
+
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
+	
+	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
+	
+	<nav role="navigation" class="navigation">  
+<ul class="navigation__list">
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/">Blog</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/archives">Archives</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/about">About</a>
+  </li>
+  <li class="navigation__item navigation__rss" data-subscription="rss">
+  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+  <div id="main" class="container">
+    <div id="content">
+      <div>
+<article class="article" role="article">
+  
+  <header>
+    
+      <h1 class="article__title">Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-12-30T00:00:00+00:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="article__content"><p>This is Part 2 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial we will briefly cover:</p>
+
+<ol>
+<li>What is CSS?</li>
+<li>CSS Basics</li>
+<li>Create a Stylesheet</li>
+<li>Link HTML and CSS</li>
+<li>Basic CSS Properties</li>
+<li>CSS Exercises</li>
+</ol>
+
+
+<h4>1. What is CSS?</h4>
+
+<p><strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing what the html elements should “look like”. It is used to describe whether an html element should be of certain height, width, if the text should be bold, text colour etc. We will try this shortly.</p>
+
+<!-- CSS allows us to separate the document structure from document appearance, it also allows certain styles to be re-used. For example if all buttons should look the same, it allows us to style them once and not repeat ourselves
+ -->
+
+
+<h4>2. CSS Basics</h4>
+
+<p>This is a <strong>rule</strong>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>This rule starts with <code>h1</code>, which is a <em>selector</em>.</li>
+<li>The part inside the curly braces is the <em>declaration</em>.</li>
+<li><code>color</code> is a <em>property</em>.</li>
+<li><code>red</code> is a <em>value</em>.</li>
+<li><code>color: red;</code>  is a <em>property-value pair</em>.</li>
+<li>The <code>;</code> after the <em>property-value pair</em> separates it from other <em>property-value pairs</em> in the same <em>rule</em>, for example:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We will refer to those definitions throughout this class.</p>
+
+<h4>3. CSS Basics</h4>
+
+<p>When the browser reads the CSS file, it finds each <em>selector</em> and works out if it applies to any elements in the HTML.
+If it does, it uses the <em>properties</em> within the matching rule.</p>
+
+<p>A <strong>style sheet</strong> consists of a list of <strong>rules</strong>.
+Each <strong>rule</strong> or <strong>rule-set</strong> consists of one or more selectors.
+<strong>Selectors</strong> allow you to SELECT all elements that match:</p>
+
+<ul>
+<li>a certain tag name e.g. <code>&lt;h1&gt;</code></li>
+<li>a certain element inside another element e.g. all <code>&lt;li&gt;</code> within a <code>&lt;ul&gt;</code></li>
+</ul>
+
+
+<!-- in addition to tag names, you can use attribute values in selectors and for example select all items that are `h1` but have a class `.red` (More info on classes later)
+ -->
+
+
+<h4>4. Create a Stylesheet</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new file in the same folder as the <code>index.html</code> and name it <code>style.css</code></li>
+<li>Type out the code below and save in in your <code>style.css</code> file:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here you created a rule that says:
+<em>All <code>h1</code> elements have the following properties:  text alignment is <code>center</code> &amp; the text colour is <code>red</code>.</em></p>
+
+<p><strong>Exercise:</strong> Now use the example above to do the same for <code>&lt;p&gt;</code>. Clue: create a new rule and replace <code>h1</code> with <code>p</code>.</p>
+
+<h4>5. Link HTML and CSS</h4>
+
+<p>Now that we have our first stylesheet, we can tell the html document <code>index.html</code> to use the stylesheet <code>style.css</code> so that the browser knows what the page should look like.</p>
+
+<ol>
+<li>Add the following line in your <code>index.html</code> file underneath the <code>&lt;title&gt;</code> tag:<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style.css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Reload the file in the browser or open it again: Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just updated. You should see “Hello World” and the text you added in the paragraph with the added style.</li>
+</ol>
+
+
+<h4>6. Basic CSS Properties</h4>
+
+<p><code>color</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is the text colour, this is used to style elements that have text e.g. <code>h1</code>, <code>p</code>, <code>h2</code>.</li>
+<li><strong>Example</strong>: <code>color: white;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/color">MDN: color</a></li>
+</ul>
+
+
+<p><code>background-color</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to define the background color of a particular element.</li>
+<li><strong>Example</strong>: <code>background-color: blue;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-color">MDN: background-color</a></li>
+</ul>
+
+
+<p><code>font-size</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set the size of a font in px or other units.</li>
+<li><strong>Example</strong>: <code>font-size: 16px;</code></li>
+<li><strong>More Info</strong>: <a href="https://www.google.com/url?q=http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/&amp;sa=D&amp;usg=AFQjCNFv60g9JwR8d5c6QMP-e9IraqjfNA">CSS font size units</a></li>
+</ul>
+
+
+<p><code>background-image</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set an image as a background of an element.</li>
+<li><strong>Example</strong>: <code>background-image: url(http://examplelink.com);</code></li>
+<li><strong>More Info</strong>: <a href="https://css-tricks.com/almanac/properties/b/background-image/">CSS-tricks: background-image</a></li>
+</ul>
+
+
+<p><code>text-align</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to align text.</li>
+<li><strong>Example</strong>: <code>text-align: left;</code></li>
+<li><strong>More Info</strong>: <a href="http://www.quirksmode.org/css/text/textalign.html">Quirksmode: text-align</a></li>
+</ul>
+
+
+<p><code>padding</code></p>
+
+<ul>
+<li><strong>Description</strong>: sets the padding of the element. See the <strong>Box Model picture</strong> below for
+an explanation of what padding is and how it will affect the look of the element.</li>
+<li><strong>Example</strong>: <code>padding: 10px 10px 10px 10px;</code> or <code>padding: 10px;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/padding">MDN: padding </a></li>
+</ul>
+
+
+<p><code>margin</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set the margin of the element. See the <strong>Box Model
+picture</strong> below for an explanation of what padding is and how it will affect the
+look of the element.</li>
+<li><strong>Example</strong>: <code>margin: 10px;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/margin">MDN: margin</a></li>
+</ul>
+
+
+<h5>6.1 CSS Box Model</h5>
+
+<p>In a document, each element is represented as a rectangular box.
+This model describes the content of the space taken by an element. Each box has four edges:</p>
+
+<ol>
+<li><code>margin</code> edge</li>
+<li><code>border</code> edge</li>
+<li><code>padding</code> edge</li>
+<li><code>content</code> edge (in blue)</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/CSSBoxModel.png" alt="" /></p>
+
+<p>You can read more about <a href="https://www.google.com/url?q=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model%23padding&amp;sa=D&amp;usg=AFQjCNFnLGpiKkdw0tpeCMcxLd6Zd5sW0A">CSS Box Model here</a>.</p>
+
+<h4>5. CSS Exercises</h4>
+
+<p>We can add more to the <code>style.css</code> at this stage or later, <a href="https://www.google.com/url?q=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference&amp;sa=D&amp;usg=AFQjCNGs3Xcq6WpTsShEmATiE4-XHERnug">here is a list of CSS properties available</a>.</p>
+
+<ol>
+<li>Try out all the properties from the <strong>Basic CSS Properties</strong> section and see what they all do.</li>
+<li>You can also style the <code>&lt;body&gt;</code> element, try setting a background image on the <body> element and see what that does.</li>
+<li>Make an image to also be a link, ie make the image clickable that will take you to a different website. Tip: you can add some elements inside of other elements,try and add an <code>img</code> within the <code>a</code>.</li>
+<li>Align left or center all the text on the page.</li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liliana Kastilio</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-12-30T00:00:00+00:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/" data-via="" data-counturl="http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/" title="Previous Post: Part 1: Create a Simple Website in CSS/HTML and deploy to Amazon S3">&laquo; Part 1: Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/" title="Next Post: Part 3: Create a Bucket and Deploy a Website to Amazon S3">Part 3: Create a Bucket and Deploy a Website to Amazon S3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer"><p>
+  Copyright &copy; 2018 -
+  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
+</p>
+
+</footer>
+  
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dgi1mac',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</body>
+</html>

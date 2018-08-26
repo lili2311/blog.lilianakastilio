@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3 - Liliana Kastilio</title>
+  <meta name="author" content="Liliana Kastilio">
+
+  
+  <meta name="description" content="Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3 Dec 3rd, 2015 12:00 am This is Part 1 of a tutorial post Create a Simple Website &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">
+  <link href="/images/favicon.png" rel="icon">
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Liliana Kastilio" type="application/atom+xml">
+<!--   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+ -->  
+  
+
+</head>
+
+<body   >
+  <header role="banner" class="header"><div class="header__wrapper">
+<a href="/">
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Liliana</h1>
+	</div>
+
+	<div class="header__title-wrapper">
+		<h1 class="header__title">Kastilio</h1>
+	</div>
+</a>
+	
+	<h2 class="header__subtitle">Coding Tutorials & Blog</h2>
+	
+	<nav role="navigation" class="navigation">  
+<ul class="navigation__list">
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/">Blog</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/archives">Archives</a>
+  </li>
+  <li class="navigation__item">
+  	<a class="navigation__link" href="/blog/about">About</a>
+  </li>
+  <li class="navigation__item navigation__rss" data-subscription="rss">
+  	<a class="navigation__link" href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a>
+  </li>
+</ul>
+</nav>
+</div>
+</header>
+  <div id="main" class="container">
+    <div id="content">
+      <div>
+<article class="article" role="article">
+  
+  <header>
+    
+      <h1 class="article__title">Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2015-12-03T00:00:00+00:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="article__content"><p>This is Part 1 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial I will briefly cover:</p>
+
+<ol>
+<li>What is HTML?</li>
+<li>HTML Basics</li>
+<li>Create a Simple HTML Page</li>
+<li>What is HTML5 and how is it different?</li>
+<li>HTML Exercisesb</li>
+</ol>
+
+
+<h4>1. What is HTML?</h4>
+
+<p><strong>HTML - HyperText Markup Language</strong> is the standard language used to create web pages. Web browsers can read HTML files and render them into visible web pages.
+HTML documents are described by HTML tags, these are enclosed in angular brackets <code>&lt;&gt;</code>.
+HTML tags can be considered to be “keywords” that the browser can understand and render/draw in the browser appropriately when viewing the page.
+Each browser has default ways of interpreting each element, these can later be “styled” to look how you prefer with the help of CSS, which will be explained a little further on.</p>
+
+<h4>2. HTML Basics</h4>
+
+<p>We will create a very basic HTML page that will load and simply display “Hello World”. It will look like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>The <code>DOCTYPE</code> is a declaration and tells the browser which &lsquo;language&rsquo; we are talking in so it knows how to render it.</li>
+<li>The text between <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> describes an HTML document</li>
+<li>The text between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> provides information about the document</li>
+<li>The text between <code>&lt;title&gt;</code> and <code>&lt;/title&gt;</code> provides a title for the document</li>
+<li>The text between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> describes the visible page content</li>
+<li>The text between <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> describes a heading</li>
+<li>The text between <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> describes a paragraph</li>
+</ul>
+
+
+<h4>3. Create a Simple HTML Page</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new folder in your <code>Documents</code> folder for this workshop, let’s call it <code>website</code>.</li>
+<li>Now open the text editor and save an empty file called <code>index.html</code>, you can press <code>Cmd + S</code> (Mac) or <code>Ctrl + S</code> (WIndows)
+
+<ul>
+<li><code>index.html</code> is a special name and this is a file that the server will look for by default when a certain url is requested (link e.g. <code>http://website.com</code>).</li>
+<li>Each simple website is basically a “directory” of files, the <code>index.html</code> is the first file the web browser will access and from here you can specify how to reach other files via writing hyperlinks.</li>
+<li>The default file can be configured to be called something else if required, but for the purpose of this workshop we will only concentrate on simple defaults.</li>
+</ul>
+</li>
+<li>Type out the code below: <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>      <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just created. You should see “Hello World” and the text you added as the paragraph, something like this:</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/preview.png" alt="" /></p>
+
+<h4>4. What is HTML5 and how is it different?</h4>
+
+<p><code>HTML5</code> is simply a newer version that is supported by most  modern browsers. HTML5 introduced some more awesome elements/tags we can use: such as <code>&lt;canvas&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;footer&gt;</code> and many more to bring the HTML language more in-line with modern times.</p>
+
+<h4>5. HTML Exercises</h4>
+
+<p>We can add more to the page at this stage or later, <a href="http://www.htmldog.com/references/html/tags/">here is a list</a> of <code>html</code> and new <code>html5</code> tags you can use.</p>
+
+<ol>
+<li>Add an image <code>&lt;img&gt;</code>:
+
+<ul>
+<li>Type out the following and modify the <code>src</code> to point to an image you like:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;<a href="https://www.example.com/image.png">https://www.example.com/image.png</a> &quot;</span> <span class="na">alt=</span><span class="s">&quot;Image description&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><code>width="100"</code> and  <code>height="90"</code> are optional, play around with the numbers.</li>
+<li><a href="http://www.htmldog.com/references/html/tags/img/">Read more</a> about image <code>&lt;img&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a link <code>&lt;a&gt;</code> to your favourite website:
+
+<ul>
+<li>Type out the following and modify it to link to point your favourite website:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;<a href="https://www.example.com">https://www.example.com</a> &quot;</span><span class="nt">&gt;</span>Link Text<span class="nt">&lt;/a&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><a href="http://www.w3schools.com/html/html_links.asp">Read more</a> about link <code>&lt;a&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a footer <code>&lt;footer&gt;</code>. These usually sit at the bottom of the page, but sometimes have to be styled to stay at the bottom if there is not enough content to fill the page:
+
+<ul>
+<li>Type out the following and modify it to say anything you want:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="nt">&lt;footer&gt;</span> This is a footer <span class="nt">&lt;/footer&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Now try to add a link within the footer to point to a url of your choice, e.g. <a href="http://google.com">http://google.com</a></li>
+<li><a href="http://www.htmldog.com/references/html/tags/footer/">Read more about footer <code>footer</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+<li>Add a comment, which says <code>“This is my first website!”</code>:
+
+<ul>
+<li>Have a look at the example below and modify it as needed:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'> <span class="c">&lt;!&ndash; Comment text, this will not be visible on the page &ndash;&gt;</span>
+</span></code></pre></td></tr></table></div></figure> * <a href="http://www.tutorialspoint.com/html/html_comments.htm">Read more about comments</a></li>
+</ul>
+</li>
+<li>Add an unordered list of 3 things you love (use previous examples to get the format right):
+
+<ul>
+<li>Unordered list is started using the tag <code>&lt;ul&gt;</code> and closed using <code>&lt;/ul&gt;</code></li>
+<li>Within the list declaration mentioned above you can add in list items, these are defined by: <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code></li>
+<li>You can have as many list items in the unordered list as you want</li>
+<li>Within each item you can add other elements, such as: paragraph, link, images, another list.</li>
+<li>Play around with this one, it is very useful especially for menus</li>
+<li><a href="http://www.htmldog.com/references/html/tags/ul/">Read more about unordered list <code>ul</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+</ol>
+
+
+<p><strong>Further reading and things to try:</strong></p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/Learn/HTML/HTML_tags">Mozilla: HTML Tags</a></li>
+<li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1?curriculum_id=50579fb998b470000202dc8b">Codeacademy: Web Beginner</a></li>
+<li><a href="http://www.tutorialspoint.com/html/">Tutorialspoint: HTML</a></li>
+<li><a href="http://codepen.io/pen/">Codepen</a></li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Liliana Kastilio</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2015-12-03T00:00:00+00:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2015</span></span> <span class='time'>12:00 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/css/'>css</a>, <a class='category' href='/blog/categories/html/'>html</a>, <a class='category' href='/blog/categories/tutorial/'>tutorial</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/" data-via="" data-counturl="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/02/21/Technical-Code-Interview-Preparation-Notes/" title="Previous Post: Technical Code Interview Prep Notes">&laquo; Technical Code Interview Prep Notes</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/" title="Next Post: Part 2: Create a Simple Website in CSS/HTML and deploy to Amazon S3">Part 2: Create a Simple Website in CSS/HTML and deploy to Amazon S3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/npm-install-distater-waiting-to-happen/">Security: Using Open Source Packages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2018/08/26/the-secret-to-learning-to-code/">The Secret to Learning to Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/25/frontend-vs-backend/">Frontend vs Backend</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/10/30/stop-wasting-time-logging-into-github-on-command-line-every-time-you-push-just-set-up-ssh-keys/">Stop Wasting Time Logging Into GitHub on Command Line Every Time You Push: Just Set Up SSH Keys</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/03/05/frontend-automation-with-grunt/">Frontend Automation With Grunt</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo" class="footer"><p>
+  Copyright &copy; 2018 -
+  Made with <span class="heart">&#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a> <span class="credit"> 
+</p>
+
+</footer>
+  
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'dgi1mac',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+</body>
+</html>

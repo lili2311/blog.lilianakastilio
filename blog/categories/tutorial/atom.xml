@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tutorial | Liliana Kastilio]]></title>
+  <link href="http://lili2311.github.io/blog/categories/tutorial/atom.xml" rel="self"/>
+  <link href="http://lili2311.github.io/"/>
+  <updated>2018-08-26T19:05:34+01:00</updated>
+  <id>http://lili2311.github.io/</id>
+  <author>
+    <name><![CDATA[Liliana Kastilio]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Part 4: Create New IAM Users and Permissions in AWS]]></title>
+    <link href="http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws/"/>
+    <updated>2016-03-05T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/03/05/create-new-iam-users-and-permissions-in-aws</id>
+    <content type="html"><![CDATA[<p>This is <strong>Part 4</strong> of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>.</p>
+
+<p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a>, <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/">Part 3: Deploy to AWS</a> of this tutorial.</p>
+
+<h4>1. Create a new User</h4>
+
+<ol>
+<li>Sign in to the <a href="https://console.aws.amazon.com/console/home?nc2=h_m_mc">AWS Amazon console</a></li>
+<li>Click on <strong>Identity &amp; Access Management</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/iam.png" alt="" /></li>
+<li>Click on <strong>User</strong> on the left hand-side menu<br/>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user.png" alt="" /></li>
+<li>Click <strong>Create New User</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-user.png" alt="" /></li>
+<li>Enter username <code>testuser</code>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/new-user-name.png" alt="" /></li>
+<li>Click <strong>Create</strong></li>
+<li>Download the credentials. These will include User Name, Access Key Id, Secret Access Key. Keep these secret as they are tied to your account and can be used for malicious purposes if not kept safely. Remember that your account is tied to your credit card.</li>
+</ol>
+
+
+<h4>2. Set user permissions</h4>
+
+<ol>
+<li>You should now see your user created in the user dashboard.</li>
+<li>Click your newly created user <code>testuser</code></li>
+<li>Click on <strong>Permissions → Attach Policy</strong></li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/attach-policy.png" alt="" /></p>
+
+<ol>
+<li>Select <strong>AmazonS3FullAccess → Attach Policy</strong>:
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazons3fullaccess.png" alt="" /></li>
+<li>Done!
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/user-complete.png" alt="" /></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 3: Create a Bucket and Deploy a Website to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3/"/>
+    <updated>2016-01-01T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2016/01/01/Create-a-bucket-and-deploy-a-website-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 3 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p><strong>Note:</strong>  Here you can look over <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Part 1: HTML</a> and <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/">Part 2: CSS</a> of this tutorial.</p>
+
+<p>In this tutorial we will cover:</p>
+
+<ol>
+<li>Create a free account on Amazon S3</li>
+<li>Creating a bucket on Amazon S3</li>
+<li>Uploading your website to Amazon S3</li>
+</ol>
+
+
+<h4>1. Create a free account on Amazon S3</h4>
+
+<p>Amazon has a free tier which will be enough for most small websites.</p>
+
+<p><strong>1.</strong> Go to <a href="https://aws.amazon.com/s3/">Amazon S3</a></p>
+
+<p><strong>2.</strong> Click on “Try Amazon S3 for Free”:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup1.png" alt="" /></p>
+
+<p><strong>3.</strong> Enter your email address or phone number. Then select  “I am  New User” and click “Sign in using our secure server”:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup2.png" alt="" /></p>
+
+<p><strong>4.</strong> Fill out required info:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup3.png" alt="" /></p>
+
+<p><strong>5.</strong>  Fill out credit card info</p>
+
+<p><strong>6.</strong>  Confirm your identity via a call:</p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonsignup4.png" alt="" /></p>
+
+<h4>2. Creating a bucket on Amazon S3</h4>
+
+<p><strong>1.</strong> Sign in to the <a href="https://aws.amazon.com/s3/">Amazon console</a></p>
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/amazonconsole-s3.png" alt="" /></p>
+
+<p><strong>2.</strong> Click on <strong>S3</strong>
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/s3-signed-in.png" alt="" /></p>
+
+<p><strong>3.</strong> Click &ldquo;Create a new bucket&rdquo;
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-bucket.png" alt="" /></p>
+
+<p><strong>4.</strong> Click &ldquo;Create a new bucket&rdquo;
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/create-new-bucket.png" alt="" /></p>
+
+<p><strong>3.</strong> Fill out the bucket name (example yourname.com)</p>
+
+<h4>3. Uploading your website to Amazon S3</h4>
+
+<p><strong>1.</strong> Click into the bucket name you have just created</p>
+
+<p><strong>2.</strong> Select “Actions” →  “Upload”
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/upload.png" alt="" /></p>
+
+<p><strong>3.</strong> Click “Set Details” → “Set permissions”</p>
+
+<p><strong>4.</strong> Tick “Make everything public”
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/makepublic.png" alt="" /></p>
+
+<p><strong>5.</strong> Click “Start Upload”</p>
+
+<p><strong>6.</strong> Select the file index.html and click “Properties”</p>
+
+<p><strong>7.</strong> Click on the link
+<img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/index.png" alt="" /></p>
+
+<p><strong>8.</strong> Thats it! Your website is now live and accessible online via this link at any time.</p>
+
+<p>If you would like to learn how to automate this deploy and make it easier for continuous development watch out for the next blog post where I will talk about using <a href="http://gruntjs.com/">Grunt</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 2: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2/"/>
+    <updated>2015-12-30T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/30/create-a-simple-website-in-css-and-html-2</id>
+    <content type="html"><![CDATA[<p>This is Part 2 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial we will briefly cover:</p>
+
+<ol>
+<li>What is CSS?</li>
+<li>CSS Basics</li>
+<li>Create a Stylesheet</li>
+<li>Link HTML and CSS</li>
+<li>Basic CSS Properties</li>
+<li>CSS Exercises</li>
+</ol>
+
+
+<h4>1. What is CSS?</h4>
+
+<p><strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for describing what the html elements should “look like”. It is used to describe whether an html element should be of certain height, width, if the text should be bold, text colour etc. We will try this shortly.</p>
+
+<!-- CSS allows us to separate the document structure from document appearance, it also allows certain styles to be re-used. For example if all buttons should look the same, it allows us to style them once and not repeat ourselves
+ -->
+
+
+<h4>2. CSS Basics</h4>
+
+<p>This is a <strong>rule</strong>:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>This rule starts with <code>h1</code>, which is a <em>selector</em>.</li>
+<li>The part inside the curly braces is the <em>declaration</em>.</li>
+<li><code>color</code> is a <em>property</em>.</li>
+<li><code>red</code> is a <em>value</em>.</li>
+<li><code>color: red;</code>  is a <em>property-value pair</em>.</li>
+<li>The <code>;</code> after the <em>property-value pair</em> separates it from other <em>property-value pairs</em> in the same <em>rule</em>, for example:</li>
+</ul>
+
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+We will refer to those definitions throughout this class.</p>
+
+<h4>3. CSS Basics</h4>
+
+<p>When the browser reads the CSS file, it finds each <em>selector</em> and works out if it applies to any elements in the HTML.
+If it does, it uses the <em>properties</em> within the matching rule.</p>
+
+<p>A <strong>style sheet</strong> consists of a list of <strong>rules</strong>.
+Each <strong>rule</strong> or <strong>rule-set</strong> consists of one or more selectors.
+<strong>Selectors</strong> allow you to SELECT all elements that match:</p>
+
+<ul>
+<li>a certain tag name e.g. <code>&lt;h1&gt;</code></li>
+<li>a certain element inside another element e.g. all <code>&lt;li&gt;</code> within a <code>&lt;ul&gt;</code></li>
+</ul>
+
+
+<!-- in addition to tag names, you can use attribute values in selectors and for example select all items that are `h1` but have a class `.red` (More info on classes later)
+ -->
+
+
+<h4>4. Create a Stylesheet</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new file in the same folder as the <code>index.html</code> and name it <code>style.css</code></li>
+<li>Type out the code below and save in in your <code>style.css</code> file:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nt">h1</span> <span class="p">{</span>
+</span><span class='line'> <span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span>
+</span><span class='line'> <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></li>
+</ol>
+
+
+<p>Here you created a rule that says:
+<em>All <code>h1</code> elements have the following properties:  text alignment is <code>center</code> &amp; the text colour is <code>red</code>.</em></p>
+
+<p><strong>Exercise:</strong> Now use the example above to do the same for <code>&lt;p&gt;</code>. Clue: create a new rule and replace <code>h1</code> with <code>p</code>.</p>
+
+<h4>5. Link HTML and CSS</h4>
+
+<p>Now that we have our first stylesheet, we can tell the html document <code>index.html</code> to use the stylesheet <code>style.css</code> so that the browser knows what the page should look like.</p>
+
+<ol>
+<li>Add the following line in your <code>index.html</code> file underneath the <code>&lt;title&gt;</code> tag:<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;style.css&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Reload the file in the browser or open it again: Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just updated. You should see “Hello World” and the text you added in the paragraph with the added style.</li>
+</ol>
+
+
+<h4>6. Basic CSS Properties</h4>
+
+<p><code>color</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is the text colour, this is used to style elements that have text e.g. <code>h1</code>, <code>p</code>, <code>h2</code>.</li>
+<li><strong>Example</strong>: <code>color: white;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/color">MDN: color</a></li>
+</ul>
+
+
+<p><code>background-color</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to define the background color of a particular element.</li>
+<li><strong>Example</strong>: <code>background-color: blue;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/background-color">MDN: background-color</a></li>
+</ul>
+
+
+<p><code>font-size</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set the size of a font in px or other units.</li>
+<li><strong>Example</strong>: <code>font-size: 16px;</code></li>
+<li><strong>More Info</strong>: <a href="https://www.google.com/url?q=http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/&amp;sa=D&amp;usg=AFQjCNFv60g9JwR8d5c6QMP-e9IraqjfNA">CSS font size units</a></li>
+</ul>
+
+
+<p><code>background-image</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set an image as a background of an element.</li>
+<li><strong>Example</strong>: <code>background-image: url(http://examplelink.com);</code></li>
+<li><strong>More Info</strong>: <a href="https://css-tricks.com/almanac/properties/b/background-image/">CSS-tricks: background-image</a></li>
+</ul>
+
+
+<p><code>text-align</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to align text.</li>
+<li><strong>Example</strong>: <code>text-align: left;</code></li>
+<li><strong>More Info</strong>: <a href="http://www.quirksmode.org/css/text/textalign.html">Quirksmode: text-align</a></li>
+</ul>
+
+
+<p><code>padding</code></p>
+
+<ul>
+<li><strong>Description</strong>: sets the padding of the element. See the <strong>Box Model picture</strong> below for
+an explanation of what padding is and how it will affect the look of the element.</li>
+<li><strong>Example</strong>: <code>padding: 10px 10px 10px 10px;</code> or <code>padding: 10px;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/padding">MDN: padding </a></li>
+</ul>
+
+
+<p><code>margin</code></p>
+
+<ul>
+<li><strong>Description</strong>: this is used to set the margin of the element. See the <strong>Box Model
+picture</strong> below for an explanation of what padding is and how it will affect the
+look of the element.</li>
+<li><strong>Example</strong>: <code>margin: 10px;</code></li>
+<li><strong>More Info</strong>: <a href="https://developer.mozilla.org/en/docs/Web/CSS/margin">MDN: margin</a></li>
+</ul>
+
+
+<h5>6.1 CSS Box Model</h5>
+
+<p>In a document, each element is represented as a rectangular box.
+This model describes the content of the space taken by an element. Each box has four edges:</p>
+
+<ol>
+<li><code>margin</code> edge</li>
+<li><code>border</code> edge</li>
+<li><code>padding</code> edge</li>
+<li><code>content</code> edge (in blue)</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/CSSBoxModel.png" alt="" /></p>
+
+<p>You can read more about <a href="https://www.google.com/url?q=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model%23padding&amp;sa=D&amp;usg=AFQjCNFnLGpiKkdw0tpeCMcxLd6Zd5sW0A">CSS Box Model here</a>.</p>
+
+<h4>5. CSS Exercises</h4>
+
+<p>We can add more to the <code>style.css</code> at this stage or later, <a href="https://www.google.com/url?q=https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference&amp;sa=D&amp;usg=AFQjCNGs3Xcq6WpTsShEmATiE4-XHERnug">here is a list of CSS properties available</a>.</p>
+
+<ol>
+<li>Try out all the properties from the <strong>Basic CSS Properties</strong> section and see what they all do.</li>
+<li>You can also style the <code>&lt;body&gt;</code> element, try setting a background image on the <body> element and see what that does.</li>
+<li>Make an image to also be a link, ie make the image clickable that will take you to a different website. Tip: you can add some elements inside of other elements,try and add an <code>img</code> within the <code>a</code>.</li>
+<li>Align left or center all the text on the page.</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Part 1: Create a Simple Website in CSS/HTML and Deploy to Amazon S3]]></title>
+    <link href="http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/"/>
+    <updated>2015-12-03T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3</id>
+    <content type="html"><![CDATA[<p>This is Part 1 of a tutorial post <a href="http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/">Create a Simple Website in CSS/HTML and deploy to Amazon S3</a>, it is aimed at a completele beginner.</p>
+
+<p>In this tutorial I will briefly cover:</p>
+
+<ol>
+<li>What is HTML?</li>
+<li>HTML Basics</li>
+<li>Create a Simple HTML Page</li>
+<li>What is HTML5 and how is it different?</li>
+<li>HTML Exercisesb</li>
+</ol>
+
+
+<h4>1. What is HTML?</h4>
+
+<p><strong>HTML - HyperText Markup Language</strong> is the standard language used to create web pages. Web browsers can read HTML files and render them into visible web pages.
+HTML documents are described by HTML tags, these are enclosed in angular brackets <code>&lt;&gt;</code>.
+HTML tags can be considered to be “keywords” that the browser can understand and render/draw in the browser appropriately when viewing the page.
+Each browser has default ways of interpreting each element, these can later be “styled” to look how you prefer with the help of CSS, which will be explained a little further on.</p>
+
+<h4>2. HTML Basics</h4>
+
+<p>We will create a very basic HTML page that will load and simply display “Hello World”. It will look like this:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>The <code>DOCTYPE</code> is a declaration and tells the browser which &lsquo;language&rsquo; we are talking in so it knows how to render it.</li>
+<li>The text between <code>&lt;html&gt;</code> and <code>&lt;/html&gt;</code> describes an HTML document</li>
+<li>The text between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> provides information about the document</li>
+<li>The text between <code>&lt;title&gt;</code> and <code>&lt;/title&gt;</code> provides a title for the document</li>
+<li>The text between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> describes the visible page content</li>
+<li>The text between <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code> describes a heading</li>
+<li>The text between <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> describes a paragraph</li>
+</ul>
+
+
+<h4>3. Create a Simple HTML Page</h4>
+
+<ol>
+<li><a href="http://www.sublimetext.com/">Install Sublime</a> or use your preferred text editor</li>
+<li>Create a new folder in your <code>Documents</code> folder for this workshop, let’s call it <code>website</code>.</li>
+<li>Now open the text editor and save an empty file called <code>index.html</code>, you can press <code>Cmd + S</code> (Mac) or <code>Ctrl + S</code> (WIndows)
+
+<ul>
+<li><code>index.html</code> is a special name and this is a file that the server will look for by default when a certain url is requested (link e.g. <code>http://website.com</code>).</li>
+<li>Each simple website is basically a “directory” of files, the <code>index.html</code> is the first file the web browser will access and from here you can specify how to reach other files via writing hyperlinks.</li>
+<li>The default file can be configured to be called something else if required, but for the purpose of this workshop we will only concentrate on simple defaults.</li>
+</ul>
+</li>
+<li>Type out the code below: <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="ni">&amp;lt;</span>!DOCTYPE html&gt;
+</span><span class='line'><span class="nt">&lt;html&gt;</span>
+</span><span class='line'> <span class="nt">&lt;head&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;title&gt;</span>Page title goes here<span class="nt">&lt;/title&gt;</span>
+</span><span class='line'> <span class="nt">&lt;/head&gt;</span>
+</span><span class='line'> <span class="nt">&lt;body&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;h1&gt;</span>Hello World<span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>     <span class="nt">&lt;p&gt;</span>This is my first website!<span class="nt">&lt;/p&gt;</span>
+</span><span class='line'> <span class="nt">&lt;/body&gt;</span>
+</span><span class='line'><span class="nt">&lt;/html&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Open your web browser, then press <code>Ctrl + O</code> (Windows) or <code>Cmd + O</code> (Mac) to open the file we have just created. You should see “Hello World” and the text you added as the paragraph, something like this:</li>
+</ol>
+
+
+<p><img src="http://www.lilianakastilio.co.uk/images/2015-12-03-create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/preview.png" alt="" /></p>
+
+<h4>4. What is HTML5 and how is it different?</h4>
+
+<p><code>HTML5</code> is simply a newer version that is supported by most  modern browsers. HTML5 introduced some more awesome elements/tags we can use: such as <code>&lt;canvas&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;footer&gt;</code> and many more to bring the HTML language more in-line with modern times.</p>
+
+<h4>5. HTML Exercises</h4>
+
+<p>We can add more to the page at this stage or later, <a href="http://www.htmldog.com/references/html/tags/">here is a list</a> of <code>html</code> and new <code>html5</code> tags you can use.</p>
+
+<ol>
+<li>Add an image <code>&lt;img&gt;</code>:
+
+<ul>
+<li>Type out the following and modify the <code>src</code> to point to an image you like:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;https://www.example.com/image.png &quot;</span> <span class="na">alt=</span><span class="s">&quot;Image description&quot;</span><span class="nt">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><code>width="100"</code> and  <code>height="90"</code> are optional, play around with the numbers.</li>
+<li><a href="http://www.htmldog.com/references/html/tags/img/">Read more</a> about image <code>&lt;img&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a link <code>&lt;a&gt;</code> to your favourite website:
+
+<ul>
+<li>Type out the following and modify it to link to point your favourite website:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://www.example.com &quot;</span><span class="nt">&gt;</span>Link Text<span class="nt">&lt;/a&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li><a href="http://www.w3schools.com/html/html_links.asp">Read more</a> about link <code>&lt;a&gt;</code> tag and it&rsquo;s use.</li>
+</ul>
+</li>
+<li>Add a footer <code>&lt;footer&gt;</code>. These usually sit at the bottom of the page, but sometimes have to be styled to stay at the bottom if there is not enough content to fill the page:
+
+<ul>
+<li>Type out the following and modify it to say anything you want:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;footer&gt;</span> This is a footer <span class="nt">&lt;/footer&gt;</span>
+</span></code></pre></td></tr></table></div></figure></li>
+<li>Now try to add a link within the footer to point to a url of your choice, e.g. <a href="http://google.com">http://google.com</a></li>
+<li><a href="http://www.htmldog.com/references/html/tags/footer/">Read more about footer <code>footer</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+<li>Add a comment, which says <code>“This is my first website!”</code>:
+
+<ul>
+<li>Have a look at the example below and modify it as needed:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="c">&lt;!-- Comment text, this will not be visible on the page --&gt;</span>
+</span></code></pre></td></tr></table></div></figure>   * <a href="http://www.tutorialspoint.com/html/html_comments.htm">Read more about comments</a></li>
+</ul>
+</li>
+<li>Add an unordered list of 3 things you love (use previous examples to get the format right):
+
+<ul>
+<li>Unordered list is started using the tag <code>&lt;ul&gt;</code> and closed using <code>&lt;/ul&gt;</code></li>
+<li>Within the list declaration mentioned above you can add in list items, these are defined by: <code>&lt;li&gt;</code> <code>&lt;/li&gt;</code></li>
+<li>You can have as many list items in the unordered list as you want</li>
+<li>Within each item you can add other elements, such as: paragraph, link, images, another list.</li>
+<li>Play around with this one, it is very useful especially for menus</li>
+<li><a href="http://www.htmldog.com/references/html/tags/ul/">Read more about unordered list <code>ul</code> tag and it&rsquo;s use</a></li>
+</ul>
+</li>
+</ol>
+
+
+<p><strong>Further reading and things to try:</strong></p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/Learn/HTML/HTML_tags">Mozilla: HTML Tags</a></li>
+<li><a href="https://www.codecademy.com/courses/web-beginner-en-HZA3b/0/1?curriculum_id=50579fb998b470000202dc8b">Codeacademy: Web Beginner</a></li>
+<li><a href="http://www.tutorialspoint.com/html/">Tutorialspoint: HTML</a></li>
+<li><a href="http://codepen.io/pen/">Codepen</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HTML5 Canvas Particle System (Pt. 3)]]></title>
+    <link href="http://lili2311.github.io/blog/2014/11/17/HTML5-Canvas-Particle-System-pt3/"/>
+    <updated>2014-11-17T00:00:00+00:00</updated>
+    <id>http://lili2311.github.io/blog/2014/11/17/HTML5-Canvas-Particle-System-pt3</id>
+    <content type="html"><![CDATA[<p>This is a Part 3 of a tutorial post <a href="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/">HTML5 Canvas Particles System (Pt. 1)</a>. In this tutorial I will cover:</p>
+
+<ol>
+<li>Initialising Canvas (covered in <a href="http://lili2311.github.io/blog/2014/07/22/Canvas-Particles/">Pt. 1</a>)</li>
+<li>Drawing circles in Canvas (covered in <a href="http://lili2311.github.io/blog/2014/11/16/HTML5-Canvas-Particle-System-pt2/">Pt. 2</a>)</li>
+<li>Simple animation for particle movement using <code>SetInterval()</code> (covered in <a href="http://lili2311.github.io/blog/2014/11/16/HTML5-Canvas-Particle-System-pt2/">Pt. 2</a>)</li>
+<li>Improving the code using <code>RequestAnimationFrame()</code></li>
+</ol>
+
+
+<h4>Using RequestAnimationFrame() instead of SetInterval()</h4>
+
+<p>Instead of using <code>SetInterval()</code> we can animate only when we need to using <code>RequestAnimationFrame()</code>. This helps improve performance as we re-draw only when something has changed. We can define to call <code>spawn()</code>, <code>draw()</code> and <code>update()</code> on load, after which we would have to modify the <code>update()</code> method to trigger the <code>RequestAnimationFrame()</code>.</p>
+
+<p>Here is what we are using instead of <code>SetInterval()</code>:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">requestAnimFrame</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">requestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">webkitRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">mozRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">oRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="nb">window</span><span class="p">.</span><span class="nx">msRequestAnimationFrame</span> <span class="o">||</span>
+</span><span class='line'>                          <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+</span><span class='line'>                            <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="mi">1</span><span class="nx">e3</span><span class="p">)</span>
+</span><span class='line'>                          <span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And adding an on load function:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// We should create, draw and start updating on load.</span>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">width</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nx">c</span><span class="p">.</span><span class="nx">height</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">spawn</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">update</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>We can now modify <code>update()</code> to look like this which now:</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">function</span> <span class="nx">update</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">reset</span><span class="p">();</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">width</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">;</span>
+</span><span class='line'>    <span class="nx">c</span><span class="p">.</span><span class="nx">height</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span> <span class="nx">ps</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">ps</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">y</span> <span class="o">+=</span> <span class="mi">1</span> <span class="p">;</span>
+</span><span class='line'>        <span class="nx">ps</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">x</span> <span class="o">+=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">3</span><span class="p">);</span>
+</span><span class='line'>        <span class="c1">//ps[i].r = Math.random()*5;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="nx">draw</span><span class="p">();</span>
+</span><span class='line'>    <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">requestAnimFrame</span><span class="p">(</span><span class="nx">update</span><span class="p">),</span><span class="mi">1</span><span class="nx">e3</span><span class="p">);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<p>And that is it!</p>
+]]></content>
+  </entry>
+  
+</feed>
