@@ -2,7 +2,7 @@
 layout: post
 title: "Part 4: Create new IAM users and permissions in AWS"
 comments: true
-categories: aws iam tutorial
+categories: aws iam tutorial frontend
 ---
 This is **Part 4** of a tutorial post [Create a Simple Website in CSS/HTML and deploy to Amazon S3](http://blog.lilianakastilio.co.uk/blog/2015/12/03/create-a-simple-website-in-css-and-html-and-deploy-to-amazon-s3/).
 

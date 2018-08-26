@@ -3,7 +3,7 @@ layout: post
 title: "Stop wasting time logging into GitHub on command line every time you push: just set up SSH keys"
 date: 2016-10-30 23:54:37 +0000
 comments: true
-categories: 
+categories: git ssh
 ---
 
 ##1. Does GitHub always ask you for your password? There is a fix, read on :)
